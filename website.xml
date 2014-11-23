@@ -37,7 +37,7 @@
 	<propval
 		name='port'
 		type='astring'
-    value='8002' />
+    value='8003' />
 
 </property_group>
 
