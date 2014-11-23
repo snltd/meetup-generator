@@ -1,19 +1,13 @@
 #!/usr/bin/env ruby
-#
+
 require 'yaml'
 require 'sinatra'
 require 'haml'
+require 'pathname'
 
-if File.exist?('/usr/share/dict/words')
-  words_file = '/usr/share/dict/words'
-elsif File.exist?('/usr/share/lib/dict/words')
-  words_file = '/usr/share/lib/dict/words'
-else
-  abort 'no words file'
-end
-
-things = YAML.load_file('all_the_things.yaml')
-
+#-----------------------------------------------------------------------------
+# METHODS
+#
 def generate_item(things)
   t = things[:template].sample
   t.scan(/%\w+%/).each { |k| t = t.sub(k, things[k[1..-2].to_sym].sample) }
@@ -30,7 +24,22 @@ def generate_job(things, words)
   ].join(' ')
 end
 
-words = `grep "^[a-z]*$" #{words_file}`.split("\n")
+#-----------------------------------------------------------------------------
+# SCRIPT STARTS HERE
+#
+if File.exist?('/usr/share/dict/words')
+  words_file = '/usr/share/dict/words'
+elsif File.exist?('/usr/share/lib/dict/words')
+  words_file = '/usr/share/lib/dict/words'
+else
+  abort 'no words file'
+end
+
+words = `/bin/grep "^[a-z]*$" #{words_file}`.split("\n")
+
+all_the_things = Pathname(__FILE__).dirname + 'all_the_things.yaml'
+
+things = YAML.load_file(all_the_things)
 
 get '/' do
   @talks, @jobs = [], []
