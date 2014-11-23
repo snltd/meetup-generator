@@ -7,16 +7,16 @@ body {
 }
 
 .tperson {
-    font-size: small;
-    margin-left: 5em;
+  font-size: small;
+  margin-left: 5em;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 li {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 .ttitle {
@@ -36,4 +36,14 @@ h1, h2, h3, h4 {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#footer {
+  margin-top: 20em;
+  font-size: x-small;
+  text-align: right;
+}
+
+a {
+ text-decoration: none;
 }
