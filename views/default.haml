@@ -1,0 +1,56 @@
+%html{lang: 'en'}
+  %head
+    %meta{charset: 'utf-8'}
+    %link{href: 'http://fonts.googleapis.com/css?family=Roboto+Slab:300,700', rel: 'stylesheet'}
+    %link{href: '/css/main.css', rel: 'stylesheet'}
+
+  %body
+    #container
+      %h1
+        \#DevOps Meetup // Shoreditch, probably // #{(Date.today + 1).strftime("%d/%m/%Y")}
+
+      %ul
+        %li 18:00 // Introduction
+
+        %li
+          18:10 // Lightning talk //
+          %span.ttitle
+            &#8220;#{@talks.pop}&#8221;
+        .tperson
+          (#{@jobs.pop})
+
+        %li
+          18:20 //
+          %span.ttitle
+            &#8220;#{@talks.pop}&#8221;
+        .tperson
+          (#{@jobs.pop})
+
+        %li 19:20 // break
+        .tperson
+          = @food
+
+        %li
+          19:50 //
+          %span.ttitle
+            &#8220;#{@talks.pop}&#8221;
+        .tperson
+          (#{@jobs.pop})
+
+        %li
+          20:10 // Lightning talk //
+          %span.ttitle
+            &#8220;#{@talks.pop}&#8221;
+        .tperson
+          (#{@jobs.pop})
+
+        %li
+          20:20 //
+          %span.ttitle
+            &#8220;#{@talks.pop}&#8221;
+        .tperson
+          (#{@jobs.pop})
+
+        %li 20:40 // Close
+        .tperson
+          Everyone is hiring, but no one's paying

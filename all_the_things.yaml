@@ -1,0 +1,285 @@
+---
+
+# These can have -ing or -ed appended
+
+:verb:
+  - Automat
+  - Brogramm
+  - Cheff
+  - Cloudstack
+  - Cod
+  - Containeriz
+  - DDOS
+  - Deliver
+  - Deploy
+  - Disrupt
+  - Downscal
+  - Graph
+  - Horizonatiliz
+  - Incubat
+  - Monitor
+  - Obfuscat
+  - Optimiz
+  - Orchestrat
+  - Puppetiz
+  - Recod
+  - Refactor
+  - RESTify
+  - Revolutioniz
+  - Scal
+  - Shard
+  - Syntax-colour
+  - Transform
+  - Tun
+  - Upscal
+  - Verticaliz
+  - Virtualiz
+  - Webscal
+
+:tech:
+  - angular.js
+  - Ansible
+  - bacon.js
+  - backbone.js
+  - Capistrano
+  - Cassandra
+  - Chef
+  - Clojure
+  - CloudFormation
+  - Cloudstack
+  - Clusterpoint
+  - Coffeescript
+  - Couchbase
+  - CoreOS
+  - Dart
+  - Docker
+  - EC2
+  - Elixir
+  - ember.js
+  - etcd
+  - Erlang
+  - Express
+  - Fleet
+  - FoundationDB
+  - Github
+  - Golang
+  - Gocraft/web
+  - Grafana
+  - Graphene
+  - Graphite
+  - Hadoop
+  - Hazelcast
+  - HBase
+  - Haskell
+  - InfluxDB
+  - IO
+  - Jenkins
+  - JRuby
+  - JSON
+  - Kibana
+  - Linux
+  - Lisp
+  - LXC
+  - microservices
+  - MongoDB
+  - node.js
+  - npm
+  - NewRelic
+  - NoSQL
+  - Objective-J
+  - Opa
+  - Packer
+  - Perl
+  - Puppet
+  - Python
+  - RabbitMQ
+  - Redis
+  - Riak
+  - Ruby
+  - S3
+  - Salt
+  - Scala
+  - Scalr
+  - Sensu
+  - Sinatra
+  - SmartOS
+  - Sublime Text
+  - Systemd
+  - Terraform
+  - TokyoTyrant
+  - Ubuntu
+  - YAML
+  - ZeroMQ
+  - Zookeeper
+
+:service:
+  - Cloud
+  - Container
+  - DevOps
+  - Downtime
+  - Infrastructure
+  - Platform
+  - Private Cloud
+  - Service
+
+:extreme:
+  - Improve
+  - Limit
+  - Maximize
+  - Minimize
+  - Reduce
+
+:quantifier:
+  - AWS bill
+  - Downtime
+  - ROI
+  - Synergy
+  - Uptime
+
+:time:
+  - Attempts
+  - Days
+  - Hours
+  - Minutes
+  - Seconds
+  - Weeks
+
+:food_style:
+  - artisan
+  - Asian
+  - barrista
+  - craft
+  - fusion
+  - microbrewery
+  - keg
+
+:food:
+  - beers
+  - breads
+  - chutneys
+  - coffee
+  - hummus
+  - lagers
+  - olives
+  - quinoa
+
+:skill_level:
+  - Advanced User
+  - Beginner
+  - CTO
+  - Developer
+  - Idiot
+  - n00b
+  - Webscalr
+
+:is_not:
+  - ""
+  - not
+
+:template:
+  - "%verb%ed %tech% == #Awesomesauce"
+  - "%verb%ing All of The Things with %tech%"
+  - "I Don't Know Much About %tech% or %tech% But I'm Going to Talk About Them Anyway"
+  - "How to %extreme% Your %quantifier% by %is_not% %verb%ing %tech%"
+  - "%tech% for %tech% users, and How to Avoid %verb%ing Your %tech% Layer"
+  - "%verb%ing %tech% with %tech% for %skill_level%s"
+  - "Why %tech% is %is_not% the new %tech%"
+  - "How we %verb%ed %tech% with %tech% in RAND100 %time%"
+  - "RAND20 Things You Should %is_not% be Doing with %tech% to Enable %service% as a Service"
+
+#-----------------------------------------------------------------------------
+# This block relates to the names and roles of the people doing the
+# talks
+
+# These are the most common names of the 1990s, according to some
+# stupid website. We have as many female as male. Idealism over
+# realism.
+#
+:first_name:
+  - Amanda
+  - Andrew
+  - Ashley
+  - Brandon
+  - Brittany
+  - Christopher
+  - Daniel
+  - David
+  - Elizabeth
+  - Emily
+  - Hannah
+  - Jacob
+  - James
+  - Jennifer
+  - Jessica
+  - John
+  - Joseph
+  - Joshua
+  - Justin
+  - Kayla
+  - Lauren
+  - Matthew
+  - Megan
+  - Michael
+  - Nicholas
+  - Nicole
+  - Rachel
+  - Ryan
+  - Samantha
+  - Sarah
+  - Stephanie
+  - Taylor
+  - Tyler
+  - Zachary
+
+# These are the most common surnames in Britain, according to some
+# other website
+
+:last_name:
+  - Smith
+  - Jones
+  - Taylor
+  - Williams
+  - Brown
+  - Davies
+  - Evans
+  - Wilson
+  - Thomas
+  - Roberts
+  - Johnson
+  - Lewis
+  - Walker
+  - Robinson
+  - Wood
+  - Thompson
+  - White
+  - Watson
+  - Jackson
+  - Wright
+
+:job_role:
+  - DevOps
+  - Full Stack
+  - Technical
+  - Node.js
+  - All The Things
+
+:job_title:
+  - Balrog
+  - Big Data Scientist
+  - Dragonslayer
+  - Evangelist
+  - Fundamentalist
+  - Guru
+  - Helicopter pilot
+  - Hero
+  - Jedi
+  - Legend
+  - Magician
+  - Neckbeard
+  - Ninja
+  - Preacherman
+  - Rocket scientist
+  - Rockstar
+  - Savant
+  - Warlock
+  - Wizard

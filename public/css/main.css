@@ -1,0 +1,39 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.9em;
+  text-align: justify;
+  background: #eeeeee;
+  color: #222;
+}
+
+.tperson {
+    font-size: small;
+    margin-left: 5em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-top: 1em;
+}
+
+.ttitle {
+    font-style: italic;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  border-bottom: 2px dotted #888;
+}
+
+#container {
+  padding-top: 3em;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
