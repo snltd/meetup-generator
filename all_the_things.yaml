@@ -15,7 +15,7 @@
   - Disrupt
   - Downscal
   - Graph
-  - Horizonatiliz
+  - Horizontaliz
   - Incubat
   - Monitor
   - Obfuscat
@@ -152,6 +152,7 @@
   - craft
   - fairtrade
   - fusion
+  - Lebanese
   - microbrewery
   - keg
 
@@ -189,6 +190,7 @@
   - "Why %tech% is %is_not% the new %tech%"
   - "How we %verb%ed %tech% with %tech% in RAND100 %time%"
   - "RAND20 Things You Should %is_not% be Doing with %tech% to Enable %service% as a Service"
+  - "Pimp My %tech%. %tech% is the Answer, What's the Question?"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
