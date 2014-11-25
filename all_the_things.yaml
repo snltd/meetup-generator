@@ -4,19 +4,25 @@
 #
 :verb:
   - Automat
+  - Autoscal
   - Brogramm
   - Cheff
   - Cloudstack
   - Cod
+  - Continuously Deliver
+  - Continuously Deploy
   - Containeriz
   - DDOS
+  - Detun
   - Deliver
   - Deploy
   - Disrupt
   - Downscal
+  - Enabl
   - Graph
   - Horizontaliz
   - Incubat
+  - Megashard
   - Monitor
   - Obfuscat
   - Optimiz
@@ -28,7 +34,7 @@
   - Revolutioniz
   - Scal
   - Shard
-  - Syntax-colour
+  - Syntax-Colour
   - Transform
   - Tun
   - Upscal
@@ -39,6 +45,7 @@
 :tech:
   - angular.js
   - Ansible
+  - AWS
   - bacon.js
   - backbone.js
   - Capistrano
@@ -61,6 +68,7 @@
   - Express
   - Fleet
   - FoundationDB
+  - GCE
   - Github
   - Golang
   - Gocraft/web
@@ -76,6 +84,7 @@
   - Jenkins
   - JRuby
   - JSON
+  - Juju
   - Kibana
   - Linux
   - Lisp
@@ -123,10 +132,14 @@
   - Services
 
 :extreme:
+  - Annihilate
+  - Autoscale
+  - Destroy
   - Improve
   - Limit
   - Maximize
   - Minimize
+  - Normalize
   - Reduce
 
 :quantifier:
@@ -135,6 +148,7 @@
   - ROI
   - Synergy
   - Uptime
+  - VC Appeal
 
 :time:
   - Attempts
@@ -152,17 +166,24 @@
   - craft
   - fairtrade
   - fusion
+  - heirloom
+  - heritage
+  - keg-aged
   - Lebanese
+  - matured
   - microbrewery
-  - keg
 
 :food:
   - beers
   - breads
+  - charcuterie
   - cheeses
+  - ciders
   - chutneys
   - coffee
+  - grazing boards
   - hummus
+  - IPAs
   - lagers
   - olives
   - quinoa
@@ -184,12 +205,14 @@
   - "%verb%ed %tech% == #Awesomesauce"
   - "%verb%ing All of the Things with %tech%"
   - "I Don't Know Much About %tech% or %tech% But I'm Going to Talk About Them Anyway"
+  - "How %tech% Taught Us What '%verb%ing' Really Means"
   - "How to %extreme% Your %quantifier% by %is_not% %verb%ing %tech%"
   - "%tech% for %tech% users, and How to Avoid %verb%ing Your %tech% Layer"
   - "%verb%ing %tech% with %tech% for %skill_level%s"
   - "Why %tech% is %is_not% the new %tech%"
   - "How we %verb%ed %tech% with %tech% in RAND100 %time%"
   - "RAND20 Things You Should %is_not% be Doing with %tech% to Enable %service% as a Service"
+  - "From %tech% n00b to %tech% %verb%ing Jedi in RAND5 %time%"
   - "Pimp My %tech%. %tech% is the Answer, What's the Question?"
 
 #-----------------------------------------------------------------------------
@@ -262,6 +285,7 @@
   - Wright
 
 :job_role:
+  - Big Data
   - DevOps
   - Full Stack
   - Technical
@@ -269,22 +293,23 @@
   - All of the Things
 
 :job_title:
+  - Afficianado
   - Balrog
-  - Big Data Scientist
   - Dragonslayer
   - Evangelist
   - Fundamentalist
   - Guru
   - Helicopter pilot
-  - Hero
+  - Imagineer
   - Jedi
   - Legend
   - Magician
   - Neckbeard
   - Ninja
   - Preacherman
-  - Rocket scientist
+  - Rocket Scientist
   - Rockstar
   - Savant
+  - Scientist
   - Warlock
   - Wizard
