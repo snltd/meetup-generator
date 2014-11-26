@@ -12,7 +12,7 @@ def generate_item(things)
   t = things[:template].sample
   t.scan(/%\w+%/).each { |k| t = t.sub(k, things[k[1..-2].to_sym].sample) }
   t.scan(/RAND\d+/).each do |i|
-    t = t.sub(i, rand(i.sub(/RAND/, '').to_i + 2).to_s)
+    t = t.sub(i, rand(2..(i.sub(/RAND/, '').to_i)).to_s)
   end
   t
 end
