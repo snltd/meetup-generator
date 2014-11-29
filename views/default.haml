@@ -1,5 +1,7 @@
+!!! html
 %html{lang: 'en'}
   %head
+    %title #Devops Meetup
     %meta{charset: 'utf-8'}
     %link{href: 'http://fonts.googleapis.com/css?family=Roboto+Slab:300,700', rel: 'stylesheet'}
     %link{href: '/css/main.css', rel: 'stylesheet'}
@@ -16,44 +18,46 @@
           18:10 // Lightning talk //
           %span.ttitle
             &#8220;#{@talks.pop}&#8221;
-        .tperson
-          (#{@jobs.pop})
+          .tperson
+            (#{@jobs.pop})
 
         %li
           18:20 //
           %span.ttitle
             &#8220;#{@talks.pop}&#8221;
-        .tperson
-          (#{@jobs.pop})
+          .tperson
+            (#{@jobs.pop})
 
-        %li 18:50 // break
-        .tperson
-          = @food
+        %li
+          18:50 // break
+          .tperson
+            = @food
 
         %li
           19:20 //
           %span.ttitle
             &#8220;#{@talks.pop}&#8221;
-        .tperson
-          (#{@jobs.pop})
+          .tperson
+            (#{@jobs.pop})
 
         %li
           19:40 // Lightning talk //
           %span.ttitle
             &#8220;#{@talks.pop}&#8221;
-        .tperson
-          (#{@jobs.pop})
+          .tperson
+            (#{@jobs.pop})
 
         %li
           20:00 //
           %span.ttitle
             &#8220;#{@talks.pop}&#8221;
-        .tperson
-          (#{@jobs.pop})
+          .tperson
+            (#{@jobs.pop})
 
-        %li 20:30 // Close
-        .tperson
-          Everyone is hiring, but no one's paying
+        %li
+          20:30 // Close
+          .tperson
+            Everyone is hiring, but no one's paying
 
       #footer
         %a{href: 'https://github.com/snltd/meetup-generator'}
