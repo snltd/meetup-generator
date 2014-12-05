@@ -15,6 +15,7 @@
   - Containeriz
   - DDOS
   - Detun
+  - Dedup
   - Deliver
   - Deploy
   - Disrupt
@@ -47,21 +48,26 @@
   - Webscal
 
 :tech:
+  - Akka
   - angular.js
   - Ansible
   - AWS
   - bacon.js
   - backbone.js
+  - BigTable
   - Capistrano
   - Cassandra
+  - cgroups
   - Chef
   - Clojure
   - CloudFormation
   - Cloudstack
   - Clusterpoint
   - Coffeescript
+  - CouchDB
   - Couchbase
   - CoreOS
+  - "curl | sudo bash"
   - Dart
   - Docker
   - Doozer
@@ -75,6 +81,7 @@
   - Flapjack
   - Fleet
   - FoundationDB
+  - functional programming
   - Ganglia
   - GCE
   - Git
@@ -91,6 +98,8 @@
   - Haskell
   - HBase
   - Heroku
+  - hyperconvergence
+  - IntelliJ
   - InfluxDB
   - IO
   - Jenkins
@@ -98,15 +107,21 @@
   - JSON
   - Juju
   - Kibana
+  - Kubernetes
   - Linux
   - Lisp
   - Logstash
   - LXC
+  - MEAN
   - microservices
+  - monads
   - MongoDB
+  - Mutable Infrastructure
+  - Neo4J
   - node.js
   - npm
   - NewRelic
+  - NoOps
   - NoSQL
   - Objective-J
   - Opa
@@ -114,10 +129,13 @@
   - Perl
   - Puppet
   - Python
+  - R
   - RabbitMQ
+  - Racket
   - Redis
   - Restify
   - Riak
+  - Rocket
   - Ruby
   - S3
   - Salt
@@ -125,6 +143,7 @@
   - Scala
   - Scalr
   - Scrum
+  - SDN
   - Sensu
   - Sinatra
   - SmartOS
@@ -185,6 +204,7 @@
   - Asian
   - barrista
   - biodynamic
+  - cave-aged
   - craft
   - fairtrade
   - fusion
@@ -224,6 +244,7 @@
   - not
 
 :template:
+  - "Enabling No-Ops with Virtual %tech%"
   - "%verb%ed %tech% == #Awesomesauce"
   - "%verb%ing All of the Things with %tech%"
   - "I Don't Know Much About %tech% or %tech% But I'm Going to Talk About Them Anyway"
@@ -324,6 +345,7 @@
   - Fundamentalist
   - Genius
   - Guru
+  - Hacker
   - Helicopter Pilot
   - Imagineer
   - Jedi
