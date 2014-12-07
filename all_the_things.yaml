@@ -21,6 +21,7 @@
   - Disrupt
   - Downscal
   - Enabl
+  - Fork
   - Gamify
   - Graph
   - Horizontaliz
@@ -55,9 +56,12 @@
   - bacon.js
   - backbone.js
   - BigTable
+  - Bootstrap
+  - Boto
   - Capistrano
   - Cassandra
   - cgroups
+  - CFEngine
   - Chef
   - Clojure
   - CloudFormation
@@ -69,8 +73,10 @@
   - CoreOS
   - "curl | sudo bash"
   - Dart
+  - Django
   - Docker
   - Doozer
+  - Dropwizard
   - EC2
   - Elasticsearch
   - Elixir
@@ -80,6 +86,7 @@
   - Express
   - Flapjack
   - Fleet
+  - Fog
   - FoundationDB
   - functional programming
   - Ganglia
@@ -93,6 +100,7 @@
   - Grape
   - Graphene
   - Graphite
+  - Grunt
   - Hadoop
   - Hazelcast
   - Haskell
@@ -112,6 +120,7 @@
   - Lisp
   - Logstash
   - LXC
+  - MAAS
   - MEAN
   - microservices
   - monads
@@ -137,16 +146,19 @@
   - Riak
   - Rocket
   - Ruby
+  - Rust
   - S3
   - Salt
-  - Saltstack
+  - SaltStack
   - Scala
   - Scalr
+  - Scheme
   - Scrum
   - SDN
   - Sensu
   - Sinatra
   - SmartOS
+  - Solr
   - statsd
   - Sublime Text
   - Systemd
@@ -154,6 +166,7 @@
   - TokyoTyrant
   - Travis CI
   - Ubuntu
+  - Vagrant
   - YAML
   - ZeroMQ
   - Zookeeper
@@ -351,6 +364,7 @@
   - Jedi
   - Legend
   - Magician
+  - Maven
   - Neckbeard
   - Ninja
   - Preacherman
