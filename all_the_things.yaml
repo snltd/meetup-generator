@@ -75,6 +75,7 @@
   - Cucumber
   - "curl | sudo bash"
   - Dart
+  - Dataloop
   - Django
   - Docker
   - Dokku
@@ -134,6 +135,7 @@
   - MongoDB
   - Mutable Infrastructure
   - Neo4J
+  - nginx
   - node.js
   - npm
   - NewRelic
@@ -284,7 +286,7 @@
   - "From %tech% n00b to %tech% %verb%ing Jedi in RAND5 %time%"
   - "Pimp My %tech%. %tech% is the Answer, What's the Question?"
   - "How We %verb%ed RAND40% of our Infrastructure Overnight with %tech%"
-  - "Bang! And the %noun% is gone! The Future is %verb%ed %noun%"
+  - "BANG! And the %noun% is gone! The Future is %verb%ed %noun%"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
