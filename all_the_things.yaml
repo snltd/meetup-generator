@@ -64,6 +64,7 @@
   - CFEngine
   - Chef
   - Clojure
+  - Cloud Foundry
   - CloudFormation
   - Cloudstack
   - Clusterpoint
@@ -71,10 +72,12 @@
   - CouchDB
   - Couchbase
   - CoreOS
+  - Cucumber
   - "curl | sudo bash"
   - Dart
   - Django
   - Docker
+  - Dokku
   - Doozer
   - Dropwizard
   - EC2
@@ -86,6 +89,7 @@
   - Express
   - Flapjack
   - Fleet
+  - Flynn.io
   - Fog
   - FoundationDB
   - functional programming
@@ -116,6 +120,7 @@
   - JSON
   - Juju
   - Kibana
+  - kitchen-docker
   - Kubernetes
   - Linux
   - Lisp
@@ -123,6 +128,7 @@
   - LXC
   - MAAS
   - MEAN
+  - Memchached
   - microservices
   - monads
   - MongoDB
@@ -165,6 +171,7 @@
   - Sublime Text
   - Systemd
   - Terraform
+  - Test Kitchen
   - TokyoTyrant
   - Travis CI
   - Ubuntu
@@ -228,7 +235,7 @@
   - heritage
   - keg-aged
   - Lebanese
-  - matured
+  - extra-matured
   - microbrewery
 
 :food:
@@ -239,10 +246,12 @@
   - ciders
   - chutneys
   - coffee
+  - falafel
   - grazing boards
   - hummus
   - IPAs
   - lagers
+  - nonsense
   - olives
   - quinoa
 
@@ -269,11 +278,13 @@
   - "%tech% for %tech% users, and How to Avoid %verb%ing Your %tech% Layer"
   - "%verb%ing %tech% with %tech% for %skill_level%s"
   - "Why %tech% is %is_not% the new %tech%"
+  - "RAND10 Lessons from %verb%ing %verb%ed %noun%"
   - "How we %verb%ed %tech% with %tech% in RAND100 %time%"
   - "RAND20 Things You Should %is_not% be Doing with %tech% to Enable %service% as a Service"
   - "From %tech% n00b to %tech% %verb%ing Jedi in RAND5 %time%"
   - "Pimp My %tech%. %tech% is the Answer, What's the Question?"
   - "How We %verb%ed RAND40% of our Infrastructure Overnight with %tech%"
+  - "Bang! And the %noun% is gone! The Future is %verb%ed %noun%."
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
