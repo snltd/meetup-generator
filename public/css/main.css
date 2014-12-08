@@ -1,8 +1,13 @@
 body {
-  font-family: 'Roboto Slab', serif;
-  font-size: 0.9em;
+  /* font-family: 'Roboto Slab', serif;
   background: #eeeeee;
   color: #222;
+*/
+	font-family: 'ZX Spectrum';
+  font-size: 0.9em;
+  background: black;
+  color: #0F0;
+	line-height: 120%;
 }
 
 .tperson {
@@ -19,14 +24,18 @@ li {
 }
 
 .ttitle {
-    font-style: italic;
-    font-weight: bold;
+  /*font-style: italic;*/
+  font-weight: bold;
+  background-color: #0FF;
+  color: black;
 }
 
 h1, h2, h3, h4 {
   text-align: center;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
+  color: #FF0;
+  line-height:100%;
   border-bottom: 2px dotted #888;
 }
 
@@ -45,4 +54,5 @@ h1, h2, h3, h4 {
 
 a {
  text-decoration: none;
+  color: #F0F;
 }
