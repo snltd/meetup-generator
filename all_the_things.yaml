@@ -110,6 +110,7 @@
   - IntelliJ
   - InfluxDB
   - IO
+  - Jekyll
   - Jenkins
   - JRuby
   - JSON
@@ -144,6 +145,7 @@
   - Redis
   - Restify
   - Riak
+  - Rightscale
   - Rocket
   - Ruby
   - Rust
@@ -168,6 +170,7 @@
   - Ubuntu
   - Vagrant
   - YAML
+  - YAML front-matter
   - ZeroMQ
   - Zookeeper
 
