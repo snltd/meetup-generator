@@ -20,7 +20,7 @@ end
 def generate_job(things, words)
   [ things[:first_name].sample, things[:last_name].sample, '&mdash;',
     things[:job_role].sample, things[:job_title].sample, '@',
-    "#{words.sample}.io"
+    "#{words.sample.sub(/([^aeiou])er$/, "\\1r")}.io"
   ].join(' ')
 end
 
