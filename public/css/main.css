@@ -5,14 +5,14 @@ body {
 */
 	font-family: 'ZX Spectrum';
   font-size: 0.9em;
-  background: black;
-  color: #0F0;
+  background: #000;
+  color: #0f0;
 	line-height: 120%;
 }
 
 .tperson {
   font-size: small;
-  margin-left: 5em;
+  margin-left: 12em;
 }
 
 ul {
@@ -21,22 +21,24 @@ ul {
 
 li {
   padding-top: 1em;
+  text-indent: -9em;
+  margin-left: 9em;
 }
 
 .ttitle {
   /*font-style: italic;*/
   font-weight: bold;
-  background-color: #0FF;
-  color: black;
+  background-color: #0ff;
+  color: #000;
 }
 
-h1, h2, h3, h4 {
+h1 {
   text-align: center;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
-  color: #FF0;
+  color: #ff0;
   line-height:100%;
-  border-bottom: 2px dotted #888;
+  border-bottom: 4px dotted #f0f;
 }
 
 #container {
@@ -53,6 +55,6 @@ h1, h2, h3, h4 {
 }
 
 a {
- text-decoration: none;
-  color: #F0F;
+  text-decoration: none;
+  color: #f0f;
 }
