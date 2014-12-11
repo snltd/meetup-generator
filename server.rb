@@ -26,20 +26,9 @@ end
 
 #-----------------------------------------------------------------------------
 # SCRIPT STARTS HERE
-#
-if File.exist?('/usr/share/dict/words')
-  words_file = '/usr/share/dict/words'
-elsif File.exist?('/usr/share/lib/dict/words')
-  words_file = '/usr/share/lib/dict/words'
-else
-  abort 'no words file'
-end
-
-words = `/bin/grep "^[a-z]*$" #{words_file}`.split("\n")
-
-all_the_things = Pathname(__FILE__).dirname + 'all_the_things.yaml'
-
-things = YAML.load_file(all_the_things)
+wd = File.exist?('/usr/share/dict') ? '/usr/share/dict' : '/usr/share/lib/dict'
+words = `/bin/grep "^[a-z]*$" #{Pathname(wd) + 'words'}`.split("\n")
+things = YAML.load_file(Pathname(__FILE__).dirname + 'all_the_things.yaml')
 
 get '/' do
   @talks, @jobs = [], []
