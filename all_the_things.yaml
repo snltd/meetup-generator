@@ -55,6 +55,7 @@
   - AWS
   - bacon.js
   - backbone.js
+  - Berkshelf
   - BigTable
   - Bootstrap
   - Boto
@@ -92,6 +93,7 @@
   - Fleet
   - Flynn.io
   - Fog
+  - Foodcritic
   - Footman
   - FoundationDB
   - functional programming
@@ -126,6 +128,7 @@
   - Juju
   - Kibana
   - kitchen-docker
+  - knife Plugins
   - Kubernetes
   - Linux
   - Lisp
@@ -160,6 +163,7 @@
   - Riak
   - Rightscale
   - Rocket
+  - RSpec
   - Ruby
   - Rust
   - S3
