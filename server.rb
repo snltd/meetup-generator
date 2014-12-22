@@ -30,7 +30,7 @@ wd = File.exist?('/usr/share/dict') ? '/usr/share/dict' : '/usr/share/lib/dict'
 words = `/bin/grep "^[a-z]*$" #{Pathname(wd) + 'words'}`.split("\n")
 things = YAML.load_file(Pathname(__FILE__).dirname + 'all_the_things.yaml')
 
-get '/' do
+get "*" do
   @talks, @jobs = [], []
   5.times { @jobs.<< generate_job(things, words) }
   5.times { @talks.<< generate_item(things) }
