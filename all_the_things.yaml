@@ -3,6 +3,7 @@
 # These can have -ing or -ed appended
 #
 :verb:
+  - Aggregat
   - API-
   - Automat
   - Autoscal
@@ -10,6 +11,7 @@
   - Cheff
   - Cloudstack
   - Cod
+  - Collect
   - Continuously Deliver
   - Continuously Deploy
   - Containeriz
@@ -24,18 +26,24 @@
   - Fork
   - Gamify
   - Graph
+  - Hack
   - Horizontaliz
   - Incubat
+  - Leverag
   - Measur
   - Megashard
   - Monitor
   - Obfuscat
+  - "Open Sourc"
   - Optimiz
   - Orchestrat
+  - Pipelin
   - Puppetiz
+  - Re-cultur
   - Recod
   - Refactor
   - RESTify
+  - Re-imagin
   - Revolutioniz
   - Scal
   - Shard
@@ -126,6 +134,7 @@
   - JRuby
   - JSON
   - Juju
+  - Kanban
   - Kibana
   - kitchen-docker
   - knife Plugins
@@ -213,10 +222,12 @@
   - Minimize
   - Normalize
   - Reduce
+  - Wrangle
 
 :quantifier:
   - AWS bill
   - Burn Rate
+  - Deployables
   - Downtime
   - ROI
   - Seed Capital
@@ -241,6 +252,7 @@
   - cave-aged
   - craft
   - fairtrade
+  - "farmers' market"
   - fusion
   - heirloom
   - heritage
@@ -295,7 +307,18 @@
   - "From %tech% n00b to %tech% %verb%ing Jedi in RAND5 %time%"
   - "Pimp My %tech%. %tech% is the Answer, What's the Question?"
   - "How We %verb%ed RAND40% of our Infrastructure Overnight with %tech%"
-  - "BANG! And the %tech% is gone! The Future is %verb%ed %tech%"
+  - "BANG! And the %tech% is Gone! The Future is %verb%ed %tech%"
+  - "How We Use %tech% to %extreme% the Internet of Things"
+  - "We %verb%ed our %tech%. Mind = Blown"
+  - "%tech% or Die. We're Ready, Are You?"
+  - "When %tech% is not Good Enough, Reach for the %tech%"
+  - "%verb%ed %tech% 15-minute Fishbowl Session"
+  - "Everything You Think You Know About %tech% is Wrong"
+  - "While You Learn, I Earn: Making Shit Up and Blogging it as Fact"
+  - "%quantifier% as Code: Ready for the Revolution?"
+  - "%tech% against Humanity: it's all about the Culture"
+
+
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
@@ -403,5 +426,6 @@
   - Savant
   - Scientist
   - Sensei
+  - Though Leader
   - Warlock
   - Wizard
