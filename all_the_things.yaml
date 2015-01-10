@@ -318,8 +318,6 @@
   - "%quantifier% as Code: Ready for the Revolution?"
   - "%tech% against Humanity: it's all about the Culture"
 
-
-
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
 # talks
@@ -402,8 +400,10 @@
   - 00 Agent
   - 10x
   - Afficianado
+  - Alchemist
   - Badass
   - Balrog
+  - Demi-God
   - Dragonslayer
   - Evangelist
   - Fundamentalist
@@ -421,11 +421,14 @@
   - Overlord
   - Pirate
   - Preacherman
+  - Road Warrior
   - Rocket Scientist
   - Rockstar
   - Savant
   - Scientist
   - Sensei
-  - Though Leader
+  - Thought Leader
+  - Visionary
   - Warlock
   - Wizard
+  - Wrangler
