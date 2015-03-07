@@ -15,6 +15,7 @@
   - Continuously Deliver
   - Continuously Deploy
   - Containeriz
+  - De-Risk
   - DDOS
   - Detun
   - Dedup
@@ -118,6 +119,7 @@
   - Graphite
   - Groovy
   - Grunt
+  - Gulp
   - Hadoop
   - Hazelcast
   - Haskell
@@ -159,7 +161,6 @@
   - NoSQL
   - Objective-J
   - OCaml
-  - Opa
   - Packer
   - Perl
   - Puppet
@@ -167,6 +168,7 @@
   - R
   - RabbitMQ
   - Racket
+  - ReactJS
   - Redis
   - Restify
   - Riak
@@ -184,6 +186,7 @@
   - Scrum
   - SDN
   - Sensu
+  - Sidekiq
   - Sinatra
   - SmartOS
   - Solr
@@ -215,6 +218,7 @@
 :extreme:
   - Annihilate
   - Autoscale
+  - De-Risk
   - Destroy
   - Improve
   - Limit
@@ -229,6 +233,7 @@
   - Burn Rate
   - Deployables
   - Downtime
+  - Innovation Initiatives
   - ROI
   - Seed Capital
   - Synergy
@@ -318,8 +323,16 @@
   - "%quantifier% as Code: Ready for the Revolution?"
   - "%tech% against Humanity: it's all about the Culture"
   - "A Complicated Way to do Something Unnecessary Which Does Not Work"
-  - "If You Don't Understand Something - Reinvent It"
+  - "DevOps Culture: If You Don't Understand Something - Reinvent It"
   - "DevOps Culture: Don't Do it If it's Hard or Boring"
+  - "Something People Have Done Since 1979, but with a New Name"
+  - "How We %verb%ed Our %service% with %tech% FTW!"
+  - "Still Using %tech%? Allow Me to Enlighten You"
+  - "I First Heard about %tech% RAND5 Days Ago, and Now I'm an Expert"
+  - "Fifteen Minutes of Ignorant Hubris"
+  - "Buzzword Blizzard: %tech% + %tech% + %tech% + %tech%"
+  - "How We Do What Google Do, but on a Tiny Scale, and Wrong"
+  - "EC2 at Scale: RAND40 instances and Counting!"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
@@ -409,6 +422,7 @@
   - Demi-God
   - Dragonslayer
   - Evangelist
+  - Factotum
   - Fundamentalist
   - Genius
   - Guru
@@ -423,6 +437,7 @@
   - Ninja
   - Overlord
   - Pirate
+  - Polyglot
   - Preacherman
   - Road Warrior
   - Rocket Scientist
