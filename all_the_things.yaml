@@ -296,6 +296,16 @@
   - ""
   - not
 
+:company:
+  - Etsy
+  - Facebook
+  - Flickr
+  - Foursquare
+  - Google
+  - LinkedIn
+  - Netflix
+  - Twitter
+
 :template:
   - "Enabling No-Ops with Virtual %tech%"
   - "%verb%ed %tech% == #Awesomesauce"
@@ -331,8 +341,9 @@
   - "I First Heard about %tech% RAND5 Days Ago, and Now I'm an Expert"
   - "Fifteen Minutes of Ignorant Hubris"
   - "Buzzword Blizzard: %tech% + %tech% + %tech% + %tech%"
-  - "How We Do What Google Do, but on a Tiny Scale, and Wrong"
+  - "How We Do What %company% Do, but on a Tiny Scale, and Wrong"
   - "EC2 at Scale: RAND40 instances and Counting!"
+  - "Why %company% Should Switch Everything to %tech%"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
