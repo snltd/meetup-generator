@@ -269,6 +269,7 @@
 :food:
   - beers
   - breads
+  - cereal
   - charcuterie
   - cheeses
   - ciders
@@ -305,6 +306,22 @@
   - LinkedIn
   - Netflix
   - Twitter
+
+:driver:
+  - Reddit
+  - HackerNews
+  - YCombinator
+  - Meetup-Generator
+  - I-Ching
+  - Hipster
+  - "Somone-Else's-Blog"
+  - CV
+  - Resume
+  - Hubris
+  - Overconfidence
+  - What-Everyone-Else-is-Doing
+  - I-Know-Best
+  - Stack Overflow
 
 :template:
   - "Enabling No-Ops with Virtual %tech%"
@@ -344,6 +361,10 @@
   - "How We Do What %company% Do, but on a Tiny Scale, and Wrong"
   - "EC2 at Scale: RAND40 instances and Counting!"
   - "Why %company% Should Switch Everything to %tech%"
+  - "An Algorithm for Optimal Laptop Sticker Placement"
+  - "DevOps and Objet Trouve: If Good Enough to be on Github, it's Good Enough for Production"
+  - "%driver% Driven Development 101"
+
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
