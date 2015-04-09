@@ -2,7 +2,7 @@
 
 require 'yaml'
 require 'sinatra'
-require 'haml'
+require 'tilt/haml'
 require 'pathname'
 
 #-----------------------------------------------------------------------------
@@ -26,6 +26,7 @@ end
 
 #-----------------------------------------------------------------------------
 # SCRIPT STARTS HERE
+#
 wd = File.exist?('/usr/share/dict') ? '/usr/share/dict' : '/usr/share/lib/dict'
 words = `/bin/grep "^[a-z]*$" #{Pathname(wd) + 'words'}`.split("\n")
 things = YAML.load_file(Pathname(__FILE__).dirname + 'all_the_things.yaml')
