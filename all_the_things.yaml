@@ -79,6 +79,7 @@
   - Cloudstack
   - Clusterpoint
   - Coffeescript
+  - Coherence
   - CouchDB
   - Couchbase
   - CoreOS
@@ -91,7 +92,9 @@
   - Dokku
   - Doozer
   - Dropwizard
+  - DynamoDB
   - EC2
+  - Edge Rabbit
   - Elasticsearch
   - Elixir
   - ember.js
@@ -136,6 +139,8 @@
   - JRuby
   - JSON
   - Juju
+  - Kafka
+  - KairosDB
   - Kanban
   - Kibana
   - kitchen-docker
@@ -168,9 +173,11 @@
   - R
   - RabbitMQ
   - Racket
+  - RDS
   - ReactJS
   - Redis
   - Restify
+  - RethinkDB
   - Riak
   - Rightscale
   - Rocket
@@ -185,6 +192,7 @@
   - Scheme
   - Scrum
   - SDN
+  - Sensei
   - Sensu
   - Sidekiq
   - Sinatra
@@ -199,6 +207,7 @@
   - Travis CI
   - Ubuntu
   - Vagrant
+  - Velocity
   - YAML
   - YAML front-matter
   - ZeroMQ
@@ -234,6 +243,7 @@
   - Deployables
   - Downtime
   - Innovation Initiatives
+  - Polyglot Persistence
   - ROI
   - Seed Capital
   - Synergy
