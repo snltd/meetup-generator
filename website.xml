@@ -2,10 +2,10 @@
 
 <!DOCTYPE service_bundle SYSTEM '/usr/share/lib/xml/dtd/service_bundle.dtd.1'>
 
-<service_bundle type='manifest' name='snltd:sinatra'>
+<service_bundle type='manifest' name='snltd:sinatra:meetup-generator'>
 
 <service
-  name='application/sinatra'
+  name='application/sinatra/meetup-generator'
 	type='service'
 	version='1'>
 
@@ -22,7 +22,7 @@
 
 </property_group>
 
-<property_group name='options' type='application'>
+<property_group name='options' type='applications'>
 
 	<propval
 		name='rackup'
@@ -30,18 +30,23 @@
     value='/opt/local/bin/rackup' />
 
 	<propval
-		name='config'
+		name='user'
 		type='astring'
-    value='/www/meetup-generator/config.ru' />
+    value='sinatra' />
+
+	<propval
+		name='dir'
+		type='astring'
+    value='/www/meetup-generator' />
 
 	<propval
 		name='port'
 		type='astring'
-    value='8003' />
+    value='8002' />
 
 </property_group>
 
-<instance name='meetup-generator' enabled='true'>
+<instance name='default' enabled='true'>
 
 	<!-- Run in multi-user mode -->
 
@@ -59,11 +64,11 @@
 		name='start'
 		type='method'
     timeout_seconds='0'
-    exec='%{options/rackup} -D -p %{options/port} %{options/config}'>
+    exec='%{options/rackup} -D -p %{options/port} %{options/dir}/config.ru'>
     <method_context>
       <method_credential
-        user='www'
-        group='www'
+        user='%{options/user}'
+        group='nogroup'
         privileges='basic,!proc_session,!proc_info,!file_link_any'/>
     </method_context>
   </exec_method>
@@ -80,12 +85,12 @@
 
 	<common_name>
 		<loctext xml:lang='C'>
-			rdfisher.co.uk website
+      meetup-generator website
 		</loctext>
 	</common_name>
 
 	<documentation>
-		<doc_link name='rdfisher.co.uk' uri='http://rdfisher.co.uk/' />
+    <doc_link name='meetup.rfisher.co.uk' uri='http://meetup.rdfisher.co.uk' />
 	</documentation>
 
 </template>
