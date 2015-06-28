@@ -61,6 +61,7 @@
   - Akka
   - angular.js
   - Ansible
+  - APIs
   - AWS
   - bacon.js
   - backbone.js
@@ -99,6 +100,7 @@
   - Elixir
   - ember.js
   - etcd
+  - ELK
   - Erlang
   - Express
   - Flapjack
@@ -120,6 +122,7 @@
   - Grape
   - Graphene
   - Graphite
+  - Graylog
   - Groovy
   - Grunt
   - Gulp
@@ -153,6 +156,7 @@
   - MAAS
   - MEAN
   - Memchached
+  - Mesos
   - microservices
   - monads
   - MongoDB
@@ -210,6 +214,7 @@
   - Velocity
   - YAML
   - YAML front-matter
+  - YARN
   - ZeroMQ
   - Zookeeper
 
@@ -313,6 +318,7 @@
   - Flickr
   - Foursquare
   - Google
+  - Hashicorp
   - LinkedIn
   - Netflix
   - Twitter
