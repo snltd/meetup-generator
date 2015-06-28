@@ -318,20 +318,23 @@
   - Twitter
 
 :driver:
-  - Reddit
-  - HackerNews
-  - YCombinator
-  - Meetup-Generator
-  - I-Ching
-  - Hipster
-  - "Somone-Else's-Blog"
+  - Bullshit
   - CV
-  - Resume
+  - HackerNews
+  - Hipster
   - Hubris
-  - Overconfidence
-  - What-Everyone-Else-is-Doing
+  - I-Ching
   - I-Know-Best
+  - Meetup-Generator
+  - NIH
+  - Overconfidence
+  - Reddit
+  - Pointless Reinvention
+  - Resumé
+  - "Somone-Else's-Blog"
   - Stack Overflow
+  - What-Everyone-Else-is-Doing
+  - YCombinator
 
 :template:
   - "Enabling No-Ops with Virtual %tech%"
@@ -374,7 +377,9 @@
   - "An Algorithm for Optimal Laptop Sticker Placement"
   - "DevOps and Objet Trouve: If it's Good Enough to be on Github, it's Good Enough for Production"
   - "%driver% Driven Development 101"
-
+  - "I'm All About That Rate: How to Screw Your Client By Building Shit They Don't Need"
+  - "Installing More Shit: You Can't Automate All of the Things if You Aren't Using All of the Things"
+  - "How We Moved from Puppet to Chef to Ansible to Salt to CFEngine then Back to Ansible then Chef Again then Briefly Itamae then Packered AMIs then Masterless Puppet then Chef then a Different Chef Setup then Puppet"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
