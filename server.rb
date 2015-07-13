@@ -31,6 +31,18 @@ wd = File.exist?('/usr/share/dict') ? '/usr/share/dict' : '/usr/share/lib/dict'
 words = `/bin/grep "^[a-z]*$" #{Pathname(wd) + 'words'}`.split("\n")
 things = YAML.load_file(Pathname(__FILE__).dirname + 'all_the_things.yaml')
 
+get "/api/talk/?:p?" do
+  o = generate_item(things) + "\n"
+  if params[:p] == 'person'
+    o.<< '  '+generate_job(things, words).sub(/&mdash;/, '-') + "\n"
+  end
+  o
+end
+
+get "/api/*" do
+  [404, 'not found']
+end
+
 get "*" do
   @talks, @jobs = [], []
   5.times { @jobs.<< generate_job(things, words) }
