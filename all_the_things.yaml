@@ -67,6 +67,7 @@
   - backbone.js
   - Berkshelf
   - BigTable
+  - Boot2Docker
   - Bootstrap
   - Boto
   - Capistrano
@@ -74,6 +75,7 @@
   - cgroups
   - CFEngine
   - Chef
+  - Chef/Puppet
   - Clojure
   - Cloud Foundry
   - CloudFormation
@@ -81,6 +83,7 @@
   - Clusterpoint
   - Coffeescript
   - Coherence
+  - Consul
   - CouchDB
   - Couchbase
   - CoreOS
@@ -122,7 +125,7 @@
   - Grape
   - Graphene
   - Graphite
-  - Graylog
+  - Graylog2
   - Groovy
   - Grunt
   - Gulp
@@ -134,8 +137,9 @@
   - Housekeeper
   - hyperconvergence
   - Immutable Infrastructure
-  - IntelliJ
+  - IndexedDB
   - InfluxDB
+  - IntelliJ
   - io.js
   - IO
   - Jekyll
@@ -161,7 +165,10 @@
   - microservices
   - monads
   - MongoDB
+  - Mountebank
   - Mutable Infrastructure
+  - Nancy
+  - Nashorn
   - Neo4J
   - nginx
   - node.js
@@ -169,11 +176,13 @@
   - NewRelic
   - NoOps
   - NoSQL
+  - NuGet
   - Objective-J
   - OCaml
   - Packer
   - Perl
   - Puppet
+  - Puppet/Chef
   - Python
   - R
   - RabbitMQ
@@ -248,11 +257,16 @@
   - Burn Rate
   - Deployables
   - Downtime
+  - Enterprise Data Lake
+  - Guerilla User Testing
+  - Hipster Batch Paradigm
   - Innovation Initiatives
   - Polyglot Persistence
   - ROI
+  - Security Sandwich
   - Seed Capital
   - Synergy
+  - Threat Model
   - Uptime
   - VC Appeal
   - Velocity
@@ -327,6 +341,7 @@
 :driver:
   - Bullshit
   - CV
+  - Datensparsamkeit
   - HackerNews
   - Hipster
   - Hubris
