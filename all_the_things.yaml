@@ -67,6 +67,7 @@
   - backbone.js
   - Berkshelf
   - BigTable
+  - Blockbridge
   - Boot2Docker
   - Bootstrap
   - Boto
@@ -89,8 +90,10 @@
   - CoreOS
   - Cucumber
   - "curl | sudo bash"
+  - Dapper
   - Dart
   - Dataloop
+  - Deis
   - Django
   - Docker
   - Dokku
@@ -106,8 +109,12 @@
   - ELK
   - Erlang
   - Express
+  - Flabbergast
   - Flapjack
   - Fleet
+  - Flocker
+  - Flume
+  - fluentd
   - Flynn.io
   - Fog
   - Foodcritic
@@ -119,6 +126,7 @@
   - Git
   - Gitflow
   - Github
+  - Go
   - Golang
   - Gocraft/web
   - Grafana
@@ -133,6 +141,7 @@
   - Hazelcast
   - Haskell
   - HBase
+  - Heapster
   - Heroku
   - Housekeeper
   - hyperconvergence
@@ -162,6 +171,7 @@
   - MEAN
   - Memchached
   - Mesos
+  - Mesosphere
   - microservices
   - monads
   - MongoDB
@@ -181,12 +191,15 @@
   - OCaml
   - Packer
   - Perl
+  - Project Atomic
+  - Prometheus
   - Puppet
   - Puppet/Chef
   - Python
   - R
   - RabbitMQ
   - Racket
+  - Rancher OS
   - RDS
   - ReactJS
   - Redis
@@ -195,6 +208,7 @@
   - Riak
   - Rightscale
   - Rocket
+  - rkt
   - RSpec
   - Ruby
   - Rust
@@ -214,7 +228,9 @@
   - Solr
   - statsd
   - Sublime Text
-  - Systemd
+  - Swarm
+  - Sysdig
+  - systemd
   - Terraform
   - Test Kitchen
   - TokyoTyrant
@@ -233,9 +249,11 @@
   - Containers
   - DevOps
   - Downtime
+  - Hybrid Cloud
   - Infrastructure
   - Metrics
   - Platform
+  - Public Cloud
   - Private Cloud
   - Services
 
@@ -286,6 +304,7 @@
   - biodynamic
   - cave-aged
   - craft
+  - extra-matured
   - fairtrade
   - "farmers' market"
   - fusion
@@ -293,8 +312,8 @@
   - heritage
   - keg-aged
   - Lebanese
-  - extra-matured
   - microbrewery
+  - Scandinavian
 
 :food:
   - beers
@@ -319,6 +338,7 @@
   - Beginner
   - CTO
   - Developer
+  - Full-Stacker
   - Idiot
   - n00b
   - Webscalr
@@ -339,15 +359,18 @@
   - Twitter
 
 :driver:
+  - Blog
   - Bullshit
   - CV
   - Datensparsamkeit
+  - Google
   - HackerNews
   - Hipster
   - Hubris
   - I-Ching
   - I-Know-Best
   - Meetup-Generator
+  - Naivety
   - NIH
   - Overconfidence
   - Reddit
@@ -402,6 +425,11 @@
   - "I'm All About That Rate: How to Screw Your Client By Building Shit They Don't Need"
   - "Installing More Shit: You Can't Automate All of the Things if You Aren't Using All of the Things"
   - "How We Moved from Puppet to Chef to Ansible to Salt to CFEngine then Back to Ansible then Chef Again then Briefly Itamae then Packered AMIs then Masterless Puppet then Chef then a Different Chef Setup then Puppet"
+  - "%verb%ing %tech% Makes for Awesome %driver%-driven Infrastructure"
+  - "How a %tech%/%tech% Mash-Up Shaved RAND50 Seconds off Our Deployment Times"
+  - "Containers: or How I Swapped a Simple Packaging Problem for a Complex Orchestration Problem"
+  - "Look at me Mummy, aren't I Clever?"
+  - "%tech% Necromancy for Full-Stack Nirvana"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
@@ -482,8 +510,8 @@
   - All of the Things
 
 :job_title:
-  - 00 Agent
-  - 10x
+  - "00 Agent"
+  - "10x"
   - Afficianado
   - Alchemist
   - Badass
@@ -502,6 +530,7 @@
   - Legend
   - Magician
   - Maven
+  - Necromancer
   - Neckbeard
   - Ninja
   - Overlord
