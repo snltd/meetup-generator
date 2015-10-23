@@ -167,7 +167,9 @@
   - Lisp
   - Logstash
   - LXC
+  - LXD
   - MAAS
+  - ManageIQ
   - MEAN
   - Memchached
   - Mesos
@@ -182,6 +184,7 @@
   - Neo4J
   - nginx
   - node.js
+  - Nomad
   - npm
   - NewRelic
   - NoOps
@@ -189,6 +192,7 @@
   - NuGet
   - Objective-J
   - OCaml
+  - OpenShift
   - Packer
   - Perl
   - Project Atomic
@@ -256,6 +260,7 @@
   - Public Cloud
   - Private Cloud
   - Services
+  - Slack Integration
 
 :extreme:
   - Annihilate
@@ -273,6 +278,7 @@
 :quantifier:
   - AWS bill
   - Burn Rate
+  - Density
   - Deployables
   - Downtime
   - Enterprise Data Lake
@@ -406,7 +412,6 @@
   - "Everything You Think You Know About %tech% is Wrong"
   - "While You Learn, I Earn: Making Shit Up and Blogging it as Fact"
   - "%quantifier% as Code: Ready for the Revolution?"
-  - "%tech% against Humanity: it's all about the Culture"
   - "A Complicated Way to do Something Unnecessary Which Does Not Work"
   - "DevOps Culture: If You Don't Understand Something - Reinvent It"
   - "DevOps Culture: Don't Do it If it's Hard or Boring"
@@ -418,8 +423,6 @@
   - "Buzzword Blizzard: %tech% + %tech% + %tech% + %tech%"
   - "How We Do What %company% Do, but on a Tiny Scale, and Wrong"
   - "EC2 at Scale: RAND40 instances and Counting!"
-  - "Why %company% Should Switch Everything to %tech%"
-  - "An Algorithm for Optimal Laptop Sticker Placement"
   - "DevOps and Objet Trouve: If it's Good Enough to be on Github, it's Good Enough for Production"
   - "%driver% Driven Development 101"
   - "I'm All About That Rate: How to Screw Your Client By Building Shit They Don't Need"
@@ -430,6 +433,8 @@
   - "Containers: or How I Swapped a Simple Packaging Problem for a Complex Orchestration Problem"
   - "Look at me Mummy, aren't I Clever?"
   - "%tech% Necromancy for Full-Stack Nirvana"
+  - "Wow Very %tech%. So %tech%. Such %verb%ed"
+  - "Never Mind What I'm Saying, I've Got Stickers"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
