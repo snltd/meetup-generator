@@ -237,6 +237,7 @@
   - systemd
   - Terraform
   - Test Kitchen
+  - Thrift
   - TokyoTyrant
   - Travis CI
   - Ubuntu
