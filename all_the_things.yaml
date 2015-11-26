@@ -12,6 +12,7 @@
   - Cloudstack
   - Cod
   - Collect
+  - Config Manag
   - Continuously Deliver
   - Continuously Deploy
   - Containeriz
@@ -70,6 +71,7 @@
   - Blockbridge
   - Boot2Docker
   - Bootstrap
+  - Borg
   - Boto
   - Capistrano
   - Cassandra
@@ -144,6 +146,7 @@
   - Heapster
   - Heroku
   - Housekeeper
+  - Hubot
   - hyperconvergence
   - Immutable Infrastructure
   - IndexedDB
@@ -243,6 +246,7 @@
   - Ubuntu
   - Vagrant
   - Velocity
+  - Weave
   - YAML
   - YAML front-matter
   - YARN
@@ -250,6 +254,7 @@
   - Zookeeper
 
 :service:
+  - ChatOps
   - Cloud
   - Containers
   - DevOps
@@ -262,12 +267,15 @@
   - Private Cloud
   - Services
   - Slack Integration
+  - WebOps
 
 :extreme:
   - Annihilate
   - Autoscale
+  - Config-Manage
   - De-Risk
   - Destroy
+  - Dockerize
   - Improve
   - Limit
   - Maximize
@@ -277,6 +285,7 @@
   - Wrangle
 
 :quantifier:
+  - Antipatterns
   - AWS bill
   - Burn Rate
   - Density
@@ -336,6 +345,7 @@
   - hummus
   - IPAs
   - lagers
+  - micro-pizza
   - nonsense
   - olives
   - quinoa
@@ -358,7 +368,6 @@
   - Etsy
   - Facebook
   - Flickr
-  - Foursquare
   - Google
   - Hashicorp
   - LinkedIn
@@ -381,11 +390,12 @@
   - NIH
   - Overconfidence
   - Reddit
-  - Pointless Reinvention
+  - Reinvention
   - Resumé
   - "Somone-Else's-Blog"
   - Stack Overflow
   - What-Everyone-Else-is-Doing
+  - Wheel-Reinvention
   - YCombinator
 
 :template:
@@ -416,7 +426,7 @@
   - "A Complicated Way to do Something Unnecessary Which Does Not Work"
   - "DevOps Culture: If You Don't Understand Something - Reinvent It"
   - "DevOps Culture: Don't Do it If it's Hard or Boring"
-  - "Something People Have Done Since 1979, but with a New Name"
+  - "Something People Have Done Since 198RAND9, but with a New Name"
   - "How We %verb%ed Our %service% with %tech% FTW!"
   - "Still Using %tech%? Allow Me to Enlighten You"
   - "I First Heard about %tech% RAND5 Days Ago, and Now I'm an Expert"
@@ -427,7 +437,7 @@
   - "DevOps and Objet Trouve: If it's Good Enough to be on Github, it's Good Enough for Production"
   - "%driver% Driven Development 101"
   - "I'm All About That Rate: How to Screw Your Client By Building Shit They Don't Need"
-  - "Installing More Shit: You Can't Automate All of the Things if You Aren't Using All of the Things"
+  - "Ticking the Boxes: You Can't Automate All of the Things if You Aren't Using All of the Things"
   - "How We Moved from Puppet to Chef to Ansible to Salt to CFEngine then Back to Ansible then Chef Again then Briefly Itamae then Packered AMIs then Masterless Puppet then Chef then a Different Chef Setup then Puppet"
   - "%verb%ing %tech% Makes for Awesome %driver%-driven Infrastructure"
   - "How a %tech%/%tech% Mash-Up Shaved RAND50 Seconds off Our Deployment Times"
@@ -437,6 +447,16 @@
   - "Wow Very %tech%. So %tech%. Such %verb%ed"
   - "Never Mind What I'm Saying, I've Got Stickers"
   - "How We Made a Really Bad Version of Something Which Already Existed"
+  - "We Started a Shitty Company"
+  - "We Have a DevOps Consultancy and We Don't Know What We're Doing"
+  - "Dockerizing Dockerized Docker with Docker for Docker Users"
+  - "Sneering DevOps Tough Guy Bitches about %tech% and Expects You to Admire Him"
+  - "Slapping Ourselves on the Back"
+  - "How we Spent RAND8 Months Building Our Own Version of a Service We Could Buy for $6/month"
+  - "Thinly Disguised Sales Pitch"
+  - "Roll Your Own Monitoring with %tech%, %tech%, %tech%, %tech%, %tech%, %tech%, %tech%, %tech% and %tech%"
+  - "How This Thing We Built Would Work if it Worked"
+  - "If Heath Robinson Deployed an apt Package"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
