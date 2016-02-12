@@ -1,9 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'yaml'
-require 'sinatra'
-require 'tilt/haml'
-require 'pathname'
+%w(yaml sinatra slim pathname).each { |r| require r }
 
 #-----------------------------------------------------------------------------
 # METHODS
@@ -48,5 +45,5 @@ get "*" do
   5.times { @jobs.<< generate_job(things, words) }
   5.times { @talks.<< generate_item(things) }
   @food = "#{things[:food_style].sample} #{things[:food].sample}"
-  haml :default
+  slim :default
 end
