@@ -1,9 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'yaml'
-require 'sinatra'
-require 'tilt/haml'
-require 'pathname'
+%w(yaml sinatra tilt/haml pathname).each { |r| require r }
 
 #-----------------------------------------------------------------------------
 # METHODS
