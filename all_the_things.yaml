@@ -7,6 +7,7 @@
   - API-
   - Automat
   - Autoscal
+  - AWS-
   - Brogramm
   - Cheff
   - Cloudstack
@@ -47,13 +48,16 @@
   - RESTify
   - Re-imagin
   - Revolutioniz
+  - Rightsiz
   - Scal
   - Shard
   - Syntax-Colour
+  - Strategiz
   - Transform
   - Trend
   - Tun
   - Upscal
+  - "Unit test"
   - Verticaliz
   - Virtualiz
   - Webscal
@@ -79,6 +83,7 @@
   - CFEngine
   - Chef
   - Chef/Puppet
+  - CircleCI
   - Clojure
   - Cloud Foundry
   - CloudFormation
@@ -92,6 +97,7 @@
   - CoreOS
   - Cucumber
   - "curl | sudo bash"
+  - DalmatinerDB
   - Dapper
   - Dart
   - Dataloop
@@ -103,7 +109,8 @@
   - Dropwizard
   - DynamoDB
   - EC2
-  - Edge Rabbit
+  - "Edge Rabbit"
+  - "Elastic Beanstalk"
   - Elasticsearch
   - Elixir
   - ember.js
@@ -120,7 +127,6 @@
   - Flynn.io
   - Fog
   - Foodcritic
-  - Footman
   - FoundationDB
   - functional programming
   - Ganglia
@@ -129,8 +135,9 @@
   - Gitflow
   - Github
   - Go
-  - Golang
   - Gocraft/web
+  - Golang
+  - "Google SRE Book"
   - Grafana
   - Grape
   - Graphene
@@ -145,7 +152,6 @@
   - HBase
   - Heapster
   - Heroku
-  - Housekeeper
   - Hubot
   - hyperconvergence
   - Immutable Infrastructure
@@ -206,7 +212,7 @@
   - R
   - RabbitMQ
   - Racket
-  - Rancher OS
+  - RancherOS
   - RDS
   - ReactJS
   - Redis
@@ -229,6 +235,7 @@
   - SDN
   - Sensei
   - Sensu
+  - Serf
   - Sidekiq
   - Sinatra
   - SmartOS
@@ -244,13 +251,16 @@
   - TokyoTyrant
   - Travis CI
   - Ubuntu
+  - unikernel
   - Vagrant
   - Velocity
+  - Wavefront
   - Weave
   - YAML
   - YAML front-matter
   - YARN
   - ZeroMQ
+  - ZFS
   - Zookeeper
 
 :service:
@@ -267,11 +277,13 @@
   - Private Cloud
   - Services
   - Slack Integration
+  - SRE
   - WebOps
 
 :extreme:
   - Annihilate
   - Autoscale
+  - Chaos Monkey
   - Config-Manage
   - De-Risk
   - Destroy
@@ -282,6 +294,8 @@
   - Minimize
   - Normalize
   - Reduce
+  - Strategize
+  - Webscale
   - Wrangle
 
 :quantifier:
@@ -292,6 +306,7 @@
   - Deployables
   - Downtime
   - Enterprise Data Lake
+  - Error Budget
   - Guerilla User Testing
   - Hipster Batch Paradigm
   - Innovation Initiatives
@@ -319,6 +334,7 @@
   - barrista
   - biodynamic
   - cave-aged
+  - copper-still
   - craft
   - extra-matured
   - fairtrade
@@ -330,8 +346,11 @@
   - Lebanese
   - microbrewery
   - Scandinavian
+  - seasonal
 
 :food:
+  - ales
+  - beard yeast
   - beers
   - breads
   - cereal
@@ -341,6 +360,7 @@
   - chutneys
   - coffee
   - falafel
+  - gins
   - grazing boards
   - hummus
   - IPAs
@@ -348,6 +368,7 @@
   - micro-pizza
   - nonsense
   - olives
+  - pizza
   - quinoa
 
 :skill_level:
@@ -358,6 +379,7 @@
   - Full-Stacker
   - Idiot
   - n00b
+  - SRE
   - Webscalr
 
 :is_not:
@@ -385,6 +407,8 @@
   - Hubris
   - I-Ching
   - I-Know-Best
+  - Insecurity
+  - Job-Security
   - Meetup-Generator
   - Naivety
   - NIH
@@ -394,9 +418,10 @@
   - Resumé
   - "Someone-Else's-Blog"
   - Stack Overflow
+  - "Sticker"
+  - "Whatever's-New"
   - What-Everyone-Else-is-Doing
   - Wheel-Reinvention
-  - YCombinator
 
 :template:
   - "Enabling No-Ops with Virtual %tech%"
@@ -424,7 +449,6 @@
   - "While You Learn, I Earn: Making Shit Up and Blogging it as Fact"
   - "%quantifier% as Code: Ready for the Revolution?"
   - "A Complicated Way to do Something Unnecessary Which Does Not Work"
-  - "DevOps Culture: If You Don't Understand Something - Reinvent It"
   - "DevOps Culture: Don't Do it If it's Hard or Boring"
   - "Something People Have Done Since 198RAND9, but with a New Name"
   - "How We %verb%ed Our %service% with %tech% FTW!"
@@ -450,13 +474,19 @@
   - "We Started a Shitty Company"
   - "We Have a DevOps Consultancy and We Don't Know What We're Doing"
   - "Dockerizing Dockerized Docker with Docker for Docker Users"
-  - "Sneering DevOps Tough Guy Bitches about %tech% and Expects You to Admire Him"
-  - "Slapping Ourselves on the Back"
+  - "Sneering DevOps Tough Guy Bitches about How Bad He Thinks %tech% is and Expects You to Admire Him"
+  - "Slapping Ourselves on the Back for Ten Minutes"
   - "How we Spent RAND8 Months Building Our Own Version of a Service We Could Buy for $6/month"
+  - "How we Spent RAND3 Years Building Our Own Version of a Service We Could Buy for $6/month"
   - "Thinly Disguised Sales Pitch"
   - "Roll Your Own Monitoring with %tech%, %tech%, %tech%, %tech%, %tech%, %tech%, %tech%, %tech% and %tech%"
   - "How This Thing We Built Would Work if it Worked"
   - "If Heath Robinson Deployed an apt Package"
+  - "We Put %tech% in our %tech%: You Won't Believe What Happened Next"
+  - "RAND10 Things Only a DevOps Understands"
+  - "We Think We Need What %company% Has"
+  - "Up Your Rate: You're an SRE Now!"
+  - "How To Feel It's Worth It When You Have More Github Repos than Users"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
@@ -528,6 +558,7 @@
   - Wright
 
 :job_role:
+  - All of the Things
   - Big Data
   - Chief Technical
   - DevOps
@@ -536,7 +567,7 @@
   - Open Source
   - Technical
   - Node.js
-  - All of the Things
+  - SRE
 
 :job_title:
   - "00 Agent"
