@@ -10,7 +10,8 @@ class Meetup
 
   def initialize
     @words = `/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
-    @lib = YAML.load_file(Pathname(__FILE__).dirname + 'all_the_things.yaml')
+    @lib = YAML.load_file(Pathname(__FILE__).dirname + 'lib' +
+                          'all_the_things.yaml')
   end
 
   def find_dict
