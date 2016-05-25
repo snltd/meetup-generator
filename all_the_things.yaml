@@ -53,6 +53,7 @@
   - Shard
   - Syntax-Colour
   - Strategiz
+  - Terraform
   - Transform
   - Trend
   - Tun
@@ -66,6 +67,7 @@
   - Akka
   - angular.js
   - Ansible
+  - API Gateway
   - APIs
   - AWS
   - bacon.js
@@ -79,6 +81,7 @@
   - Boto
   - Capistrano
   - Cassandra
+  - CDN
   - cgroups
   - CFEngine
   - Chef
@@ -87,6 +90,7 @@
   - Clojure
   - Cloud Foundry
   - CloudFormation
+  - Cloudfront
   - Cloudstack
   - Clusterpoint
   - Coffeescript
@@ -109,8 +113,10 @@
   - Dropwizard
   - DynamoDB
   - EC2
+  - ECS
   - "Edge Rabbit"
   - "Elastic Beanstalk"
+  - Elasticache
   - Elasticsearch
   - Elixir
   - ember.js
@@ -154,6 +160,7 @@
   - Heroku
   - Hubot
   - hyperconvergence
+  - IAM
   - Immutable Infrastructure
   - IndexedDB
   - InfluxDB
@@ -172,6 +179,7 @@
   - kitchen-docker
   - knife Plugins
   - Kubernetes
+  - Lambda
   - Linux
   - Lisp
   - Logstash
@@ -236,10 +244,14 @@
   - Sensei
   - Sensu
   - Serf
+  - Serverless
+  - SES
   - Sidekiq
   - Sinatra
   - SmartOS
+  - SNS
   - Solr
+  - SQS
   - statsd
   - Sublime Text
   - Swarm
@@ -259,6 +271,7 @@
   - YAML
   - YAML front-matter
   - YARN
+  - Zappa
   - ZeroMQ
   - ZFS
   - Zookeeper
@@ -288,6 +301,7 @@
   - De-Risk
   - Destroy
   - Dockerize
+  - Hybridize
   - Improve
   - Limit
   - Maximize
@@ -299,6 +313,7 @@
   - Wrangle
 
 :quantifier:
+  - Agility
   - Antipatterns
   - AWS bill
   - Burn Rate
@@ -309,7 +324,9 @@
   - Error Budget
   - Guerilla User Testing
   - Hipster Batch Paradigm
+  - Leanness
   - Innovation Initiatives
+  - Patterns
   - Polyglot Persistence
   - ROI
   - Security Sandwich
@@ -387,16 +404,21 @@
   - not
 
 :company:
+  - Amazon
+  - AWS
   - Etsy
   - Facebook
   - Flickr
+  - Github
   - Google
+  - Google SREs
   - Hashicorp
   - LinkedIn
   - Netflix
   - Twitter
 
 :driver:
+  - Asshole
   - Blog
   - Bullshit
   - CV
@@ -469,13 +491,12 @@
   - "Look at me Mummy, aren't I Clever?"
   - "%tech% Necromancy for Full-Stack Nirvana"
   - "Wow Very %tech%. So %tech%. Such %verb%ed"
-  - "Never Mind What I'm Saying, I've Got Stickers"
+  - "Never Mind the Talk, I've Got Stickers!"
   - "How We Made a Really Bad Version of Something Which Already Existed"
   - "We Started a Shitty Company"
   - "We Have a DevOps Consultancy and We Don't Know What We're Doing"
   - "Dockerizing Dockerized Docker with Docker for Docker Users"
   - "Sneering DevOps Tough Guy Bitches about How Bad He Thinks %tech% is and Expects You to Admire Him"
-  - "Slapping Ourselves on the Back for Ten Minutes"
   - "How we Spent RAND8 Months Building Our Own Version of a Service We Could Buy for $6/month"
   - "How we Spent RAND3 Years Building Our Own Version of a Service We Could Buy for $6/month"
   - "Thinly Disguised Sales Pitch"
@@ -484,9 +505,16 @@
   - "If Heath Robinson Deployed an apt Package"
   - "We Put %tech% in our %tech%: You Won't Believe What Happened Next"
   - "RAND10 Things Only a DevOps Understands"
-  - "We Think We Need What %company% Has"
+  - "RAND10 %tech% Secrets %company% Don't Want You to Know"
   - "Up Your Rate: You're an SRE Now!"
-  - "How To Feel It's Worth It When You Have More Github Repos than Users"
+  - "When You Have More Github Repos than Users"
+  - "How %tech% Invokes %last_name%'s Law"
+  - "Large-Scale %tech% Anti-Patterns Will %extreme% Your %service%"
+  - "Bro, Do You Even %tech%?"
+  - "Beautiful %tech% for beautiful %service%"
+  - "Real Heroes Use %tech%"
+  - "To Hear Us Talk, You Could almost Think this Stuff is Important"
+
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
