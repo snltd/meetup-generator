@@ -1,39 +1,55 @@
 #!/usr/bin/env ruby
 
-%w(yaml sinatra slim pathname).each { |r| require r }
+%w(json yaml sinatra slim pathname).each { |r| require r }
 
 #-----------------------------------------------------------------------------
 # METHODS
 #
-def generate_item(things)
-  t = things[:template].sample
-  t.scan(/%\w+%/).each { |k| t = t.sub(k, things[k[1..-2].to_sym].sample) }
-  t.scan(/RAND\d+/).each do |i|
-    t = t.sub(i, rand(2..(i.sub(/RAND/, '').to_i)).to_s)
-  end
-  t
-end
+class Meetup
+  attr_reader :words, :lib, :talk, :talker, :refreshment
 
-def generate_job(things, words)
-  [ things[:first_name].sample, things[:last_name].sample, '&mdash;',
-    things[:job_role].sample, things[:job_title].sample, '@',
-    "#{words.sample.sub(/([^aeiou])er$/, "\\1r")}.io"
-  ].join(' ')
+  def initialize
+    @words = `/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
+    @lib = YAML.load_file(Pathname(__FILE__).dirname + 'all_the_things.yaml')
+  end
+
+  def find_dict
+    %w(dict lib/dict).each do |d|
+      dict = Pathname.new('/usr/share') + d + 'words'
+      return dict if dict.exist?
+    end
+    abort('Cannot find dictionary file.')
+  end
+
+  def talk
+    t = lib[:template].sample
+    t.scan(/%\w+%/).each { |k| t = t.sub(k, lib[k[1..-2].to_sym].sample) }
+    t.scan(/RAND\d+/).each do |i|
+      t = t.sub(i, rand(2..(i.sub(/RAND/, '').to_i)).to_s)
+    end
+    t
+  end
+
+  def talker
+    { talker: [lib[:first_name].sample, lib[:last_name].sample].join(' '),
+      role: [lib[:job_role].sample, lib[:job_title].sample].join(' '),
+      company: words.sample.sub(/([^aeiou])er$/, "\\1r") + '.io'
+    }
+  end
+
+  def refreshment
+    [lib[:food_style].sample, lib[:food].sample].join(' ')
+  end
 end
 
 #-----------------------------------------------------------------------------
 # SCRIPT STARTS HERE
 #
-wd = File.exist?('/usr/share/dict') ? '/usr/share/dict' : '/usr/share/lib/dict'
-words = `/bin/grep "^[a-z]*$" #{Pathname(wd) + 'words'}`.split("\n")
-things = YAML.load_file(Pathname(__FILE__).dirname + 'all_the_things.yaml')
+m = Meetup.new
 
-get "/api/talk/?:p?" do
-  o = generate_item(things) + "\n"
-  if params[:p] == 'person'
-    o.<< '  '+generate_job(things, words).sub(/&mdash;/, '-') + "\n"
-  end
-  o
+get '/api/talk' do
+  content_type :json
+  { talk: m.talk }.merge(m.talker).to_json
 end
 
 get "/api/*" do
@@ -42,8 +58,11 @@ end
 
 get "*" do
   @talks, @jobs = [], []
-  5.times { @jobs.<< generate_job(things, words) }
-  5.times { @talks.<< generate_item(things) }
-  @food = "#{things[:food_style].sample} #{things[:food].sample}"
+  5.times do
+    t = m.talker
+    @jobs.<< [t[:talker], '//', t[:role], '@', t[:company]].join(' ')
+  end
+  5.times { @talks.<< m.talk }
+  @food = m.refreshment
   slim :default
 end
