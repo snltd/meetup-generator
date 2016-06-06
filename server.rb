@@ -9,7 +9,7 @@ class Meetup
   attr_reader :words, :lib, :talk, :talker, :refreshment
 
   def initialize
-    @words = `/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
+    @words = `/usr/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
     @lib = YAML.load_file(Pathname(__FILE__).dirname + 'lib' +
                           'all_the_things.yaml')
   end
@@ -17,6 +17,7 @@ class Meetup
   def find_dict
     %w(dict lib/dict).each do |d|
       dict = Pathname.new('/usr/share') + d + 'words'
+      puts "dict is #{dict}"
       return dict if dict.exist?
     end
     abort('Cannot find dictionary file.')
@@ -29,6 +30,15 @@ class Meetup
       t = t.sub(i, rand(2..(i.sub(/RAND/, '').to_i)).to_s)
     end
     t
+  end
+
+  def talks(count = 5)
+    ret = []
+    until ret.size == count do
+      t = talk
+      ret.<< t unless ret.include?(t)
+    end
+    ret
   end
 
   def talker
@@ -58,12 +68,11 @@ get "/api/*" do
 end
 
 get "*" do
-  @talks, @jobs = [], []
+  @talks, @jobs = m.talks, []
   5.times do
     t = m.talker
     @jobs.<< [t[:talker], '//', t[:role], '@', t[:company]].join(' ')
   end
-  5.times { @talks.<< m.talk }
   @food = m.refreshment
   slim :default
 end
