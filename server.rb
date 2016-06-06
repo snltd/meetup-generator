@@ -31,6 +31,15 @@ class Meetup
     t
   end
 
+  def talks(count = 5)
+    ret = []
+    until ret.size == count do
+      t = talk
+      ret.<< t unless ret.include?(t)
+    end
+    ret
+  end
+
   def talker
     { talker: [lib[:first_name].sample, lib[:last_name].sample].join(' '),
       role: [lib[:job_role].sample, lib[:job_title].sample].join(' '),
@@ -58,12 +67,11 @@ get "/api/*" do
 end
 
 get "*" do
-  @talks, @jobs = [], []
+  @talks, @jobs = m.talks, []
   5.times do
     t = m.talker
     @jobs.<< [t[:talker], '//', t[:role], '@', t[:company]].join(' ')
   end
-  5.times { @talks.<< m.talk }
   @food = m.refreshment
   slim :default
 end
