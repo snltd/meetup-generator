@@ -9,7 +9,7 @@ class Meetup
   attr_reader :words, :lib, :talk, :talker, :refreshment
 
   def initialize
-    @words = `/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
+    @words = `/usr/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
     @lib = YAML.load_file(Pathname(__FILE__).dirname + 'lib' +
                           'all_the_things.yaml')
   end
@@ -17,6 +17,7 @@ class Meetup
   def find_dict
     %w(dict lib/dict).each do |d|
       dict = Pathname.new('/usr/share') + d + 'words'
+      puts "dict is #{dict}"
       return dict if dict.exist?
     end
     abort('Cannot find dictionary file.')
