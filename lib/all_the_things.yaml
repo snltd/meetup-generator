@@ -17,6 +17,7 @@
   - Continuously Deliver
   - Continuously Deploy
   - Containeriz
+  - Crystal
   - De-Risk
   - DDOS
   - Detun
@@ -140,6 +141,7 @@
   - Git
   - Gitflow
   - Github
+  - Glueflakes
   - Go
   - Gocraft/web
   - Golang
@@ -187,9 +189,12 @@
   - LXD
   - MAAS
   - ManageIQ
+  - Marathon
+  - Marathon-Consul
   - MEAN
   - Memchached
   - Mesos
+  - Mesos-Consul
   - Mesosphere
   - microservices
   - monads
@@ -223,6 +228,7 @@
   - RancherOS
   - RDS
   - ReactJS
+  - Community Driven
   - Redis
   - Restify
   - RethinkDB
@@ -260,6 +266,7 @@
   - Terraform
   - Test Kitchen
   - Thrift
+  - Timeseries Database
   - TokyoTyrant
   - Travis CI
   - Ubuntu
@@ -445,6 +452,17 @@
   - What-Everyone-Else-is-Doing
   - Wheel-Reinvention
 
+:adjective:
+  - Batteries Included
+  - Beautiful
+  - Cloud Agsnotic
+  - Community Driven
+  - Community Focused
+  - End-to-End
+  - Opinionated
+  - Micro Serviced
+  - Soup to Nuts
+
 :template:
   - "Enabling No-Ops with Virtual %tech%"
   - "%verb%ed %tech% == #Awesomesauce"
@@ -514,7 +532,9 @@
   - "Beautiful %tech% for beautiful %service%"
   - "Real Heroes Use %tech%"
   - "To Hear Us Talk, You Could almost Think this Stuff is Important"
-
+  - "Our %adjective% Micro-Framework"
+  - "A %tech% %adjective% %adjective% %adjective% Micro-Framework"
+  - "%adjective% %tech% %adjective% Time-series Micro-Services for Dummies"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
