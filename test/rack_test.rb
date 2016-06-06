@@ -11,8 +11,9 @@ require 'json'
 require 'yaml'
 require 'cgi'
 
-OUTER_APP = Rack::Builder.parse_file(
-  (Pathname.new(__FILE__).dirname + 'config.ru').to_s).first
+ROOT = Pathname.new(__FILE__).realpath.dirname.parent
+
+OUTER_APP = Rack::Builder.parse_file((ROOT + 'config.ru').to_s).first
 
 class TestApp < MiniTest::Unit::TestCase
   attr_reader :things
@@ -20,8 +21,7 @@ class TestApp < MiniTest::Unit::TestCase
 
   def initialize(args)
     super(args)
-    @things = YAML.load(IO.read(Pathname.new(__FILE__).dirname + 'lib' +
-                                  'all_the_things.yaml'))
+    @things = YAML.load(IO.read(ROOT + 'lib' + 'all_the_things.yaml'))
   end
 
   def app
