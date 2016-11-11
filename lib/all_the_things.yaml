@@ -30,6 +30,7 @@
   - Gamify
   - Graph
   - Hack
+  - Hand Craft
   - Horizontaliz
   - Incubat
   - Leverag
@@ -457,14 +458,21 @@
   - Wheel-Reinvention
 
 :adjective:
+  - Artisinal
   - Batteries Included
   - Beautiful
   - Cloud Agsnotic
+  - Craft
   - Community Driven
   - Community Focused
   - End-to-End
+  - Hand-Crafted
+  - Immutable
   - Opinionated
   - Micro Serviced
+  - Self-Service
+  - Serverful
+  - Serverless
   - Soup to Nuts
 
 :template:
@@ -540,6 +548,7 @@
   - "A %tech% %adjective% %adjective% %adjective% Micro-Framework"
   - "%adjective% %tech% %adjective% Time-series Micro-Services for Dummies"
   - "Living for Meetups: I Haven't Done Any Actual Work Since 2013"
+  - "%tech% to %adjective% %service%: Living the Dream"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
@@ -611,13 +620,18 @@
   - Wright
 
 :job_role:
+  - Agile
   - All of the Things
+  - Automation
   - Big Data
   - Chief Technical
+  - Cyber
   - DevOps
+  - DevSecOps
   - Full Stack
   - Innovation
   - Open Source
+  - Polyglot Developer
   - Technical
   - Node.js
   - SRE
@@ -626,12 +640,16 @@
 :job_title:
   - "00 Agent"
   - "10x"
+  - Advocate
   - Afficianado
   - Alchemist
   - Apostle
+  - Artisan
   - Badass
   - Balrog
   - Demi-God
+  - Demonologist
+  - DevOpsologist
   - Dragonslayer
   - Evangelist
   - Factotum
@@ -642,7 +660,9 @@
   - Hacker
   - Helicopter Pilot
   - Imagineer
+  - Innovator
   - Jedi
+  - Lead
   - Legend
   - Magician
   - Maven
@@ -662,6 +682,7 @@
   - Scientist
   - Sensei
   - Sherpa
+  - Technologist
   - Thought Leader
   - Visionary
   - Warlock
