@@ -1,4 +1,5 @@
-# meetup-generator [![Code Climate](https://codeclimate.com/github/snltd/meetup-generator/badges/gpa.svg)](https://codeclimate.com/github/snltd/meetup-generator)
+# meetup-generator [![Code Climate](https://codeclimate.com/github/snltd/meetup-generator/badges/gpa.svg)](https://codeclimate.com/github/snltd/meetup-generator) [![Known Vulnerabilities](https://snyk.io/test/github/snltd/meetup-generator/badge.svg)](https://snyk.io/test/github/snltd/meetup-generator)
+
 
 A very small, very stupid Sinatra app which generates a wholly plausible
 agenda for a fictional DevOps meetup.
