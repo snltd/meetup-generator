@@ -9,7 +9,7 @@ class Meetup
   attr_reader :words, :lib, :talk, :talker, :refreshment
 
   def initialize
-    @words = `/usr/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
+    @words = `/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
     @lib = YAML.load_file(Pathname(__FILE__).dirname + 'lib' +
                           'all_the_things.yaml')
   end
@@ -44,8 +44,7 @@ class Meetup
   def talker
     { talker: [lib[:first_name].sample, lib[:last_name].sample].join(' '),
       role: [lib[:job_role].sample, lib[:job_title].sample].join(' '),
-      company: words.sample.sub(/([^aeiou])er$/, "\\1r") + '.io'
-    }
+      company: words.sample.sub(/([^aeiou])er$/, "\\1r") + '.io' }
   end
 
   def refreshment
@@ -63,11 +62,11 @@ get '/api/talk' do
   { talk: m.talk }.merge(m.talker).to_json
 end
 
-get "/api/*" do
+get '/api/*' do
   [404, 'not found']
 end
 
-get "*" do
+get '*' do
   @talks, @jobs = m.talks, []
   5.times do
     t = m.talker
