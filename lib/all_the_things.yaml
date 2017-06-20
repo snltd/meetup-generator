@@ -156,6 +156,7 @@
   - Graphite
   - Graylog2
   - Groovy
+  - GRPC
   - Grunt
   - Gulp
   - Habitat
@@ -225,6 +226,7 @@
   - Phoenix
   - Project Atomic
   - Prometheus
+  - Protobuf
   - Puppet
   - Puppet/Chef
   - Python
