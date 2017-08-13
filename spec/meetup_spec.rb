@@ -15,7 +15,7 @@ ROOT = Pathname.new(__FILE__).realpath.dirname.parent
 
 OUTER_APP = Rack::Builder.parse_file((ROOT + 'config.ru').to_s).first
 
-class TestApp < MiniTest::Unit::TestCase
+class TestApp < MiniTest::Test
   attr_reader :things
   include Rack::Test::Methods
 
