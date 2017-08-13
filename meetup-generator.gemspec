@@ -26,7 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 12.0'
   gem.add_development_dependency 'rubocop',  '~> 0.49.1'
   gem.add_development_dependency 'minitest', '~> 5.8', '>= 5.8.0'
-  gem.add_development_dependency 'rack-test', '~> 0.6.3'
+  gem.add_development_dependency 'rack-test', '~> 0.7.0'
 
   gem.required_ruby_version = Gem::Requirement.new('>= 2.2.0')
 end
