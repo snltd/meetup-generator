@@ -24,6 +24,7 @@
   - Deliver
   - Deploy
   - Disrupt
+  - Dockeriz
   - Dogfood
   - Downscal
   - Enabl
@@ -43,6 +44,7 @@
   - Optimiz
   - Orchestrat
   - Pipelin
+  - Planetscal
   - Puppetiz
   - Re-cultur
   - Recod
@@ -56,7 +58,6 @@
   - Syntax-Colour
   - Strategiz
   - Terraform
-  - Toxiproxy
   - Transform
   - Transpil
   - Trend
@@ -75,7 +76,6 @@
   - APIs
   - AWS
   - bacon.js
-  - backbone.js
   - Berkshelf
   - BigTable
   - Blockbridge
@@ -148,7 +148,6 @@
   - Github
   - Glueflakes
   - Go
-  - Gocraft/web
   - Golang
   - "Google SRE Book"
   - Grafana
@@ -235,10 +234,10 @@
   - R
   - RabbitMQ
   - Racket
+  - Rancher
   - RancherOS
   - RDS
   - ReactJS
-  - Community Driven
   - Redis
   - Restify
   - RethinkDB
@@ -279,7 +278,9 @@
   - TICK stack
   - Timeseries Database
   - TokyoTyrant
+  - Toxiproxy
   - Travis CI
+  - Triton
   - Ubuntu
   - unikernel
   - Vagrant
@@ -339,6 +340,7 @@
   - Antipatterns
   - AWS bill
   - Burn Rate
+  - Compliance
   - Density
   - Deployables
   - Downtime
@@ -431,6 +433,7 @@
   - Amazon
   - AWS
   - Etsy
+  - Everyone Else
   - Facebook
   - Flickr
   - Github
@@ -440,13 +443,16 @@
   - LinkedIn
   - Netflix
   - Twitter
+  - Uber
 
 :driver:
   - Anger
   - Asshole
+  - Big Data
   - Blog
   - Bullshit
   - CV
+  - Data
   - Datensparsamkeit
   - Google
   - HackerNews
@@ -455,8 +461,10 @@
   - I-Ching
   - I-Know-Best
   - Insecurity
+  - IPO
   - Job-Security
   - Meetup-Generator
+  - Metric
   - Naivety
   - NIH
   - Overconfidence
@@ -474,21 +482,23 @@
 
 :adjective:
   - Artisinal
-  - Batteries Included
+  - Batteries-Included
   - Beautiful
-  - Cloud Agsnotic
+  - Cloud-Agsnotic
   - Craft
-  - Community Driven
-  - Community Focused
+  - Community-Driven
+  - Community-Focused
   - End-to-End
   - Hand-Crafted
   - Immutable
   - Opinionated
-  - Micro Serviced
+  - Micro-Serviced
+  - Nano-Serviced
   - Self-Service
+  - Service-Oriented
   - Serverful
   - Serverless
-  - Soup to Nuts
+  - Soup-to-Nuts
 
 :template:
   - "Enabling No-Ops with Virtual %tech%"
@@ -566,6 +576,9 @@
   - "10x-ing Your Team: The End of %job_title% %job_title% Culture"
   - "Vague Soft-Skills Waffle"
   - "Everything I Know About %tech% I Learned from Star Wars"
+  - "There's %tech% in my %tech%!"
+  - "Repeatedly Saying 'on premise' Without Understanding What it Means"
+  - "'You Have 15 Seconds to Comply' and other '80s Cliches stiched Loosely Together"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
@@ -642,13 +655,20 @@
   - Automation
   - Big Data
   - Chief Technical
+  - Cloud
   - Cyber
   - DevOps
   - DevSecOps
   - Full Stack
   - Innovation
+  - Junior DevOps
+  - Lead
+  - Lead DevOps
   - Open Source
-  - Polyglot Developer
+  - Polyglot Development
+  - Senior
+  - Senior Cloud
+  - Senior DevOps
   - Technical
   - Node.js
   - SRE
@@ -661,9 +681,11 @@
   - Afficianado
   - Alchemist
   - Apostle
+  - Architect
   - Artisan
   - Badass
   - Balrog
+  - Codemonger
   - Demi-God
   - Demonologist
   - DevOpsologist
@@ -673,6 +695,7 @@
   - Firestarter
   - Fundamentalist
   - Genius
+  - Grandmaster
   - Guru
   - Hacker
   - Helicopter Pilot
@@ -697,9 +720,12 @@
   - Rockstar
   - Samurai
   - Savant
+  - Science Officer
   - Scientist
   - Sensei
   - Sherpa
+  - Space Cadet
+  - Squadron Leader
   - Superstar
   - Technologist
   - Thought Leader
