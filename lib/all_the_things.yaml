@@ -56,6 +56,7 @@
   - Syntax-Colour
   - Strategiz
   - Terraform
+  - Toxiproxy
   - Transform
   - Transpil
   - Trend
@@ -186,6 +187,7 @@
   - Kibana
   - kitchen-docker
   - knife Plugins
+  - Kubelet
   - Kubernetes
   - Lambda
   - Linux
@@ -274,6 +276,7 @@
   - Terraform
   - Test Kitchen
   - Thrift
+  - TICK stack
   - Timeseries Database
   - TokyoTyrant
   - Travis CI
@@ -298,7 +301,9 @@
   - Containers
   - DevOps
   - Downtime
+  - GitOps
   - Hybrid Cloud
+  - Incident Management
   - Infrastructure
   - Metrics
   - Platform
@@ -323,6 +328,7 @@
   - Maximize
   - Minimize
   - Normalize
+  - Planet-Scale
   - Reduce
   - Strategize
   - Webscale
@@ -415,6 +421,7 @@
   - n00b
   - SRE
   - Webscalr
+  - Wizard
 
 :is_not:
   - ""
@@ -435,6 +442,7 @@
   - Twitter
 
 :driver:
+  - Anger
   - Asshole
   - Blog
   - Bullshit
@@ -452,12 +460,14 @@
   - Naivety
   - NIH
   - Overconfidence
+  - Paranoia
   - Reddit
   - Reinvention
   - Resumé
   - "Someone-Else's-Blog"
   - Stack Overflow
   - "Sticker"
+  - Urgency
   - "Whatever's-New"
   - What-Everyone-Else-is-Doing
   - Wheel-Reinvention
@@ -526,12 +536,12 @@
   - "Look at me Mummy, aren't I Clever?"
   - "%tech% Necromancy for Full-Stack Nirvana"
   - "Wow Very %tech%. So %tech%. Such %verb%ed"
-  - "Never Mind the Talk, I've Got Stickers!"
+  - "I've Got Stickers!"
   - "How We Made a Really Bad Version of Something Which Already Existed"
   - "We Started a Shitty Company"
   - "We Have a DevOps Consultancy and We Don't Know What We're Doing"
   - "Dockerizing Dockerized Docker with Docker for Docker Users"
-  - "Sneering DevOps Tough Guy Bitches about How Bad He Thinks %tech% is and Expects You to Admire Him"
+  - "DevOps Tough Guy Bitches about %tech% is and Expects You to Admire Him"
   - "How we Spent RAND8 Months Building Our Own Version of a Service We Could Buy for $6/month"
   - "How we Spent RAND3 Years Building Our Own Version of a Service We Could Buy for $6/month"
   - "Thinly Disguised Sales Pitch"
@@ -543,7 +553,6 @@
   - "RAND10 %tech% Secrets %company% Don't Want You to Know"
   - "Up Your Rate: You're an SRE Now!"
   - "When You Have More Github Repos than Users"
-  - "How %tech% Invokes %last_name%'s Law"
   - "Large-Scale %tech% Anti-Patterns Will %extreme% Your %service%"
   - "Bro, Do You Even %tech%?"
   - "Beautiful %tech% for Beautiful %service%"
@@ -554,7 +563,9 @@
   - "%adjective% %tech% %adjective% Time-series Micro-Services for Dummies"
   - "Living for Meetups: I Haven't Done Any Actual Work Since 2013"
   - "%tech% to %adjective% %service%: Living the Dream"
-  - "10x-ing Your Team: The End of %job_title%  %job_title% Culture"
+  - "10x-ing Your Team: The End of %job_title% %job_title% Culture"
+  - "Vague Soft-Skills Waffle"
+  - "Everything I Know About %tech% I Learned from Star Wars"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
