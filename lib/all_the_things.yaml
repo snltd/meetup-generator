@@ -219,7 +219,6 @@
   - NoOps
   - NoSQL
   - NuGet
-  - Objective-J
   - OCaml
   - OpenShift
   - Packer
@@ -500,6 +499,17 @@
   - Serverless
   - Soup-to-Nuts
 
+:panacea:
+  - Containers
+  - Docker
+  - Golang
+  - Google SREs
+  - Kubernetes
+  - Serverless
+  - The Blockchain
+  - The Next Version
+  - Unikernels
+
 :template:
   - "Enabling No-Ops with Virtual %tech%"
   - "%verb%ed %tech% == #Awesomesauce"
@@ -579,6 +589,7 @@
   - "There's %tech% in my %tech%!"
   - "Repeatedly Saying 'on premise' Without Understanding What it Means"
   - "'You Have 15 Seconds to Comply' and other '80s Cliches stiched Loosely Together"
+    "%panacea% Will Fix Everything"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
