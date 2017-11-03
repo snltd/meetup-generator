@@ -503,11 +503,11 @@
   - Containers
   - Docker
   - Golang
-  - Google SREs
+  - "Google SREs"
   - Kubernetes
   - Serverless
   - The Blockchain
-  - The Next Version
+  - "The Next Version"
   - Unikernels
 
 :template:
@@ -589,7 +589,7 @@
   - "There's %tech% in my %tech%!"
   - "Repeatedly Saying 'on premise' Without Understanding What it Means"
   - "'You Have 15 Seconds to Comply' and other '80s Cliches stiched Loosely Together"
-    "%panacea% Will Fix Everything"
+  - "%panacea% Will Fix Everything"
 
 #-----------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
