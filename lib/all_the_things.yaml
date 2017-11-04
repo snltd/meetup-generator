@@ -524,6 +524,7 @@
   - End-to-End
   - Hand-Crafted
   - Immutable
+  - "On-Premise"
   - Opinionated
   - Micro-Serviced
   - Nano-Serviced
@@ -531,6 +532,8 @@
   - Service-Oriented
   - Serverful
   - Serverless
+  - Stateful
+  - Stateless
   - Soup-to-Nuts
 
 :panacea:
