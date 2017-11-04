@@ -24,6 +24,7 @@
   - Deliver
   - Deploy
   - Disrupt
+  - Distribut
   - Dockeriz
   - Dogfood
   - Downscal
@@ -34,10 +35,12 @@
   - Hack
   - Hand Craft
   - Horizontaliz
+  - Hyperconverg
   - Incubat
   - Leverag
   - Measur
   - Megashard
+  - Microservic
   - Monitor
   - Obfuscat
   - "Open Sourc"
@@ -74,6 +77,7 @@
   - Ansible
   - API Gateway
   - APIs
+  - Athena
   - AWS
   - bacon.js
   - Berkshelf
@@ -97,8 +101,14 @@
   - CloudFormation
   - Cloudfront
   - Cloudstack
+  - CloudTrail
   - Clusterpoint
+  - CodeBuild
+  - CodeCommit
+  - CodePipeline
+  - CodeStar
   - Coffeescript
+  - Cognito
   - Coherence
   - Consul
   - CouchDB
@@ -112,24 +122,30 @@
   - Dart
   - Dataloop
   - Deis
+  - Device Farm
   - Django
   - Docker
+  - Docker Compose
+  - Dockersh
   - Dokku
   - Doozer
   - Dropwizard
   - DynamoDB
   - EC2
   - ECS
+  - EFS
   - "Edge Rabbit"
   - "Elastic Beanstalk"
   - Elasticache
   - Elasticsearch
   - Elixir
   - ember.js
+  - EMR
   - etcd
   - ELK
   - Erlang
   - Express
+  - Filebeat
   - Flabbergast
   - Flapjack
   - Fleet
@@ -146,6 +162,8 @@
   - Git
   - Gitflow
   - Github
+  - Glacier
+  - Glue
   - Glueflakes
   - Go
   - Golang
@@ -165,6 +183,8 @@
   - Haskell
   - HBase
   - Heapster
+  - Heartbeat
+  - Helm
   - Heroku
   - Hubot
   - hyperconvergence
@@ -184,17 +204,23 @@
   - KairosDB
   - Kanban
   - Kibana
+  - Kinesis
   - kitchen-docker
   - knife Plugins
+  - Kube
   - Kubelet
   - Kubernetes
   - Lambda
+  - Lex
+  - Lightsail
   - Linux
   - Lisp
+  - Logspout
   - Logstash
   - LXC
   - LXD
   - MAAS
+  - Machine Learning
   - ManageIQ
   - Marathon
   - Marathon-Consul
@@ -203,7 +229,9 @@
   - Mesos
   - Mesos-Consul
   - Mesosphere
+  - Metricbeat
   - microservices
+  - Minikube
   - monads
   - MongoDB
   - Mountebank
@@ -221,7 +249,9 @@
   - NuGet
   - OCaml
   - OpenShift
+  - OpsWorks
   - Packer
+  - Packetbeat
   - Perl
   - Phoenix
   - Project Atomic
@@ -238,6 +268,7 @@
   - RDS
   - ReactJS
   - Redis
+  - Redshift
   - Restify
   - RethinkDB
   - Riak
@@ -271,6 +302,7 @@
   - Swarm
   - Sysdig
   - systemd
+  - Telegraf
   - Terraform
   - Test Kitchen
   - Thrift
@@ -342,6 +374,8 @@
   - Compliance
   - Density
   - Deployables
+  - DevOps
+  - DevSecOps
   - Downtime
   - Enterprise Data Lake
   - Error Budget
@@ -501,11 +535,14 @@
 
 :panacea:
   - Containers
+  - DevOps
+  - DevSecOps
   - Docker
   - Golang
   - "Google SREs"
   - Kubernetes
   - Serverless
+  - SREs
   - The Blockchain
   - "The Next Version"
   - Unikernels
@@ -593,8 +630,9 @@
   - "I Have RAND18 Months' Experience But I Know Everything"
   - "We Were the First People to Ever Encounter any of these Problems"
   - "I Worked for Google so I Know Everything"
+  - "Rewriting Most of Kubernetes 101"
 
-#-----------------------------------------------------------------------------
+#-------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
 # talks
 
