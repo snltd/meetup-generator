@@ -73,6 +73,7 @@
 
 :tech:
   - Akka
+  - Ambassador Containers
   - angular.js
   - Ansible
   - API Gateway
@@ -95,6 +96,7 @@
   - CFEngine
   - Chef
   - Chef/Puppet
+  - CI/CD
   - CircleCI
   - Clojure
   - Cloud Foundry
@@ -145,6 +147,8 @@
   - ELK
   - Erlang
   - Express
+  - Fabric
+  - Fabric8
   - Filebeat
   - Flabbergast
   - Flapjack
@@ -208,8 +212,10 @@
   - kitchen-docker
   - knife Plugins
   - Kube
+  - Kubeform
   - Kubelet
   - Kubernetes
+  - KubeSpray
   - Lambda
   - Lex
   - Lightsail
@@ -291,14 +297,18 @@
   - Serf
   - Serverless
   - SES
+  - Sidecar Containers
   - Sidekiq
+  - SignalFX
   - Sinatra
   - SmartOS
   - SNS
   - Solr
+  - Spread
   - SQS
   - statsd
   - Sublime Text
+  - Supergiant
   - Swarm
   - Sysdig
   - systemd
@@ -312,6 +322,7 @@
   - Toxiproxy
   - Travis CI
   - Triton
+  - Ubernetes
   - Ubuntu
   - unikernel
   - Vagrant
@@ -372,10 +383,12 @@
   - AWS bill
   - Burn Rate
   - Compliance
+  - Container Anitpatterns
   - Density
   - Deployables
   - DevOps
   - DevSecOps
+  - Docker Socket Mount Pattern Application
   - Downtime
   - Enterprise Data Lake
   - Error Budget
@@ -496,6 +509,8 @@
   - Insecurity
   - IPO
   - Job-Security
+  - "Kelsey-Hightower's-Twitter"
+  - Loudest-Person-in-the-Room
   - Meetup-Generator
   - Metric
   - Naivety
@@ -528,6 +543,7 @@
   - Opinionated
   - Micro-Serviced
   - Nano-Serviced
+  - Public/Private
   - Self-Service
   - Service-Oriented
   - Serverful
