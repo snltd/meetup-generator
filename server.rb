@@ -2,11 +2,8 @@
 
 %w(json yaml sinatra slim pathname).each { |r| require r }
 
-#-----------------------------------------------------------------------------
-# METHODS
-#
 class Meetup
-  attr_reader :words, :lib, :talk, :talker, :refreshment
+  attr_reader :words, :lib, :talk, :talker, :refreshment, :unused_templates
 
   def initialize
     @words = `/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
@@ -17,14 +14,14 @@ class Meetup
   def find_dict
     %w(dict lib/dict).each do |d|
       dict = Pathname.new('/usr/share') + d + 'words'
-      puts "dict is #{dict}"
       return dict if dict.exist?
     end
     abort('Cannot find dictionary file.')
   end
 
   def talk
-    t = lib[:template].sample
+    t = unused_templates.sample
+    unused_templates.delete(t)
     t.scan(/%\w+%/).each { |k| t = t.sub(k, lib[k[1..-2].to_sym].sample) }
     t.scan(/RAND\d+/).each do |i|
       t = t.sub(i, rand(2..(i.sub(/RAND/, '').to_i)).to_s)
@@ -33,12 +30,8 @@ class Meetup
   end
 
   def talks(count = 5)
-    ret = []
-    until ret.size == count do
-      t = talk
-      ret.<< t unless ret.include?(t)
-    end
-    ret
+    @unused_templates = lib[:template].dup
+    count.times.with_object([]) { |_i, a| a.<< talk }
   end
 
   def talker
@@ -52,14 +45,11 @@ class Meetup
   end
 end
 
-#-----------------------------------------------------------------------------
-# SCRIPT STARTS HERE
-#
 m = Meetup.new
 
 get '/api/talk' do
   content_type :json
-  { talk: m.talk }.merge(m.talker).to_json
+  { talk: m.talks(1).first }.merge(m.talker).to_json
 end
 
 get '/api/*' do
