@@ -49,7 +49,7 @@ m = Meetup.new
 
 get '/api/talk' do
   content_type :json
-  { talk: m.talk }.merge(m.talker).to_json
+  { talk: m.talks(1).first }.merge(m.talker).to_json
 end
 
 get '/api/*' do
