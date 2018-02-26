@@ -1,22 +1,22 @@
 #!/usr/bin/env ruby
 
-%w(json yaml sinatra slim pathname).each { |r| require r }
+%w[json yaml sinatra slim pathname].each { |r| require r }
 
 class Meetup
-  attr_reader :words, :lib, :talk, :talker, :refreshment, :unused_templates
+  attr_reader :words, :lib, :unused_templates
 
   def initialize
     @words = `/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
-    @lib = YAML.load_file(Pathname(__FILE__).dirname + 'lib' +
+    @lib = YAML.load_file(Pathname.new(__FILE__).dirname + 'lib' +
                           'all_the_things.yaml')
   end
 
   def find_dict
-    %w(dict lib/dict).each do |d|
+    %w[dict lib/dict].each do |d|
       dict = Pathname.new('/usr/share') + d + 'words'
       return dict if dict.exist?
     end
-    abort('Cannot find dictionary file.')
+    abort 'Cannot find dictionary file.'
   end
 
   def talk
@@ -35,13 +35,19 @@ class Meetup
   end
 
   def talker
-    { talker: [lib[:first_name].sample, lib[:last_name].sample].join(' '),
-      role: [lib[:job_role].sample, lib[:job_title].sample].join(' '),
-      company: words.sample.sub(/([^aeiou])er$/, "\\1r") + '.io' }
+    lib[:first_name].sample + ' ' + lib[:last_name].sample
+  end
+
+  def role
+    lib[:job_role].sample + ' ' + lib[:job_title].sample
+  end
+
+  def company
+    words.sample.sub(/([^aeiou])er$/, '\\1r').downcase + '.io'
   end
 
   def refreshment
-    [lib[:food_style].sample, lib[:food].sample].join(' ')
+    lib[:food_style].sample + ' ' + lib[:food].sample
   end
 end
 
@@ -49,7 +55,8 @@ m = Meetup.new
 
 get '/api/talk' do
   content_type :json
-  { talk: m.talks(1).first }.merge(m.talker).to_json
+  { talk: m.talks(1)[0], talker: m.talker, role: m.role,
+    company: m.company }.to_json
 end
 
 get '/api/*' do
@@ -57,11 +64,9 @@ get '/api/*' do
 end
 
 get '*' do
-  @talks, @jobs = m.talks, []
-  5.times do
-    t = m.talker
-    @jobs.<< [t[:talker], '//', t[:role], '@', t[:company]].join(' ')
+  @talks, @food = m.talks, m.refreshment
+  @jobs = 5.times.with_object([]) do |_i, a|
+    a.<< [m.talker, '//', m.role, '@', m.company].join(' ')
   end
-  @food = m.refreshment
   slim :default
 end
