@@ -10,7 +10,7 @@ THINGS = { food_style: %w[artisan],
            job_role:   %w[Neckbeard],
            job_title:  ['Without Portfolio'],
            tech:       %w[Ruby],
-           template:   ['RAND20 %tech% things'] }
+           template:   ['RAND20 %tech% things'] }.freeze
 
 class Giblets < Meetup
   def initialize; end
