@@ -21,7 +21,7 @@ class TestApp < MiniTest::Test
 
   def initialize(args)
     super(args)
-    @things = YAML.load(IO.read(ROOT + 'lib' + 'all_the_things.yaml'))
+    @things = YAML.safe_load(IO.read(ROOT + 'lib' + 'all_the_things.yaml'))
   end
 
   def app
@@ -37,7 +37,7 @@ class TestApp < MiniTest::Test
     templates = things[:template].map do |t|
       escaped = Regexp.escape(CGI.escapeHTML(t))
       matcher = escaped.gsub(/%\w+%/, '\w+').gsub(/RAND\d+/, '\d+')
-      Regexp.new('^.*ttitle">' + matcher  + '</span>.*$')
+      Regexp.new('^.*ttitle">' + matcher + '</span>.*$')
     end
 
     until templates.empty?
@@ -58,7 +58,7 @@ class TestApp < MiniTest::Test
     resp = last_response.body
     refute_empty resp
     j = JSON.parse(resp)
-    fields = %w(talk talker role company)
+    fields = %w[talk talker role company]
     assert_equal(j.keys, fields)
     fields.each { |f| refute_empty j[f] }
     name = j['talker'].split
