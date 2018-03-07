@@ -23,6 +23,7 @@ class Meetup
   end
 
   def title
+    unused_templates ||= lib[:template].dup
     t = unused_templates.sample
     unused_templates.delete(t)
     t.scan(/%\w+%/).each { |k| t = t.sub(k, lib[k[1..-2].to_sym].sample) }
@@ -60,12 +61,12 @@ end
 
 m = Meetup.new
 
-get '/api/:item' do
+get '/api/:item?/?*' do
   content_type :json
   if m.respond_to?(params[:item]) && params[:item] != 'initialize'
     m.send(params[:item]).to_json
   else
-    [404, 'not found'].to_json
+    [404, 'not found']
   end
 end
 

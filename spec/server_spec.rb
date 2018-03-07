@@ -24,6 +24,14 @@ class GibletsTest < MiniTest::Test
     m.instance_variable_set(:@lib, THINGS)
   end
 
+  def test_title
+    x = m.title
+    assert_instance_of(String, x)
+    assert x.length > 0
+    refute_match(/%\w+%/, x)
+    refute_match(/RAND/, x)
+  end
+
   def test_talk
     x = m.talks(1)
     assert_instance_of(Array, x)
@@ -31,7 +39,7 @@ class GibletsTest < MiniTest::Test
     toks = x.first.split
     number = toks.first.to_i
     assert number > 0
-    assert number < 20
+    assert number <= 20
     assert_equal('Ruby', toks[1])
     assert_equal('things', toks[2])
   end
