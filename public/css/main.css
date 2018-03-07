@@ -4,15 +4,11 @@
 }
 
 body {
-  /* font-family: 'Roboto Slab', serif;
-  background: #eeeeee;
-  color: #222;
-*/
-	font-family: 'ZX Spectrum';
+  font-family: 'ZX Spectrum';
   font-size: 0.9em;
   background: #000;
   color: #0f0;
-	line-height: 120%;
+  line-height: 120%;
 }
 
 .tperson {

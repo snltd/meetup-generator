@@ -3,7 +3,7 @@ require 'date'
 
 Gem::Specification.new do |gem|
   gem.name          = 'meetup-generator'
-  gem.version       = 1.0
+  gem.version       = 1.1
   gem.date          = Date.today.to_s
 
   gem.summary       = 'Stupid fatuous random string generatpr'
