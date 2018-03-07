@@ -6,20 +6,23 @@ class Meetup
   attr_reader :words, :lib, :unused_templates
 
   def initialize
-    @words = `/bin/grep "^[a-z]*$" #{find_dict}`.split("\n")
+    grep, dict = case RUBY_PLATFORM
+                 when /solaris/
+                   %w[/bin/grep /usr/share/lib/dict/words]
+                 when /linux/
+                   %w[/bin/grep /usr/share/dict/words]
+                 when /darwin/
+                   %w[/usr/bin/grep /usr/share/dict/words]
+                 else
+                   abort "unknown platform #{RUBY_PLATFORM}"
+                 end
+
+    @words = `#{grep} "^[a-z]*$" #{dict}`.split("\n")
     @lib = YAML.load_file(Pathname.new(__FILE__).dirname + 'lib' +
                           'all_the_things.yaml')
   end
 
-  def find_dict
-    %w[dict lib/dict].each do |d|
-      dict = Pathname.new('/usr/share') + d + 'words'
-      return dict if dict.exist?
-    end
-    abort 'Cannot find dictionary file.'
-  end
-
-  def talk
+  def title
     t = unused_templates.sample
     unused_templates.delete(t)
     t.scan(/%\w+%/).each { |k| t = t.sub(k, lib[k[1..-2].to_sym].sample) }
@@ -31,7 +34,7 @@ class Meetup
 
   def talks(count = 5)
     @unused_templates = lib[:template].dup
-    count.times.with_object([]) { |_i, a| a.<< talk }
+    count.times.with_object([]) { |_i, a| a.<< title }
   end
 
   def talker
@@ -49,18 +52,21 @@ class Meetup
   def refreshment
     lib[:food_style].sample + ' ' + lib[:food].sample
   end
+
+  def talk
+    { talk: talks(1)[0], talker: talker, role: role, company: company }
+  end
 end
 
 m = Meetup.new
 
-get '/api/talk' do
+get '/api/:item' do
   content_type :json
-  { talk: m.talks(1)[0], talker: m.talker, role: m.role,
-    company: m.company }.to_json
-end
-
-get '/api/*' do
-  [404, 'not found']
+  if m.respond_to?(params[:item]) && params[:item] != 'initialize'
+    m.send(params[:item]).to_json
+  else
+    [404, 'not found'].to_json
+  end
 end
 
 get '*' do

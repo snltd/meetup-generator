@@ -24,10 +24,6 @@ class GibletsTest < MiniTest::Test
     m.instance_variable_set(:@lib, THINGS)
   end
 
-  def test_find_dict
-    assert_instance_of(Pathname, m.find_dict)
-  end
-
   def test_talk
     x = m.talks(1)
     assert_instance_of(Array, x)

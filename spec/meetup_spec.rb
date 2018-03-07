@@ -21,6 +21,7 @@ class TestApp < MiniTest::Test
 
   def initialize(args)
     super(args)
+    p ROOT + 'lib' + 'all_the_things.yaml'
     @things = YAML.safe_load(IO.read(ROOT + 'lib' + 'all_the_things.yaml'))
   end
 
