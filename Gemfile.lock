@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    meetup-generator (1.0)
+    meetup-generator (1.1)
       sinatra (~> 2.0, >= 2.0.1)
       slim (~> 3.0, >= 3.0.0)
       thin (~> 1.7, >= 1.7.0)

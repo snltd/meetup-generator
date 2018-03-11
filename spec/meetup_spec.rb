@@ -21,7 +21,7 @@ class TestApp < MiniTest::Test
 
   def initialize(args)
     super(args)
-    @things = YAML.safe_load(IO.read(ROOT + 'lib' + 'all_the_things.yaml'))
+    @things = YAML.load_file(ROOT + 'lib' + 'all_the_things.yaml')
   end
 
   def app
@@ -51,7 +51,7 @@ class TestApp < MiniTest::Test
     end
   end
 
-  def test_api
+  def test_api_talk
     get '/api/talk'
     assert last_response.ok?
     assert last_response.header['Content-Type'] == 'application/json'
@@ -65,6 +65,14 @@ class TestApp < MiniTest::Test
     assert_includes(things[:first_name], name.first)
     assert_includes(things[:last_name], name.last)
     assert j['company'].end_with?('.io')
+  end
+
+  def test_api_misc
+    %w[title talker company role refreshment].each do |word|
+      get format('/api/%s', word)
+      assert last_response.ok?
+      assert last_response.header['Content-Type'] == 'application/json'
+    end
   end
 
   def test_api_404
