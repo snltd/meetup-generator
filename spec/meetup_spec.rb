@@ -10,6 +10,7 @@ require 'pathname'
 require 'json'
 require 'yaml'
 require 'cgi'
+require 'nokogiri'
 
 ROOT = Pathname.new(__FILE__).realpath.dirname.parent
 
@@ -26,6 +27,17 @@ class TestApp < MiniTest::Test
 
   def app
     OUTER_APP
+  end
+
+  # Load the page 1000 times and make sure no talk titles occur
+  # twice
+  #
+  def test_no_repeats
+    1000.times do
+      html = Nokogiri::HTML(get('/').body)
+      titles = html.css('span[class="ttitle"]').map { |e| e.text }
+      assert_equal(titles, titles.uniq)
+    end
   end
 
   def test_default
