@@ -23,7 +23,7 @@ class Meetup
   end
 
   def title
-    unused_templates ||= lib[:template].dup
+    @unused_templates ||= lib[:template].dup
     t = unused_templates.sample
     unused_templates.delete(t)
     t.scan(/%\w+%/).each { |k| t = t.sub(k, lib[k[1..-2].to_sym].sample) }
