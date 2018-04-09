@@ -89,6 +89,12 @@
   - Borg
   - Boto
   - Bower
+  - Burp
+  - Burpsuite
+  - Burp Clickbandit
+  - Burp Infiltrator
+  - Burp Intruder
+  - Burp Scanner
   - Capistrano
   - Cassandra
   - CDN
@@ -396,6 +402,7 @@
   - Hipster Batch Paradigm
   - Leanness
   - Innovation Initiatives
+  - Multiregion Dataflows
   - MVP
   - Patterns
   - Polyglot Persistence
@@ -497,9 +504,11 @@
   - Big Data
   - Blog
   - Bullshit
+  - Copying-Google
   - CV
   - Data
   - Datensparsamkeit
+  - FOMO
   - Google
   - HackerNews
   - Hipster
@@ -652,6 +661,7 @@
   - "Rewriting Most of Kubernetes 101"
   - "Like, Diversity and Stuff?"
   - "How Everyone Else Where I Work Does Everything Wrong"
+  - "Validating Laziness by Declaring it 'Best Practice'"
 
 #-------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
@@ -751,6 +761,7 @@
   - Advocate
   - Afficianado
   - Alchemist
+  - Anorak
   - Apostle
   - Architect
   - Artisan
