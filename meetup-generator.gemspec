@@ -17,8 +17,11 @@ Gem::Specification.new do |gem|
   gem.homepage      = 'https://github.com/snltd/meetup-generator'
   gem.license       = 'BSD-2-Clause'
 
+  gem.bindir        = 'bin'
+  gem.executables   = 'meetup-generator.rb'
   gem.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
   gem.test_files    = gem.files.grep(%r{^spec/})
+  gem.require_paths = %w(lib)
 
   gem.add_runtime_dependency 'sinatra', '~>2.0', '>= 2.0.1'
   gem.add_runtime_dependency 'slim', '~> 3.0', '>= 3.0.0'

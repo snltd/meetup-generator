@@ -5,7 +5,7 @@
 <service_bundle type='manifest' name='snltd:sinatra:meetup-generator'>
 
 <service
-  name='application/sinatra/meetup-generator'
+  name='sysdef/meetup-generator'
 	type='service'
 	version='1'>
 
