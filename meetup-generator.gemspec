@@ -1,10 +1,11 @@
 require 'pathname'
 require 'date'
 require 'English'
+require_relative 'lib/build_helpers'
 
 Gem::Specification.new do |gem|
   gem.name          = 'meetup-generator'
-  gem.version       = 1.1
+  gem.version       = gem_version
   gem.date          = Date.today.to_s
 
   gem.summary       = 'Stupid fatuous random string generatpr'
@@ -21,7 +22,7 @@ Gem::Specification.new do |gem|
 
   gem.add_runtime_dependency 'sinatra', '~>2.0', '>= 2.0.1'
   gem.add_runtime_dependency 'slim', '~> 3.0', '>= 3.0.0'
-  gem.add_runtime_dependency 'thin', '~> 1.7', '>= 1.7.0'
+  gem.add_runtime_dependency 'puma', '~> 3.11', '>= 3.11.0'
 
   gem.add_development_dependency 'bundler', '~> 1.3'
   gem.add_development_dependency 'minitest', '~> 5.11', '>= 5.11.0'
