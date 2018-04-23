@@ -35,7 +35,7 @@ class TestApp < MiniTest::Test
   def test_no_repeats
     1000.times do
       html = Nokogiri::HTML(get('/').body)
-      titles = html.css('span[class="ttitle"]').map { |e| e.text }
+      titles = html.css('span[class="ttitle"]').map(&:text)
       assert_equal(titles, titles.uniq)
     end
   end

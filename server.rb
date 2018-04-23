@@ -2,24 +2,30 @@
 
 %w[json yaml sinatra slim pathname].each { |r| require r }
 
+# Everything happens here
+#
 class Meetup
   attr_reader :words, :lib, :unused_templates
 
   def initialize
-    grep, dict = case RUBY_PLATFORM
-                 when /solaris/
-                   %w[/bin/grep /usr/share/lib/dict/words]
-                 when /linux/
-                   %w[/bin/grep /usr/share/dict/words]
-                 when /darwin/
-                   %w[/usr/bin/grep /usr/share/dict/words]
-                 else
-                   abort "unknown platform #{RUBY_PLATFORM}"
-                 end
-
+    grep, dict = find_unix_stuff
     @words = `#{grep} "^[a-z]*$" #{dict}`.split("\n")
-    @lib = YAML.load_file(Pathname.new(__FILE__).dirname + 'lib' +
-                          'all_the_things.yaml')
+    @lib = YAML.load_file(
+      Pathname.new(__FILE__).dirname + 'lib' + 'all_the_things.yaml'
+    )
+  end
+
+  def find_unix_stuff
+    case RUBY_PLATFORM
+    when /solaris/
+      %w[/bin/grep /usr/share/lib/dict/words]
+    when /linux/
+      %w[/bin/grep /usr/share/dict/words]
+    when /darwin/
+      %w[/usr/bin/grep /usr/share/dict/words]
+    else
+      abort "unsupported platform: #{RUBY_PLATFORM}"
+    end
   end
 
   def title
@@ -71,7 +77,8 @@ get '/api/:item?/?*' do
 end
 
 get '*' do
-  @talks, @food = m.talks, m.refreshment
+  @talks = m.talks
+  @food = m.refreshment
   @jobs = 5.times.with_object([]) do |_i, a|
     a.<< [m.talker, '//', m.role, '@', m.company].join(' ')
   end

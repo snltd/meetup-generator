@@ -27,7 +27,7 @@ class GibletsTest < MiniTest::Test
   def test_title
     x = m.title
     assert_instance_of(String, x)
-    assert x.length > 0
+    assert !x.empty?
     refute_match(/%\w+%/, x)
     refute_match(/RAND/, x)
   end
