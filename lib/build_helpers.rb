@@ -5,5 +5,5 @@ def gem_version
 end
 
 def build_number
-  format('%03d', number = ENV['TRAVIS_BUILD_NUMBER'] || 0)
+  ENV['TRAVIS_BUILD_NUMBER'] || 0
 end
