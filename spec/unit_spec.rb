@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'minitest/autorun'
-require_relative '../server'
+require_relative '../lib/meetup-generator'
 
 THINGS = { food_style: %w[artisan],
            food:       %w[flatbread],
@@ -12,7 +12,7 @@ THINGS = { food_style: %w[artisan],
            tech:       %w[Ruby],
            template:   ['RAND20 %tech% things'] }.freeze
 
-class Giblets < Meetup
+class Giblets < MeetupGenerator
   def initialize; end
 end
 

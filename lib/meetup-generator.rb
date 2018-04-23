@@ -1,18 +1,15 @@
-#!/usr/bin/env ruby
+require 'json'
+require 'yaml'
 
-%w[json yaml sinatra slim pathname].each { |r| require r }
-
-# Everything happens here
+# Everything needed for a meetup generator
 #
-class Meetup
+class MeetupGenerator
   attr_reader :words, :lib, :unused_templates
 
   def initialize
     grep, dict = find_unix_stuff
     @words = `#{grep} "^[a-z]*$" #{dict}`.split("\n")
-    @lib = YAML.load_file(
-      Pathname.new(__FILE__).dirname + 'lib' + 'all_the_things.yaml'
-    )
+    @lib = YAML.load_file(ROOT + 'lib' + 'all_the_things.yaml')
   end
 
   def find_unix_stuff
@@ -63,24 +60,4 @@ class Meetup
   def talk
     { talk: talks(1)[0], talker: talker, role: role, company: company }
   end
-end
-
-m = Meetup.new
-
-get '/api/:item?/?*' do
-  content_type :json
-  if m.respond_to?(params[:item]) && params[:item] != 'initialize'
-    m.send(params[:item]).to_json
-  else
-    [404, 'not found']
-  end
-end
-
-get '*' do
-  @talks = m.talks
-  @food = m.refreshment
-  @jobs = 5.times.with_object([]) do |_i, a|
-    a.<< [m.talker, '//', m.role, '@', m.company].join(' ')
-  end
-  slim :default
 end

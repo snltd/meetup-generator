@@ -2,19 +2,12 @@
 #
 # Acceptance tests for the meetup generator. Yeah, I know.
 #
-require 'minitest'
-require 'minitest/unit'
-require 'minitest/autorun'
-require 'rack/test'
-require 'pathname'
-require 'json'
-require 'yaml'
-require 'cgi'
-require 'nokogiri'
+%w[minitest minitest/unit minitest/autorun rack/test pathname json
+   yaml cgi nokogiri].each { |f| require f }
 
-ROOT = Pathname.new(__FILE__).realpath.dirname.parent
+MGROOT = Pathname.new(__FILE__).realpath.dirname.parent
 
-OUTER_APP = Rack::Builder.parse_file((ROOT + 'config.ru').to_s).first
+OUTER_APP = Rack::Builder.parse_file((MGROOT + 'config.ru').to_s).first
 
 class TestApp < MiniTest::Test
   attr_reader :things
@@ -22,7 +15,7 @@ class TestApp < MiniTest::Test
 
   def initialize(args)
     super(args)
-    @things = YAML.load_file(ROOT + 'lib' + 'all_the_things.yaml')
+    @things = YAML.load_file(MGROOT + 'lib' + 'all_the_things.yaml')
   end
 
   def app

@@ -1,2 +1,2 @@
-require File.join(File.dirname(__FILE__), 'server.rb')
-run Sinatra::Application
+require_relative 'bin/meetup-generator'
+run MeetupGeneratorWebApp
