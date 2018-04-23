@@ -1,10 +1,10 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.2.10
-  - 2.3.7
-  - 2.4.4
-  - 2.5.1
+- 2.2.10
+- 2.3.7
+- 2.4.4
+- 2.5.1
 before_install: gem install bundler --no-rdoc --no-ri
 deploy:
   provider: rubygems
@@ -15,3 +15,7 @@ deploy:
     branch: master
     repo: snltd/meetup-generator
     ruby: 2.4.4
+notifications:
+  email: false
+  slack:
+    secure: JYsO1HPdbDmYhD/T6Wc8bK+jXIJ5014hVIJo8vSdZO4zlnSyisNqDbVl8m68CqTmDbYSRsYye3lg8sfxA1e18tC5OTbv08GXEGP7Hwyg136VErqthSUGquiRIDQ5kcXit4pI+p+CUxB/uUUalQWlF4sEP9BebWAqzA6suPbn83E=
