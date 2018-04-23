@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    meetup-generator (1.1)
+    meetup-generator (1.2.0)
       sinatra (~> 2.0, >= 2.0.1)
       slim (~> 3.0, >= 3.0.0)
       thin (~> 1.7, >= 1.7.0)
@@ -9,7 +9,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    ast (2.3.0)
+    ast (2.4.0)
     daemons (1.2.6)
     eventmachine (1.2.5)
     mini_portile2 (2.3.0)
@@ -18,19 +18,19 @@ GEM
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     parallel (1.12.1)
-    parser (2.4.0.2)
-      ast (~> 2.3)
+    parser (2.5.1.0)
+      ast (~> 2.4.0)
     powerpack (0.1.1)
-    rack (2.0.3)
+    rack (2.0.4)
     rack-protection (2.0.1)
       rack
-    rack-test (0.8.2)
+    rack-test (0.8.3)
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
-    rake (12.3.0)
-    rubocop (0.52.1)
+    rake (12.3.1)
+    rubocop (0.55.0)
       parallel (~> 1.10)
-      parser (>= 2.4.0.2, < 3.0)
+      parser (>= 2.5)
       powerpack (~> 0.1)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
@@ -50,7 +50,7 @@ GEM
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     tilt (2.0.8)
-    unicode-display_width (1.3.0)
+    unicode-display_width (1.3.2)
 
 PLATFORMS
   ruby
