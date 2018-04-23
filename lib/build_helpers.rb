@@ -1,7 +1,7 @@
 require_relative 'version'
 
 def gem_version
-  format('%s.%d', BASE_VERSION, build_number)
+  format('%s.%s', BASE_VERSION, build_number)
 end
 
 def build_number
