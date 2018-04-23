@@ -1,10 +1,11 @@
 require 'pathname'
 require 'date'
 require 'English'
+require_relative 'lib/build_helpers'
 
 Gem::Specification.new do |gem|
   gem.name          = 'meetup-generator'
-  gem.version       = 1.1
+  gem.version       = gem_version
   gem.date          = Date.today.to_s
 
   gem.summary       = 'Stupid fatuous random string generatpr'
