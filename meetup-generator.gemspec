@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
   gem.license       = 'BSD-2-Clause'
 
   gem.bindir        = 'bin'
-  gem.executables   = 'meetup-generator.rb'
+  gem.executables   = ['meetup-generator.rb', 'locate_meetup_generator']
   gem.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
   gem.test_files    = gem.files.grep(%r{^spec/})
   gem.require_paths = %w(lib)
