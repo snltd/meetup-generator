@@ -1,7 +1,10 @@
 require 'pathname'
 require 'date'
 require 'English'
-require_relative 'lib/build_helpers'
+
+ROOT = Pathname.new(__FILE__).dirname
+
+require ROOT + 'lib' + 'build_helpers'
 
 Gem::Specification.new do |gem|
   gem.name          = 'meetup-generator'
