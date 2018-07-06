@@ -8,8 +8,8 @@ class MeetupGenerator
 
   def initialize
     grep, dict = find_unix_stuff
-    @words = `#{grep} "^[a-z]*$" #{dict}`.split("\n")
-    @lib = YAML.load_file(ROOT + 'lib' + 'all_the_things.yaml')
+    @words     = `#{grep} "^[a-z]*$" #{dict}`.split("\n")
+    @lib       = YAML.load_file(ROOT + 'lib' + 'all_the_things.yaml')
   end
 
   def find_unix_stuff
@@ -42,19 +42,19 @@ class MeetupGenerator
   end
 
   def talker
-    lib[:first_name].sample + ' ' + lib[:last_name].sample
+    format('%s %s', lib[:first_name].sample, lib[:last_name].sample)
   end
 
   def role
-    lib[:job_role].sample + ' ' + lib[:job_title].sample
+    format('%s %s', lib[:job_role].sample, lib[:job_title].sample)
   end
 
   def company
-    words.sample.sub(/([^aeiou])er$/, '\\1r').downcase + '.io'
+    format('%s.io', words.sample.sub(/([^aeiou])er$/, '\\1r').downcase)
   end
 
   def refreshment
-    lib[:food_style].sample + ' ' + lib[:food].sample
+    format('%s %s', lib[:food_style].sample, lib[:food].sample)
   end
 
   def talk
