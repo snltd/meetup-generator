@@ -1,8 +1,6 @@
 require 'date'
 require 'English'
 
-ROOT = Pathname.new(__FILE__).dirname
-
 require_relative 'lib/build_helpers'
 
 Gem::Specification.new do |gem|
