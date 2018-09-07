@@ -40,6 +40,7 @@
   - Leverag
   - Measur
   - Megashard
+  - Mesh
   - Microservic
   - Monitor
   - Obfuscat
@@ -72,6 +73,7 @@
   - Webscal
 
 :tech:
+  - AI
   - Akka
   - Ambassador Containers
   - angular.js
@@ -106,13 +108,16 @@
   - CircleCI
   - Clojure
   - Cloud Foundry
+  - Cloud9
   - CloudFormation
   - Cloudfront
   - Cloudstack
+  - CloudSearch
   - CloudTrail
   - Clusterpoint
   - CodeBuild
   - CodeCommit
+  - CodeDeploy
   - CodePipeline
   - CodeStar
   - Coffeescript
@@ -129,6 +134,7 @@
   - Dapper
   - Dart
   - Dataloop
+  - Deep Learning
   - Deis
   - Device Farm
   - Django
@@ -183,6 +189,7 @@
   - Graphene
   - Graphite
   - Graylog2
+  - Greengrass
   - Groovy
   - GRPC
   - Grunt
@@ -198,6 +205,7 @@
   - Heroku
   - Hubot
   - hyperconvergence
+  - Hystrix
   - IAM
   - Immutable Infrastructure
   - IndexedDB
@@ -205,6 +213,7 @@
   - IntelliJ
   - io.js
   - IO
+  - Istio
   - Jekyll
   - Jenkins
   - JRuby
@@ -225,6 +234,7 @@
   - Lambda
   - Lex
   - Lightsail
+  - Linkerd
   - Linux
   - Lisp
   - Logspout
@@ -238,6 +248,7 @@
   - Marathon-Consul
   - MEAN
   - Memchached
+  - Mesh
   - Mesos
   - Mesos-Consul
   - Mesosphere
@@ -249,8 +260,10 @@
   - Mountebank
   - Mutable Infrastructure
   - Nancy
+  - nanoservices
   - Nashorn
   - Neo4J
+  - Neptune
   - nginx
   - node.js
   - Nomad
@@ -302,17 +315,22 @@
   - Sensu
   - Serf
   - Serverless
+  - Service Mesh
   - SES
   - Sidecar Containers
+  - sidecars
   - Sidekiq
   - SignalFX
   - Sinatra
   - SmartOS
+  - Snowball
   - SNS
   - Solr
   - Spread
   - SQS
   - statsd
+  - 'Step Functions'
+  - Storage Gateway
   - Sublime Text
   - Supergiant
   - Swarm
@@ -335,6 +353,7 @@
   - Velocity
   - Wavefront
   - Weave
+  - X-Ray
   - YAML
   - YAML front-matter
   - Yarn
@@ -570,12 +589,21 @@
   - "Google SREs"
   - Kubernetes
   - Serverless
+  - Service Mesh Architecture
   - SREs
   - The Blockchain
   - "The Next Version"
   - Unikernels
 
+:something_ops:
+  - Test
+  - 'No'
+  - Dev
+  - Sec
+  - Chat
+
 :template:
+  - "Regurgited Half-Understood Blog Post"
   - "Enabling No-Ops with Virtual %tech%"
   - "%verb%ed %tech% == #Awesomesauce"
   - "%verb%ing All of the Things with %tech%"
@@ -601,7 +629,7 @@
   - "While You Learn, I Earn: Making Shit Up and Blogging it as Fact"
   - "%quantifier% as Code: Ready for the Revolution?"
   - "A Complicated Way to do Something Unnecessary Which Does Not Work"
-  - "DevOps Culture: Don't Do it If it's Hard or Boring"
+  - "Culture: Don't Do it If it's Hard or Boring"
   - "Something People Have Done Since 198RAND9, but with a New Name"
   - "How We %verb%ed Our %service% with %tech% FTW!"
   - "Still Using %tech%? Allow Me to Enlighten You"
@@ -612,21 +640,19 @@
   - "EC2 at Scale: RAND40 instances and Counting!"
   - "DevOps and Objet Trouve: If it's Good Enough to be on Github, it's Good Enough for Production"
   - "%driver% Driven Development 101"
-  - "I'm All About That Rate: How to Screw Your Client By Building Shit They Don't Need"
+  - "I'm All About That Rate: Making Mo Chedda by Building Things No One Needs"
   - "Ticking the Boxes: You Can't Automate All of the Things if You Aren't Using All of the Things"
   - "How We Moved from Puppet to Chef to Ansible to Salt to CFEngine then Back to Ansible then Chef Again then Briefly Itamae then Packered AMIs then Masterless Puppet then Chef then a Different Chef Setup then Puppet"
   - "%verb%ing %tech% Makes for Awesome %driver%-driven Infrastructure"
   - "How a %tech%/%tech% Mash-Up Shaved RAND50 Seconds off Our Deployment Times"
   - "Containers: or How I Swapped a Simple Packaging Problem for a Complex Orchestration Problem"
-  - "Look at me Mummy, aren't I Clever?"
   - "%tech% Necromancy for Full-Stack Nirvana"
   - "Wow Very %tech%. So %tech%. Such %verb%ed"
-  - "I've Got Stickers!"
+  - "Stickers!"
   - "How We Made a Really Bad Version of Something Which Already Existed"
   - "We Started a Shitty Company"
   - "We Have a DevOps Consultancy and We Don't Know What We're Doing"
   - "Dockerizing Dockerized Docker with Docker for Docker Users"
-  - "DevOps Tough Guy Bitches about %tech% and Expects You to Admire Him"
   - "How we Spent RAND8 Months Building Our Own Version of a Service We Could Buy for $6/month"
   - "How we Spent RAND3 Years Building Our Own Version of a Service We Could Buy for $6/month"
   - "Thinly Disguised Sales Pitch"
@@ -636,13 +662,11 @@
   - "We Put %tech% in our %tech%: You Won't Believe What Happened Next"
   - "RAND10 Things Only a DevOps Understands"
   - "RAND10 %tech% Secrets %company% Don't Want You to Know"
-  - "Up Your Rate: You're an SRE Now!"
   - "When You Have More Github Repos than Users"
   - "Large-Scale %tech% Anti-Patterns Will %extreme% Your %service%"
   - "Bro, Do You Even %tech%?"
   - "Beautiful %tech% for Beautiful %service%"
   - "Real Heroes Use %tech%"
-  - "To Hear Us Talk, You Could almost Think this Stuff is Important"
   - "Our %adjective% Micro-Framework"
   - "A %tech% %adjective% %adjective% %adjective% Micro-Framework"
   - "%adjective% %tech% %adjective% Time-series Micro-Services for Dummies"
@@ -657,11 +681,15 @@
   - "%panacea% Will Fix Everything"
   - "I Have RAND18 Months' Experience But I Know Everything"
   - "We Were the First People to Ever Encounter any of these Problems"
-  - "I Worked for Google so I Know Everything"
+  - "I Work for Google, So I Know Everything"
+  - "I Used to Work for Google, So I Know Everything"
   - "Rewriting Most of Kubernetes 101"
   - "Like, Diversity and Stuff?"
-  - "How Everyone Else Where I Work Does Everything Wrong"
+  - "Everyone Else Does Everything Wrong"
   - "Validating Laziness by Declaring it 'Best Practice'"
+  - "We Rewrote Everything in Go for No Real Reason"
+  - "Our FNOPS Journey"
+  - "From FNOPS to FNOPS"
 
 #-------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the

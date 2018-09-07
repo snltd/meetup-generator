@@ -29,11 +29,18 @@ class MeetupGenerator
     @unused_templates ||= lib[:template].dup
     t = unused_templates.sample
     unused_templates.delete(t)
+    t.scan(/FNOPS/).each { |k| t = t.sub(k, something_ops) }
     t.scan(/%\w+%/).each { |k| t = t.sub(k, lib[k[1..-2].to_sym].sample) }
     t.scan(/RAND\d+/).each do |i|
       t = t.sub(i, rand(2..(i.sub(/RAND/, '').to_i)).to_s)
     end
     t
+  end
+
+  def something_ops
+    ret = ''
+    rand(2..4).times { ret.<< lib[:something_ops].sample }
+    ret + 'Ops'
   end
 
   def talks(count = 5)

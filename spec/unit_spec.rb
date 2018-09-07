@@ -3,14 +3,15 @@
 require 'minitest/autorun'
 require_relative '../lib/meetup-generator'
 
-THINGS = { food_style: %w[artisan],
-           food:       %w[flatbread],
-           first_name: %w[John],
-           last_name:  %w[Smith],
-           job_role:   %w[Neckbeard],
-           job_title:  ['Without Portfolio'],
-           tech:       %w[Ruby],
-           template:   ['RAND20 %tech% things'] }.freeze
+THINGS = { food_style:    %w[artisan],
+           food:          %w[flatbread],
+           first_name:    %w[John],
+           last_name:     %w[Smith],
+           job_role:      %w[Neckbeard],
+           job_title:     ['Without Portfolio'],
+           tech:          %w[Ruby],
+           something_ops: %w[Dev Test No],
+           template:      ['RAND20 %tech% things'] }.freeze
 
 class Giblets < MeetupGenerator
   def initialize; end
@@ -42,6 +43,11 @@ class GibletsTest < MiniTest::Test
     assert number <= 20
     assert_equal('Ruby', toks[1])
     assert_equal('things', toks[2])
+  end
+
+  def test_something_ops
+    assert m.something_ops.is_a?(String)
+    assert m.something_ops.end_with?('Ops')
   end
 
   def test_talker
