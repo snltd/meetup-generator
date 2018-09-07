@@ -29,7 +29,7 @@ class MeetupGenerator
     @unused_templates ||= lib[:template].dup
     t = unused_templates.sample
     unused_templates.delete(t)
-    t.gsub!(/FNOPS/, something_ops)
+    t = t.gsub(/FNOPS/, something_ops) if t.include?('FNOPS')
     t.scan(/%\w+%/).each { |k| t = t.sub(k, lib[k[1..-2].to_sym].sample) }
     t.scan(/RAND\d+/).each do |i|
       t = t.sub(i, rand(2..(i.sub(/RAND/, '').to_i)).to_s)

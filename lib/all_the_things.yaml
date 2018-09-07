@@ -73,6 +73,7 @@
   - Webscal
 
 :tech:
+  - AI
   - Akka
   - Ambassador Containers
   - angular.js
@@ -130,6 +131,7 @@
   - Dapper
   - Dart
   - Dataloop
+  - Deep Learning
   - Deis
   - Device Farm
   - Django
@@ -679,6 +681,8 @@
   - "How Everyone Else Where I Work Does Everything Wrong"
   - "Validating Laziness by Declaring it 'Best Practice'"
   - "We Rewrote Everything in Go for No Real Reason"
+  - "Our FNOPS Journey"
+  - "From FNOPS to FNOPS"
 
 #-------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
