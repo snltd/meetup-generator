@@ -40,6 +40,7 @@
   - Leverag
   - Measur
   - Megashard
+  - Mesh
   - Microservic
   - Monitor
   - Obfuscat
@@ -198,6 +199,7 @@
   - Heroku
   - Hubot
   - hyperconvergence
+  - Hystrix
   - IAM
   - Immutable Infrastructure
   - IndexedDB
@@ -205,6 +207,7 @@
   - IntelliJ
   - io.js
   - IO
+  - Istio
   - Jekyll
   - Jenkins
   - JRuby
@@ -225,6 +228,7 @@
   - Lambda
   - Lex
   - Lightsail
+  - Linkerd
   - Linux
   - Lisp
   - Logspout
@@ -238,6 +242,7 @@
   - Marathon-Consul
   - MEAN
   - Memchached
+  - Mesh
   - Mesos
   - Mesos-Consul
   - Mesosphere
@@ -249,6 +254,7 @@
   - Mountebank
   - Mutable Infrastructure
   - Nancy
+  - nanoservices
   - Nashorn
   - Neo4J
   - nginx
@@ -302,8 +308,10 @@
   - Sensu
   - Serf
   - Serverless
+  - Service Mesh
   - SES
   - Sidecar Containers
+  - sidecars
   - Sidekiq
   - SignalFX
   - Sinatra
@@ -570,10 +578,18 @@
   - "Google SREs"
   - Kubernetes
   - Serverless
+  - Service Mesh Architecture
   - SREs
   - The Blockchain
   - "The Next Version"
   - Unikernels
+
+:something_ops:
+  - Test
+  - 'No'
+  - Dev
+  - Sec
+  - Chat
 
 :template:
   - "Enabling No-Ops with Virtual %tech%"
@@ -662,6 +678,7 @@
   - "Like, Diversity and Stuff?"
   - "How Everyone Else Where I Work Does Everything Wrong"
   - "Validating Laziness by Declaring it 'Best Practice'"
+  - "We Rewrote Everything in Go for No Real Reason"
 
 #-------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
