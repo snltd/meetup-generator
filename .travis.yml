@@ -6,16 +6,11 @@ rvm:
 - 2.4.4
 - 2.5.1
 before_install: gem install bundler --no-rdoc --no-ri
-deploy:
-  provider: rubygems
-  api_key:
-    secure: YKceAbCY5cvk6G22YkgDzjs5jAW9rLTKYTkjE3anqvt3GXa5QX4+hOV0zDT6QOK+R/Dp9LY9KEC83C861pRrNk+QrbOcelo6B9vRmB+jWoYXCJybx2f0xWl1/x9XDmLNYLpgjX2hXQGj+pMaPu+cZehigk0arSXOF3aeBl3lS14=
-  gem: meetup-generator
-  on:
-    branch: master
-    repo: snltd/meetup-generator
-    ruby: 2.4.4
+script: bundle exec rake push
 notifications:
   email: false
   slack:
     secure: JYsO1HPdbDmYhD/T6Wc8bK+jXIJ5014hVIJo8vSdZO4zlnSyisNqDbVl8m68CqTmDbYSRsYye3lg8sfxA1e18tC5OTbv08GXEGP7Hwyg136VErqthSUGquiRIDQ5kcXit4pI+p+CUxB/uUUalQWlF4sEP9BebWAqzA6suPbn83E=
+env:
+  global:
+    secure: db/7+6hVzwaETIwXDqm8Sru8etZhqRQYO9Xr9MneAfpA7oBOZVzBK57ccb6COTcoQ10X+IO2Ig0QGJ4uAn44U9fy5jgBkDgLMIiwoRO4Qny4+wvkA5jl1i5bjLxbUDkNw84HPRrXeup67npJSw/Uo4tUzKuOPHVjEaJ+gXf7a8s=

@@ -24,3 +24,16 @@ task :build do
   `gem build #{ROOT + 'meetup-generator.gemspec'}`
 end
 
+desc 'push to Gemfury'
+task :push => :build do
+  if ENV['TRAVIS'] == 'true' && ENV['TRAVIS_BRANCH'] == 'master'
+    puts 'Pushing to Gemfury'
+    `curl --fail -vF package=@#{GEM} \
+     https://push.fury.io/#{ENV['GEMFURY_TOKEN']}/#{ENV['GEMFURY_USER']}`
+  elsif ENV['TRAVIS'] == 'true'
+    puts 'Not on master so not pushing.'
+  else
+    abort 'Only Travis can push. You will have to upload manually.'
+  end
+end
+
