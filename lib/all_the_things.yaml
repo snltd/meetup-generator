@@ -4,6 +4,7 @@
 #
 :verb:
   - Aggregat
+  - Ambassador
   - API-
   - Automat
   - Autoscal
@@ -64,6 +65,7 @@
   - Terraform
   - Transform
   - Transpil
+  - Trac
   - Trend
   - Tun
   - Upscal
@@ -134,6 +136,8 @@
   - Dapper
   - Dart
   - Dataloop
+  - Data Pond
+  - Data Lake
   - Deep Learning
   - Deis
   - Device Farm
@@ -155,6 +159,7 @@
   - Elixir
   - ember.js
   - EMR
+  - Envoy
   - etcd
   - ELK
   - Erlang
@@ -162,6 +167,7 @@
   - Fabric
   - Fabric8
   - Filebeat
+  - Finagle
   - Flabbergast
   - Flapjack
   - Fleet
@@ -179,6 +185,7 @@
   - Gitflow
   - Github
   - Glacier
+  - Gloo
   - Glue
   - Glueflakes
   - Go
@@ -191,7 +198,7 @@
   - Graylog2
   - Greengrass
   - Groovy
-  - GRPC
+  - gRPC
   - Grunt
   - Gulp
   - Habitat
@@ -214,6 +221,7 @@
   - io.js
   - IO
   - Istio
+  - Jaeger
   - Jekyll
   - Jenkins
   - JRuby
@@ -234,6 +242,7 @@
   - Lambda
   - Lex
   - Lightsail
+  - LightStep
   - Linkerd
   - Linux
   - Lisp
@@ -283,6 +292,7 @@
   - Project Atomic
   - Prometheus
   - Protobuf
+  - Proxygen
   - Puppet
   - Puppet/Chef
   - Python
@@ -324,10 +334,13 @@
   - SignalFX
   - Sinatra
   - SmartOS
+  - SmartStack
+  - SNI
   - Snowball
   - SNS
   - Solr
   - Spread
+  - Squash
   - SQS
   - statsd
   - 'Step Functions'
@@ -352,6 +365,7 @@
   - unikernel
   - Vagrant
   - Velocity
+  - Wangle
   - Wavefront
   - Weave
   - X-Ray
@@ -362,6 +376,7 @@
   - Zappa
   - ZeroMQ
   - ZFS
+  - Zipkin
   - Zookeeper
 
 :service:
@@ -562,9 +577,11 @@
   - Batteries-Included
   - Beautiful
   - Cloud-Agnostic
+  - Cloud-Native
   - Craft
   - Community-Driven
   - Community-Focused
+  - Declarative
   - End-to-End
   - Hand-Crafted
   - Immutable
@@ -582,19 +599,44 @@
   - Soup-to-Nuts
 
 :panacea:
+  - AI
   - Containers
+  - Deep Learning
   - DevOps
   - DevSecOps
   - Docker
   - Golang
   - "Google SREs"
   - Kubernetes
+  - Machine Learning
   - Serverless
   - Service Mesh Architecture
   - SREs
   - The Blockchain
   - "The Next Version"
   - Unikernels
+
+:language:
+  - "A Language You Probably Haven't Heard Of"
+  - "C++ 11"
+  - "Python 3"
+  - Clojure
+  - Coffeescript
+  - Crystal
+  - Elixir
+  - Elm
+  - Erlang
+  - Go
+  - Groovy
+  - Haskell
+  - Julia
+  - Kotlin
+  - OCaml
+  - Powershell
+  - Racket
+  - Rust
+  - Scala
+  - Typescript
 
 :something_ops:
   - Test
@@ -691,6 +733,11 @@
   - "We Rewrote Everything in Go for No Real Reason"
   - "Our FNOPS Journey"
   - "From FNOPS to FNOPS"
+  - "The Answer is More Code, What's the Question?"
+  - "We Rewrote Everything in %language% and Now Nothing Works"
+  - "We Rewrote Everything in %language% for No Real Reason"
+  - "You Still Use %language%? For Real?"
+  - "Bearded Manchild"
 
 #-------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
