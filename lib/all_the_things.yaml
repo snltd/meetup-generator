@@ -639,11 +639,12 @@
   - Typescript
 
 :something_ops:
-  - Test
-  - 'No'
-  - Dev
-  - Sec
   - Chat
+  - Dev
+  - Git
+  - 'No'
+  - Sec
+  - Test
 
 :template:
   - "Regurgited Half-Understood Blog Post"
@@ -730,7 +731,6 @@
   - "Like, Diversity and Stuff?"
   - "Everyone Else Does Everything Wrong"
   - "Validating Laziness by Declaring it 'Best Practice'"
-  - "We Rewrote Everything in Go for No Real Reason"
   - "Our FNOPS Journey"
   - "From FNOPS to FNOPS"
   - "The Answer is More Code, What's the Question?"
