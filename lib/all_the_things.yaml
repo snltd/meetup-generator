@@ -82,15 +82,18 @@
   - Ansible
   - API Gateway
   - APIs
+  - ArangoDB
   - Athena
   - AWS
   - bacon.js
   - Berkshelf
+  - BigChain
   - BigTable
   - Blockbridge
   - Boot2Docker
   - Bootstrap
   - Borg
+  - Bosh
   - Boto
   - Bower
   - Burp
@@ -104,6 +107,8 @@
   - CDN
   - cgroups
   - CFEngine
+  - Chaos Toolkit
+    ChaosKube
   - Chef
   - Chef/Puppet
   - CI/CD
@@ -129,6 +134,7 @@
   - CouchDB
   - Couchbase
   - CoreOS
+  - Crossplane
   - Crystal
   - Cucumber
   - "curl | sudo bash"
@@ -148,7 +154,10 @@
   - Dokku
   - Doozer
   - Dropwizard
+  - Druid
+  - Dubbo
   - DynamoDB
+  - Dynatrace
   - EC2
   - ECS
   - EFS
@@ -171,6 +180,7 @@
   - Flabbergast
   - Flapjack
   - Fleet
+  - Flink
   - Flocker
   - Flume
   - fluentd
@@ -179,6 +189,7 @@
   - Foodcritic
   - FoundationDB
   - functional programming
+  - Galactic Fog
   - Ganglia
   - GCE
   - Git
@@ -224,6 +235,7 @@
   - Jaeger
   - Jekyll
   - Jenkins
+  - JHipster
   - JRuby
   - JSON
   - Juju
@@ -236,11 +248,14 @@
   - knife Plugins
   - Kube
   - Kubeform
+  - Kubeless
   - Kubelet
   - Kubernetes
   - KubeSpray
+  - Kyma
   - Lambda
   - Lex
+  - Lightbend
   - Lightsail
   - LightStep
   - Linkerd
@@ -248,6 +263,7 @@
   - Lisp
   - Logspout
   - Logstash
+  - LunchBadger
   - LXC
   - LXD
   - MAAS
@@ -255,6 +271,7 @@
   - ManageIQ
   - Marathon
   - Marathon-Consul
+  - MariaDB
   - MEAN
   - Memchached
   - Mesh
@@ -281,21 +298,29 @@
   - NewRelic
   - NoOps
   - NoSQL
+  - Nuclio
   - NuGet
   - OCaml
+  - OpenFaaS
   - OpenShift
+  - OpenTracing
+  - OpenWhisk
   - OpsWorks
+  - PaaSta
   - Packer
   - Packetbeat
   - Perl
   - Phoenix
+  - Powerful Seal
   - Project Atomic
   - Prometheus
   - Protobuf
   - Proxygen
+  - Pulumi
   - Puppet
   - Puppet/Chef
   - Python
+  - Qubole
   - R
   - RabbitMQ
   - Racket
@@ -305,11 +330,13 @@
   - ReactJS
   - Redis
   - Redshift
+  - Replex
   - Restify
   - RethinkDB
   - Riak
   - Rightscale
   - Rocket
+  - Rook
   - rkt
   - RSpec
   - Ruby
@@ -318,9 +345,11 @@
   - Salt
   - SaltStack
   - Scala
+  - Scalingo
   - Scalr
   - Scheme
   - Scrum
+  - Scylla
   - SDN
   - Sensei
   - Sensu
@@ -333,6 +362,7 @@
   - Sidekiq
   - SignalFX
   - Sinatra
+  - Skaffold
   - SmartOS
   - SmartStack
   - SNI
@@ -342,6 +372,7 @@
   - Spread
   - Squash
   - SQS
+  - StackStorm
   - statsd
   - 'Step Functions'
   - Storage Gateway
@@ -351,6 +382,7 @@
   - Sysdig
   - systemd
   - Telegraf
+  - Telepresence
   - Terraform
   - Test Kitchen
   - Thrift
@@ -358,8 +390,11 @@
   - Timeseries Database
   - TokyoTyrant
   - Toxiproxy
+  - Traefik
   - Travis CI
+  - Trickster
   - Triton
+  - Tsuru
   - Ubernetes
   - Ubuntu
   - unikernel
@@ -425,6 +460,7 @@
   - Burn Rate
   - Compliance
   - Container Antipatterns
+  - Customer Empathy
   - Density
   - Deployables
   - DevOps
@@ -445,6 +481,7 @@
   - Security Sandwich
   - Seed Capital
   - Synergy
+  - TCO
   - Threat Model
   - Uptime
   - VC Appeal
