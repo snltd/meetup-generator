@@ -10,6 +10,7 @@
   - Autoscal
   - AWS-
   - Brogramm
+  - Buildah
   - Cheff
   - Cloudstack
   - Cod
@@ -18,6 +19,8 @@
   - Continuously Deliver
   - Continuously Deploy
   - Containeriz
+  - CRI-O
+  - Crictl
   - De-Risk
   - DDOS
   - Detun
@@ -50,6 +53,7 @@
   - Orchestrat
   - Pipelin
   - Planetscal
+  - Podman
   - Puppetiz
   - Re-cultur
   - Recod
@@ -497,6 +501,7 @@
 
 :food_style:
   - artisan
+  - artisanal
   - Asian
   - barrista
   - biodynamic
@@ -507,13 +512,17 @@
   - fairtrade
   - "farmers' market"
   - fusion
+  - gourmet
+  - guest-curated
   - heirloom
   - heritage
   - keg-aged
   - Lebanese
   - microbrewery
   - Scandinavian
+  - seagan
   - seasonal
+  - vegan
 
 :food:
   - ales
@@ -526,6 +535,7 @@
   - ciders
   - chutneys
   - coffee
+  - cronuts
   - falafel
   - gins
   - grazing boards
@@ -535,8 +545,12 @@
   - micro-pizza
   - nonsense
   - olives
+  - pickles
   - pizza
   - quinoa
+  - smoothie bowls
+  - street food
+  - tapas
 
 :skill_level:
   - Advanced User
@@ -656,7 +670,6 @@
 :language:
   - "A Language You Probably Haven't Heard Of"
   - "C++ 11"
-  - "Python 3"
   - Clojure
   - Coffeescript
   - Crystal
@@ -670,6 +683,7 @@
   - Kotlin
   - OCaml
   - Powershell
+  - "Python 3"
   - Racket
   - Rust
   - Scala
