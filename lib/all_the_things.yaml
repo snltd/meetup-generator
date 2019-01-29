@@ -92,6 +92,7 @@
   - bacon.js
   - Berkshelf
   - BigChain
+  - BigQuery
   - BigTable
   - Blockbridge
   - Boot2Docker
@@ -106,9 +107,12 @@
   - Burp Infiltrator
   - Burp Intruder
   - Burp Scanner
+  - cAdvisor
   - Capistrano
   - Cassandra
   - CDN
+  - Ceph
+  - Cernan
   - cgroups
   - CFEngine
   - Chaos Toolkit
@@ -135,6 +139,7 @@
   - Cognito
   - Coherence
   - Consul
+  - Convox
   - CouchDB
   - Couchbase
   - CoreOS
@@ -181,6 +186,7 @@
   - Fabric8
   - Filebeat
   - Finagle
+  - Firebase
   - Flabbergast
   - Flapjack
   - Fleet
@@ -230,6 +236,7 @@
   - Hystrix
   - IAM
   - Immutable Infrastructure
+  - Impala
   - IndexedDB
   - InfluxDB
   - IntelliJ
@@ -250,18 +257,21 @@
   - Kinesis
   - kitchen-docker
   - knife Plugins
+  - Kong
   - Kube
   - Kubeform
   - Kubeless
   - Kubelet
   - Kubernetes
   - KubeSpray
+  - Kudu
   - Kyma
   - Lambda
   - Lex
   - Lightbend
   - Lightsail
   - LightStep
+  - Lighttpd
   - Linkerd
   - Linux
   - Lisp
@@ -283,6 +293,7 @@
   - Mesos-Consul
   - Mesosphere
   - Metricbeat
+  - Micrometer
   - microservices
   - Minikube
   - monads
@@ -305,6 +316,7 @@
   - Nuclio
   - NuGet
   - OCaml
+  - Okta
   - OpenFaaS
   - OpenShift
   - OpenTracing
@@ -313,6 +325,7 @@
   - PaaSta
   - Packer
   - Packetbeat
+  - Papertrail
   - Perl
   - Phoenix
   - Powerful Seal
@@ -320,6 +333,7 @@
   - Prometheus
   - Protobuf
   - Proxygen
+  - Pub/Sub
   - Pulumi
   - Puppet
   - Puppet/Chef
@@ -340,10 +354,12 @@
   - Riak
   - Rightscale
   - Rocket
+  - Rollbar
   - Rook
   - rkt
   - RSpec
   - Ruby
+  - Runscope
   - Rust
   - S3
   - Salt
@@ -403,10 +419,12 @@
   - Ubuntu
   - unikernel
   - Vagrant
+  - Vault
   - Velocity
   - Wangle
   - Wavefront
   - Weave
+  - WildFly
   - X-Ray
   - YAML
   - YAML front-matter
