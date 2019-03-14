@@ -24,7 +24,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = %w(lib)
 
   gem.add_runtime_dependency 'sinatra', '~>2.0', '>= 2.0.1'
-  gem.add_runtime_dependency 'slim', '~> 3.0', '>= 3.0.0'
+  gem.add_runtime_dependency 'slim', '>= 3.0.0', '< 5'
   gem.add_runtime_dependency 'puma', '~> 3.11', '>= 3.11.0'
 
   gem.add_development_dependency 'bundler', '~> 1.17'
