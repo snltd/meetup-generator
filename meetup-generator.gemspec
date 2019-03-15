@@ -30,7 +30,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'bundler', '~> 1.17'
   gem.add_development_dependency 'minitest', '~> 5.11', '>= 5.11.0'
   gem.add_development_dependency 'nokogiri', '~> 1.8', '>= 1.8.0'
-  gem.add_development_dependency 'rack-test', '~> 0.8', '>= 0.8.0'
+  gem.add_development_dependency 'rack-test', '>= 0.8.0', '~> 1.1'
   gem.add_development_dependency 'rake', '~> 12.3', '>= 12.3.0'
   gem.add_development_dependency 'rubocop', '~> 0.52', '>= 0.52.0'
 
