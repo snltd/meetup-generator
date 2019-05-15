@@ -8,7 +8,7 @@ bin/meetup-generator.rb
 config.ru
 lib/all_the_things.yaml
 lib/locator.rb
-lib/meetup-generator.rb
+lib/meetup_generator.rb
 lib/version.rb
 meetup-generator.gemspec
 package
@@ -20,6 +20,6 @@ public/favicon.ico
 public/zxspectr.woff
 spec
 spec/acceptance_spec.rb
-spec/unit_spec.rb
+spec/meetup_generator_spec.rb
 views
 views/default.slim
