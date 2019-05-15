@@ -15,6 +15,40 @@ $ curl -s localhost:4567/api/talk | json
 }
 ```
 
-Includes SMF manifest for your SunOS pleasure.
+## Building
 
-Pull requests welcome.
+Build a gem with
+
+```sh
+$ rake build
+```
+
+## Running
+
+Install from Rubygems
+
+```
+$ gem install meetup-generator
+```
+
+then run with
+
+```
+$ rackup $(locate_meetup-generator)
+```
+
+Run from a git checkout
+
+```
+$ bin/meetup-generator.rb
+```
+
+Install as a Solaris/Illumos service
+
+```
+$ pfexec svccfg import package/meetup-generator.xml
+```
+
+Contributing
+
+Fork it, raise a PR.
