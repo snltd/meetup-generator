@@ -4,7 +4,6 @@ require 'pathname'
 require 'rake/testtask'
 require 'rubocop/rake_task'
 require 'bundler/gem_tasks'
-require_relative 'lib/build_helpers'
 
 ROOT = Pathname(__FILE__).dirname
 
