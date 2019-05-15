@@ -81,7 +81,7 @@ class MeetupGenerator
 
   def something_ops
     rand(2..4).times.with_object(%w[Ops]) do |_i, a|
-      a.prepend(lib[:something_ops].sample)
+      a.unshift(lib[:something_ops].sample)
     end.join
   end
 
