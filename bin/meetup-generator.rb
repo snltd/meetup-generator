@@ -7,7 +7,6 @@ require 'pathname'
 require_relative '../lib/meetup_generator'
 
 ROOT = Pathname.new(__FILE__).dirname.parent
-LIB  = ROOT + 'lib'
 MG   = MeetupGenerator.new
 
 # The Meetup Generator. Works is done in lib/meetup_generator.rb
