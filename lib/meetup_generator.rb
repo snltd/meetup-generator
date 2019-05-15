@@ -64,8 +64,7 @@ class MeetupGenerator
   end
 
   def company
-    format('%<word>s.io',
-           word: words.sample.sub(/([^aeiou])er$/, '\\1r').downcase)
+    format('%<word>s.io', word: words.sample.sub(/([^aeiou])er$/, '\\1r'))
   end
 
   def something_ops
