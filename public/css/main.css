@@ -11,9 +11,13 @@ body {
   line-height: 120%;
 }
 
-.tperson {
+.indent {
   font-size: small;
   margin-left: 12em;
+}
+
+.indent a {
+  color: #0f0;
 }
 
 ul {
@@ -27,7 +31,6 @@ li {
 }
 
 .ttitle {
-  /*font-style: italic;*/
   font-weight: bold;
   background-color: #0ff;
   color: #000;

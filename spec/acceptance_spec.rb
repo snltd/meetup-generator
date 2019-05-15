@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
-#
-# Acceptance tests for the meetup generator. Yeah, I know.
-#
+# frozen_string_literal: true
+
 %w[minitest minitest/unit minitest/autorun rack/test pathname json
    yaml cgi nokogiri].each { |f| require f }
 
@@ -9,6 +8,8 @@ MGROOT = Pathname.new(__FILE__).realpath.dirname.parent
 
 OUTER_APP = Rack::Builder.parse_file((MGROOT + 'config.ru').to_s).first
 
+# Acceptance tests for the meetup generator. Yeah, I know.
+#
 class TestApp < MiniTest::Test
   attr_reader :things
   include Rack::Test::Methods
@@ -22,8 +23,8 @@ class TestApp < MiniTest::Test
     OUTER_APP
   end
 
-  # Load the page 1000 times and make sure no talk titles occur
-  # twice
+  # Load the page a thousand times and make sure no talk titles
+  # occur twice
   #
   def test_no_repeats
     1000.times do
@@ -33,52 +34,77 @@ class TestApp < MiniTest::Test
     end
   end
 
+  # Get all of the templates used to generate talk titles, and
+  # re-run the test until we've seen them all. Then we know no
+  # template causes a crash. That's good enough.
+  #
   def test_default
-    #
-    # Get all of the templates used to generate talk titles, and re-run
-    # the test until we've seen them all. Then we know no template
-    # causes a crash. That's good enough.
-    #
     templates = things[:template].map do |t|
       escaped = Regexp.escape(CGI.escapeHTML(t))
-      matcher = escaped.gsub(/%\w+%/, '[\w\-]+').gsub(/RAND\d+/, '\d+').
-                        gsub(/FNOPS/, '\w+')
+      matcher = escaped.gsub(/%\w+%/, '[\w\-]+').gsub(/RAND\d+/, '\d+')
+                       .gsub(/FNOPS/, '\w+')
       Regexp.new('^.*ttitle">' + matcher + '</span>.*$')
     end
 
     until templates.empty?
       get '/'
+      assert_equal('text/html;charset=utf-8',
+                   last_response.header['Content-Type'])
+      last_response.ok?
+      resp = last_response.body
+      assert_match(/The code./, resp)
+      assert_match(/DevOps Meetup/, resp)
+      templates.each { |t| templates.delete(t) if resp =~ t }
+    end
+  end
+
+  def test_api_talker
+    get format('/api/talker')
+    assert last_response.ok?
+    assert_instance_of(String, last_response.body)
+    assert_match(/^\"\w+ \w+\"$/, last_response.body)
+    assert last_response.header['Content-Type'] == 'application/json'
+  end
+
+  def test_api_company
+    get format('/api/company')
+    assert last_response.ok?
+    assert_instance_of(String, last_response.body)
+    assert_match(/^\"\w+.io\"$/, last_response.body)
+    assert last_response.header['Content-Type'] == 'application/json'
+  end
+
+  def test_api_misc
+    %w[title role refreshment location date].each do |word|
+      get format('/api/%<word>s', word: word)
       assert last_response.ok?
-      assert last_response.header['Content-Type'] == 'text/html;charset=utf-8'
-      x = last_response.body
-      assert_match(/The code./, x)
-      assert_match(/DevOps Meetup/, x)
-      templates.each { |t| templates.delete(t) if x.match(t) }
+      assert_instance_of(String, last_response.body)
+      assert last_response.header['Content-Type'] == 'application/json'
     end
   end
 
   def test_api_talk
-    get '/api/talk'
+    get format('/api/talk')
     assert last_response.ok?
-    assert last_response.header['Content-Type'] == 'application/json'
-    resp = last_response.body
-    refute_empty resp
-    j = JSON.parse(resp)
-    fields = %w[talk talker role company]
-    assert_equal(j.keys, fields)
-    fields.each { |f| refute_empty j[f] }
-    name = j['talker'].split
-    assert_includes(things[:first_name], name.first)
-    assert_includes(things[:last_name], name.last)
-    assert j['company'].end_with?('.io')
+    assert_instance_of(String, last_response.body)
+    as_obj = JSON.parse(last_response.body, symbolize_names: true)
+    assert_equal(%i[title talker role company], as_obj.keys)
   end
 
-  def test_api_misc
-    %w[title talker company role refreshment].each do |word|
-      get format('/api/%s', word)
-      assert last_response.ok?
-      assert last_response.header['Content-Type'] == 'application/json'
+  def test_api_agenda
+    get format('/api/agenda')
+    assert last_response.ok?
+    assert_instance_of(String, last_response.body)
+    agenda = JSON.parse(last_response.body, symbolize_names: true)
+    assert_equal(%i[date location refreshment talks], agenda.keys.sort)
+
+    agenda[:talks].each do |t|
+      assert_equal(%i[title talker role company], t.keys)
     end
+
+    assert_instance_of(String, agenda[:refreshment])
+    assert_instance_of(String, agenda[:date])
+    assert_instance_of(String, agenda[:location])
   end
 
   def test_api_404
