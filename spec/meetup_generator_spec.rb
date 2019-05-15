@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require 'pathname'
 require 'minitest/autorun'
 require_relative '../lib/meetup_generator'
 
@@ -13,6 +14,33 @@ THINGS = { food_style: %w[artisan],
            tech: %w[Ruby],
            something_ops: %w[Dev Test No],
            template: ['RAND20 %tech% things'] }.freeze
+
+class TestMeetupGenerator < Minitest::Test
+  attr_reader :mg
+
+  def setup
+    @mg = MeetupGenerator.new
+  end
+
+  def test_words
+    assert_instance_of(Array, mg.words)
+    assert mg.words.size > 19_000
+    assert_includes(mg.words, 'woebegone')
+  end
+
+  def test_lib
+    assert_instance_of(Hash, mg.lib)
+    assert_includes(mg.lib[:tech], 'SmartOS')
+
+    %i[verb tech service extreme quantifier time food_style food
+       skill_level is_not company driver adjective panacea language
+       something_ops template first_name last_name job_role
+       job_title].each do |k|
+         assert_includes(mg.lib.keys, k)
+         assert_instance_of(Array, mg.lib[k])
+       end
+  end
+end
 
 # We don't want the class properly initialized
 #
@@ -66,24 +94,24 @@ class GibletsTest < MiniTest::Test
   end
 
   def test_talker
-    assert_equal(m.talker, 'John Smith')
+    assert_equal('John Smith', m.talker)
   end
 
   def test_role
-    assert_equal(m.role, 'Neckbeard Without Portfolio')
+    assert_equal('Neckbeard Without Portfolio', m.role)
   end
 
   def test_company_no_e
-    assert_equal(m.company, 'leadswingr.io')
+    assert_equal('leadswingr.io', m.company)
   end
 
   def test_company
-    m.instance_variable_set(:@words, %w[Cabbage])
-    assert_equal(m.company, 'cabbage.io')
+    m.instance_variable_set(:@words, %w[cabbage])
+    assert_equal('cabbage.io', m.company)
   end
 
   def test_refreshment
-    assert_equal(m.refreshment, 'artisan flatbread')
+    assert_equal('artisan flatbread', m.refreshment)
   end
 
   def test_replace_things
