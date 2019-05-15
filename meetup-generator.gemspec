@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
 require 'date'
-require 'English'
-
-require_relative 'lib/build_helpers'
+require_relative 'lib/version'
 
 Gem::Specification.new do |gem|
   gem.name          = 'meetup-generator'
-  gem.version       = gem_version
+  gem.version       = VERSION
   gem.date          = Date.today.to_s
 
   gem.summary       = 'Stupid fatuous random string generatpr'
