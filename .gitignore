@@ -2,4 +2,3 @@
 *.swp
 .bundle/
 vendor/
-Gemfile.lock
