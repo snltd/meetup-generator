@@ -14,7 +14,7 @@ deploy:
   on:
     branch: master
     repo: snltd/meetup-generator
-    ruby: 2.5.3
+    ruby: 2.5.5
 notifications:
   email: false
   slack:
