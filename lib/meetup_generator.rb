@@ -1,30 +1,19 @@
 # frozen_string_literal: true
 
-require 'json'
 require 'yaml'
+require 'date'
+require 'zlib'
+
+LIB = Pathname.new(__dir__)
 
 # Everything needed for a meetup generator
 #
 class MeetupGenerator
-  attr_reader :words, :lib, :unused_templates
+  attr_reader :words, :lib
 
   def initialize
-    grep, dict = find_unix_stuff
-    @words     = `#{grep} "^[a-z]*$" #{dict}`.split("\n")
-    @lib       = YAML.load_file(ROOT + 'lib' + 'all_the_things.yaml')
-  end
-
-  def find_unix_stuff
-    case RUBY_PLATFORM
-    when /solaris/
-      %w[/bin/grep /usr/share/lib/dict/words]
-    when /linux/
-      %w[/bin/grep /usr/share/dict/words]
-    when /darwin/
-      %w[/usr/bin/grep /usr/share/dict/words]
-    else
-      abort "unsupported platform: #{RUBY_PLATFORM}"
-    end
+    @words = Zlib::GzipReader.open(LIB + 'words.gz').readlines.map(&:strip)
+    @lib   = YAML.load_file(LIB + 'all_the_things.yaml')
   end
 
   # @param num [Integer] how many talks you want

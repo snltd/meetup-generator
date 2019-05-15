@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require 'pathname'
 require 'minitest/autorun'
 require_relative '../lib/meetup_generator'
 
@@ -13,6 +14,33 @@ THINGS = { food_style: %w[artisan],
            tech: %w[Ruby],
            something_ops: %w[Dev Test No],
            template: ['RAND20 %tech% things'] }.freeze
+
+class TestMeetupGenerator < Minitest::Test
+  attr_reader :mg
+
+  def setup
+    @mg = MeetupGenerator.new
+  end
+
+  def test_words
+    assert_instance_of(Array, mg.words)
+    assert mg.words.size > 20_000
+    assert_includes(mg.words, 'woebegone')
+  end
+
+  def test_lib
+    assert_instance_of(Hash, mg.lib)
+    assert_includes(mg.lib[:tech], 'SmartOS')
+
+    %i[verb tech service extreme quantifier time food_style food
+       skill_level is_not company driver adjective panacea language
+       something_ops template first_name last_name job_role
+       job_title].each do |k|
+         assert_includes(mg.lib.keys, k)
+         assert_instance_of(Array, mg.lib[k])
+       end
+  end
+end
 
 # We don't want the class properly initialized
 #
