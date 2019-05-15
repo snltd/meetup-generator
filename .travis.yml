@@ -12,7 +12,7 @@ deploy:
     secure: YKceAbCY5cvk6G22YkgDzjs5jAW9rLTKYTkjE3anqvt3GXa5QX4+hOV0zDT6QOK+R/Dp9LY9KEC83C861pRrNk+QrbOcelo6B9vRmB+jWoYXCJybx2f0xWl1/x9XDmLNYLpgjX2hXQGj+pMaPu+cZehigk0arSXOF3aeBl3lS14=
   gem: meetup-generator
   on:
-    branch: master
+    tags: true
     repo: snltd/meetup-generator
     ruby: 2.5.5
 notifications:
