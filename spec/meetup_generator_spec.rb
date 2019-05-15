@@ -24,7 +24,7 @@ class TestMeetupGenerator < Minitest::Test
 
   def test_words
     assert_instance_of(Array, mg.words)
-    assert mg.words.size > 20_000
+    assert mg.words.size > 19_000
     assert_includes(mg.words, 'woebegone')
   end
 
@@ -94,24 +94,24 @@ class GibletsTest < MiniTest::Test
   end
 
   def test_talker
-    assert_equal(m.talker, 'John Smith')
+    assert_equal('John Smith', m.talker)
   end
 
   def test_role
-    assert_equal(m.role, 'Neckbeard Without Portfolio')
+    assert_equal('Neckbeard Without Portfolio', m.role)
   end
 
   def test_company_no_e
-    assert_equal(m.company, 'leadswingr.io')
+    assert_equal('leadswingr.io', m.company)
   end
 
   def test_company
-    m.instance_variable_set(:@words, %w[Cabbage])
-    assert_equal(m.company, 'cabbage.io')
+    m.instance_variable_set(:@words, %w[cabbage])
+    assert_equal('cabbage.io', m.company)
   end
 
   def test_refreshment
-    assert_equal(m.refreshment, 'artisan flatbread')
+    assert_equal('artisan flatbread', m.refreshment)
   end
 
   def test_replace_things
