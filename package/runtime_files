@@ -24,3 +24,4 @@ spec/acceptance_spec.rb
 spec/meetup_generator_spec.rb
 views
 views/default.slim
+views/partial_talk.slim
