@@ -101,33 +101,35 @@
   - Bosh
   - Boto
   - Bower
+  - Brigade
+  - Buildkite
   - Burp
-  - Burpsuite
   - Burp Clickbandit
   - Burp Infiltrator
   - Burp Intruder
   - Burp Scanner
+  - Burpsuite
   - cAdvisor
   - Capistrano
   - Cassandra
   - CDN
   - Ceph
   - Cernan
-  - cgroups
   - CFEngine
-  - Chaos Toolkit
+  - cgroups
     ChaosKube
+  - Chaos Toolkit
   - Chef
   - Chef/Puppet
   - CI/CD
   - CircleCI
   - Clojure
-  - Cloud Foundry
   - Cloud9
   - CloudFormation
+  - Cloud Foundry
   - Cloudfront
-  - Cloudstack
   - CloudSearch
+  - Cloudstack
   - CloudTrail
   - Clusterpoint
   - CodeBuild
@@ -140,9 +142,11 @@
   - Coherence
   - Consul
   - Convox
-  - CouchDB
-  - Couchbase
+  - CoreDNS
   - CoreOS
+  - Couchbase
+  - CouchDB
+  - CRI-O
   - Crossplane
   - Crystal
   - Cucumber
@@ -150,9 +154,9 @@
   - DalmatinerDB
   - Dapper
   - Dart
+  - Data Lake
   - Dataloop
   - Data Pond
-  - Data Lake
   - Deep Learning
   - Deis
   - Device Farm
@@ -162,6 +166,7 @@
   - Dockersh
   - Dokku
   - Doozer
+  - Draft
   - Dropwizard
   - Druid
   - Dubbo
@@ -169,18 +174,18 @@
   - Dynatrace
   - EC2
   - ECS
-  - EFS
   - "Edge Rabbit"
-  - "Elastic Beanstalk"
+  - EFS
   - Elasticache
+  - "Elastic Beanstalk"
   - Elasticsearch
   - Elixir
+  - ELK
   - ember.js
   - EMR
   - Envoy
-  - etcd
-  - ELK
   - Erlang
+  - etcd
   - Express
   - Fabric
   - Fabric8
@@ -192,8 +197,8 @@
   - Fleet
   - Flink
   - Flocker
-  - Flume
   - fluentd
+  - Flume
   - Flynn.io
   - Fog
   - Foodcritic
@@ -225,13 +230,15 @@
   - Gulp
   - Habitat
   - Hadoop
-  - Hazelcast
+  - Harbor
   - Haskell
+  - Hazelcast
   - HBase
   - Heapster
   - Heartbeat
   - Helm
   - Heroku
+  - Heron
   - Hubot
   - hyperconvergence
   - Hystrix
@@ -239,10 +246,12 @@
   - Immutable Infrastructure
   - Impala
   - IndexedDB
+  - Infinispan
   - InfluxDB
   - IntelliJ
-  - io.js
   - IO
+  - io.js
+  - IronDB
   - Istio
   - Jaeger
   - Jekyll
@@ -251,20 +260,36 @@
   - JRuby
   - JSON
   - Juju
+  - k3s
   - Kafka
   - KairosDB
   - Kanban
+  - Kaniko
+  - Kiali
   - Kibana
+  - Kind
   - Kinesis
   - kitchen-docker
   - knife Plugins
+  - Knox
   - Kong
+  - Kops
+  - KrakenD
   - Kube
+  - Kube-Bench
+  - KubeEdge
   - Kubeform
+  - Kube Hunter
   - Kubeless
   - Kubelet
+  - KubeOne
+  - Kubermatic
   - Kubernetes
+  - kube-spawn
   - KubeSpray
+  - Kubic
+  - Kubicorn
+  - kublr
   - Kudu
   - Kyma
   - Lambda
@@ -276,6 +301,7 @@
   - Linkerd
   - Linux
   - Lisp
+  - Litmus
   - Logspout
   - Logstash
   - LunchBadger
@@ -289,6 +315,7 @@
   - MariaDB
   - MEAN
   - Memchached
+  - MemSQL
   - Mesh
   - Mesos
   - Mesos-Consul
@@ -300,6 +327,7 @@
   - monads
   - MongoDB
   - monorepo
+  - MooseFS
   - Mountebank
   - Mutable Infrastructure
   - Nancy
@@ -307,15 +335,18 @@
   - Nashorn
   - Neo4J
   - Neptune
+  - NewRelic
   - nginx
+  - NiFi
   - node.js
   - Nomad
-  - npm
-  - NewRelic
+  - Noms
   - NoOps
   - NoSQL
+  - npm
   - Nuclio
   - NuGet
+  - NuoDB
   - OCaml
   - Okta
   - OpenFaaS
@@ -323,12 +354,14 @@
   - OpenTracing
   - OpenWhisk
   - OpsWorks
+  - OrientDB
   - PaaSta
   - Packer
   - Packetbeat
   - Papertrail
   - Perl
   - Phoenix
+  - Pilosa
   - Powerful Seal
   - Project Atomic
   - Prometheus
@@ -355,10 +388,10 @@
   - RethinkDB
   - Riak
   - Rightscale
+  - rkt
   - Rocket
   - Rollbar
   - Rook
-  - rkt
   - RSpec
   - Ruby
   - Runscope
@@ -391,9 +424,11 @@
   - Snowball
   - SNS
   - Solr
+  - SPIFFE
+  - Spire
   - Spread
-  - Squash
   - SQS
+  - Squash
   - StackStorm
   - statsd
   - 'Step Functions'
@@ -401,14 +436,19 @@
   - Sublime Text
   - Supergiant
   - Swarm
+  - Symplegma
   - Sysdig
   - systemd
   - Telegraf
+  - Teleport
   - Telepresence
   - Terraform
   - Test Kitchen
+  - Thanos
   - Thrift
   - TICK stack
+  - TiDB
+  - TiKV
   - Timeseries Database
   - TokyoTyrant
   - Toxiproxy
@@ -417,12 +457,15 @@
   - Trickster
   - Triton
   - Tsuru
+  - TUF
+  - Tyk
   - Ubernetes
   - Ubuntu
   - unikernel
   - Vagrant
   - Vault
   - Velocity
+  - Vitess
   - Wangle
   - Wavefront
   - Weave
@@ -437,7 +480,7 @@
   - ZFS
   - Zipkin
   - Zookeeper
-
+  - Zuul
 :service:
   - ChatOps
   - Cloud
