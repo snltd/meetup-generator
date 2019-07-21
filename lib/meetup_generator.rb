@@ -12,8 +12,10 @@ class MeetupGenerator
   attr_reader :words, :lib
 
   def initialize
+    s = OpenTracing.start_span('initialize')
     @words = Zlib::GzipReader.open(LIB + 'words.gz').readlines.map(&:strip)
     @lib   = YAML.load_file(LIB + 'all_the_things.yaml')
+    s.finish
   end
 
   # @param num [Integer] how many talks you want
