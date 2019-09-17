@@ -32,7 +32,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'nokogiri', '~> 1.10', '>= 1.10.4'
   gem.add_development_dependency 'rack-test', '~> 1.1'
   gem.add_development_dependency 'rake', '~> 12.3', '>= 12.3.0'
-  gem.add_development_dependency 'rubocop', '~> 0.69'
+  gem.add_development_dependency 'rubocop', '~> 0.71'
   gem.add_development_dependency 'rubocop-performance', '~> 1.3'
 
   gem.required_ruby_version = Gem::Requirement.new('>= 2.4.0')
