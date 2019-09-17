@@ -44,7 +44,7 @@ class MeetupGenerator
   end
 
   def title(template = random_template)
-    replace_number(replace_ops(replace_things(template)))
+    replace_word(replace_number(replace_ops(replace_things(template))))
   end
 
   def random_template(number = 1)
@@ -78,23 +78,29 @@ class MeetupGenerator
   end
 
   def replace_things(template)
-    return template unless template =~ /%\w+%/
+    return template unless template =~ /%[a-z_]+%/
 
-    replace_things(template.sub(/%(\w+)%/) do
+    replace_things(template.sub(/%([a-z_]+)%/) do
       lib[Regexp.last_match(1).to_sym].sample
     end)
   end
 
-  def replace_ops(template)
-    return template unless template.include?('FNOPS')
+  def replace_word(template)
+    return template unless template.include?('%WORD%')
 
-    replace_ops(template.sub(/FNOPS/, something_ops))
+    replace_word(template.sub('%WORD%', words.sample.capitalize))
+  end
+
+  def replace_ops(template)
+    return template unless template.include?('%FNOPS%')
+
+    replace_ops(template.sub('%FNOPS%', something_ops))
   end
 
   def replace_number(template)
-    return template unless template =~ /RAND\d+/
+    return template unless template =~ /%RAND\d+%/
 
-    replace_number(template.sub(/RAND(\d+)/) do
+    replace_number(template.sub(/%RAND(\d+)%/) do
       rand(2..Regexp.last_match(1).to_i).to_s
     end)
   end

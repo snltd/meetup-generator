@@ -13,7 +13,7 @@ THINGS = { food_style: %w[artisan],
            job_title: ['Without Portfolio'],
            tech: %w[Ruby],
            something_ops: %w[Dev Test No],
-           template: ['RAND20 %tech% things'] }.freeze
+           template: ['%RAND20% %tech% things'] }.freeze
 
 class TestMeetupGenerator < Minitest::Test
   attr_reader :mg
@@ -64,7 +64,6 @@ class GibletsTest < MiniTest::Test
     assert_instance_of(String, x)
     assert !x.empty?
     refute_match(/%\w+%/, x)
-    refute_match(/RAND/, x)
   end
 
   def test_agenda
@@ -110,6 +109,10 @@ class GibletsTest < MiniTest::Test
     assert_equal('cabbage.io', m.company)
   end
 
+  def test_replace_word
+    assert_equal('LeadswingerOps', m.replace_word('%WORD%Ops'))
+  end
+
   def test_refreshment
     assert_equal('artisan flatbread', m.refreshment)
   end
@@ -120,13 +123,13 @@ class GibletsTest < MiniTest::Test
   end
 
   def test_replace_ops
-    x = m.replace_ops('From FNOPS to FNOPS')
+    x = m.replace_ops('From %FNOPS% to %FNOPS%')
     assert_instance_of(String, x)
     assert_match(/From \w+Ops to \w+Ops$/, x)
   end
 
   def test_replace_number
-    x = m.replace_number('RAND9 years and RAND5 months')
+    x = m.replace_number('%RAND9% years and %RAND5% months')
     assert_instance_of(String, x)
     assert_match(/\d years and \d months/, x)
   end
