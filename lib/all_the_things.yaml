@@ -905,8 +905,14 @@
   - "%tech%, %tech% and %tech% Walk into a Bar"
   - "%adjective% %tech% at Scale"
   - "%adjective% %tech% for Fun and Profit"
+  - "%verb%ing the %tech% for Fun and Profit"
   - "Winter is Coming: Level Up Your %panacea%"
   - "%WORD%Ops"
+  - "What I Talk about When I Talk about %tech%"
+  - "What I Talk about When I Talk about %verb%ing"
+  - "Luke, I Am Your %verb%er"
+  - "An %adjective% Mash-Up of %tech%, %tech%, %tech% and %tech%"
+  - "Reading out the Slides"
 
 #-------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
