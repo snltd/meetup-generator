@@ -28,8 +28,8 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'slim', '~> 4.0', '>= 4.0.1'
 
   gem.add_development_dependency 'bundler', '~> 2.0'
+  gem.add_development_dependency 'capybara', '~> 3.29'
   gem.add_development_dependency 'minitest', '~> 5.11', '>= 5.11.0'
-  gem.add_development_dependency 'nokogiri', '~> 1.10', '>= 1.10.4'
   gem.add_development_dependency 'rack-test', '~> 1.1'
   gem.add_development_dependency 'rake', '~> 12.3', '>= 12.3.0'
   gem.add_development_dependency 'rubocop', '~> 0.71'
