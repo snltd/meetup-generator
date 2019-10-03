@@ -6,6 +6,7 @@
   - Aggregat
   - Ambassador
   - API-
+  - Audit
   - Automat
   - Autoscal
   - AWS-
@@ -162,6 +163,7 @@
   - Deep Learning
   - Deis
   - Device Farm
+  - Distributed Tracing
   - Django
   - Docker
   - Docker Compose
@@ -502,6 +504,9 @@
   - Private Cloud
   - Services
   - Slack Integration
+  - SLA
+  - SLI
+  - SLO
   - SRE
   - WebOps
 
@@ -528,6 +533,7 @@
 :quantifier:
   - Agility
   - Antipatterns
+  - audited break-glass
   - AWS bill
   - Burn Rate
   - Compliance
@@ -635,6 +641,7 @@
   - SRE
   - Webscalr
   - Wizard
+  - Zero Touch
 
 :is_not:
   - ""
@@ -712,6 +719,7 @@
   - Community-Driven
   - Community-Focused
   - Composable
+  - Container-Native
   - Container-Ready
   - Continuous
   - Craft
@@ -722,11 +730,15 @@
   - Developer-Friendly
   - End-to-End
   - Entity-Centric
+  - Full Spectrum
+  - Full Stack
   - Functional
   - Game-Changing
   - Hand-Crafted
+  - Humane
   - Hyperscale
   - Immutable
+  - Inclusive
   - Insightful
   - Integrated
   - Lean
@@ -747,12 +759,15 @@
   - Soup-to-Nuts
   - Stateful
   - Stateless
+  - Sustainable
   - Transformative
   - Webscale
+  - Zero Touch
 
 :panacea:
   - AI
   - AIOps
+  - Best Practice
   - Containers
   - Deep Learning
   - DevOps
@@ -779,15 +794,19 @@
   - Elixir
   - Elm
   - Erlang
+  - F#
   - Go
   - Groovy
   - Haskell
   - Julia
   - Kotlin
+  - Nim
   - OCaml
   - "Perl 6"
+  - Pony
   - Powershell
   - "Python 3"
+  - R
   - Racket
   - Ruby
   - Rust
@@ -899,9 +918,9 @@
   - "You Still Use %language%? For Real?"
   - "Bearded Manchild"
   - "If You Like YAML You'll LOVE Kubernetes"
-  - "A Thing I Did Only Because I Could do a Talk About It"
+  - "A Thing I Did Just So I Could do a Talk About It"
   - "A System Which Can Serve Ten Million Users (but only has six hundred)"
-  - "%tech% Considered Harmful and other Trite Clichés"
+  - "'%tech% Considered Harmful' and other Trite Clichés"
   - "%tech%, %tech% and %tech% Walk into a Bar"
   - "%adjective% %tech% at Scale"
   - "%adjective% %tech% for Fun and Profit"
@@ -913,6 +932,8 @@
   - "Luke, I Am Your %verb%er"
   - "An %adjective% Mash-Up of %tech%, %tech%, %tech% and %tech%"
   - "Reading out the Slides"
+  - "Your %tech% is Bad and You Should Feel Bad"
+
 
 #-------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
