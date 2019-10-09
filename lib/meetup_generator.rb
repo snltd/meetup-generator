@@ -68,9 +68,7 @@ class MeetupGenerator
   end
 
   def something_ops
-    rand(2..4).times.with_object(%w[Ops]) do |_i, a|
-      a.unshift(lib[:something_ops].sample)
-    end.join
+    (lib[:something_ops] * 4).sample(rand(2..4)).join + 'Ops'
   end
 
   def pair(list1, list2)
