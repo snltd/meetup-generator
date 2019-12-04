@@ -16,7 +16,8 @@ class TestApp < MiniTest::Test
 
   def initialize(args)
     super(args)
-    @things = YAML.load_file(MGROOT + 'lib' + 'all_the_things.yaml')
+    @things = YAML.safe_load(IO.read(MGROOT + 'lib' + 'all_the_things.yaml'),
+                             symbolize_names: true)
   end
 
   def app

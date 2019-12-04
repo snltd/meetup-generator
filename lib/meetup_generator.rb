@@ -13,7 +13,8 @@ class MeetupGenerator
 
   def initialize
     @words = Zlib::GzipReader.open(LIB + 'words.gz').readlines.map(&:strip)
-    @lib   = YAML.load_file(LIB + 'all_the_things.yaml')
+    @lib   = YAML.safe_load(IO.read(LIB + 'all_the_things.yaml'),
+                            symbolize_names: true)
   end
 
   # @param num [Integer] how many talks you want
