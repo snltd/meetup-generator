@@ -45,6 +45,7 @@ verb:
   - Hyperconverg
   - Incubat
   - Leverag
+  - Macroservic
   - Measur
   - Megashard
   - Mesh
@@ -313,6 +314,7 @@ tech:
   - LXD
   - MAAS
   - Machine Learning
+  - macroservices
   - ManageIQ
   - Marathon
   - Marathon-Consul
