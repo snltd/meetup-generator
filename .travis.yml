@@ -1,9 +1,9 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.4.6
-  - 2.5.5
-  - 2.6.3
+  - 2.5.7
+  - 2.6.5
+  - 2.7.0
 before_install: gem install bundler --no-document
 deploy:
   provider: rubygems
@@ -13,7 +13,7 @@ deploy:
   on:
     tags: true
     repo: snltd/meetup-generator
-    ruby: 2.6.3
+    ruby: 2.6.5
 notifications:
   email: false
   slack:
