@@ -3,48 +3,46 @@ html
   head
     title #Devops Meetup
     meta charset='utf-8'
-    link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300,700' rel='stylesheet'
-    link href='https://allfont.net/css/?fonts=zx-spectrum' rel='stylesheet' type='text/css'
     link href='/css/main.css' rel='stylesheet'
 
   body
     #container
-      h1 #DevOps Meetup // Shoreditch, probably // #{(Date.today + 1).strftime("%d/%m/%Y")}
+      h1
+        ' #DevOps Meetup //
+        => @agenda[:location]
+        ' //
+        == @agenda[:date]
 
       ul
         li 18:00 // Introduction
 
         li
           ' 18:10 // Lightning talk //
-          span.ttitle=@talks.pop
-          .tperson=@jobs.pop
+          == slim :partial_talk
 
         li
           ' 18:20 //
-          span.ttitle=@talks.pop
-          .tperson=@jobs.pop
+          == slim :partial_talk
 
-        li 18:50 // break
-        .tperson=@food
+        li
+          ' 18:50 // break
+          .indent=@agenda[:refreshment]
 
         li
           ' 19:20 //
-          span.ttitle=@talks.pop
-          .tperson=@jobs.pop
+          == slim :partial_talk
 
         li
           ' 19:40 // Ignite //
-          span.ttitle=@talks.pop
-          .tperson=@jobs.pop
+          == slim :partial_talk
 
         li
           ' 20:00 //
-          span.ttitle=@talks.pop
-          .tperson=@jobs.pop
+          == slim :partial_talk
 
         li
           ' 20:30 // Close
-          .tperson Everyone is hiring, but no one's paying
+          .indent Everyone is hiring, but no one's paying
 
       #footer
         a href='https://github.com/snltd/meetup-generator' The code.

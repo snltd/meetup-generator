@@ -1,17 +1,20 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.2.9
-  - 2.3.6
-  - 2.4.3
-  - 2.5.0
-before_install: gem install bundler --no-rdoc --no-ri
+  - 2.5.7
+  - 2.6.5
+  - 2.7.0
+before_install: gem install bundler --no-document
 deploy:
   provider: rubygems
   api_key:
-    secure: dfmL5JwBn+u3cUmyAaDsApDa7ljGajGNz3GDcKd2J8FOt7+a758/lmL8EQ34sDT1ZFotrxn/y1RbgXlaDxAE1XDfrZbjckmx7a6wa2sqR3kBraJ2tx7CiXodbw3Z8XZf9WLb0kYGmlLtI73GNcuunMt/9f1cobqWISRLHw6b7amlO7GW2ZBZgzRS+N8TSS2dicIvKMo5HoMYU+uWLM4zDFBPnGNcMiWxh8ysLzJoKqA9kbBUyCVEZ03MlV7G71ObvWCLasKnZ3W5U+K1NbgU7mgMYfl9KIcA4y9hQ9hUCijk40SmT7ffy3P2gq8zblC/4x5Eefpau9X/bdLwXoRCIzqk05t4f45wstj2auHGK0HJwOYRtx8apdaLSgyJ5lQpGcbCRu40WR9mDkaM8m9n3u2o6GJmftCg3AN1QtsourmQB84x67LEbHzValMaokrbCol4XeWqlC+dCNLPixemQRBvcNfI3V9C6RqVGfjpoGlSTI+RkQqwm01PcxpeqIVfdMd1wnfUuAOywUO6UpvtK9TZaxg0NnVElXpPseQbtzulLwZ7R5Y3A4Ss8Z7w43c1KHxTkg54FWUOp065ItjAc4lmyORXq/2+F7sMvRN6dtCLaXTUlkYuU3cjFLIPlLGFYgqq4T4xQa+e5NEK1XW7nghv+IRfKfyVeZsB0WpY+uc=
+    secure: YKceAbCY5cvk6G22YkgDzjs5jAW9rLTKYTkjE3anqvt3GXa5QX4+hOV0zDT6QOK+R/Dp9LY9KEC83C861pRrNk+QrbOcelo6B9vRmB+jWoYXCJybx2f0xWl1/x9XDmLNYLpgjX2hXQGj+pMaPu+cZehigk0arSXOF3aeBl3lS14=
   gem: meetup-generator
   on:
     tags: true
     repo: snltd/meetup-generator
-    ruby: 2.3.6
+    ruby: 2.6.5
+notifications:
+  email: false
+  slack:
+    secure: JYsO1HPdbDmYhD/T6Wc8bK+jXIJ5014hVIJo8vSdZO4zlnSyisNqDbVl8m68CqTmDbYSRsYye3lg8sfxA1e18tC5OTbv08GXEGP7Hwyg136VErqthSUGquiRIDQ5kcXit4pI+p+CUxB/uUUalQWlF4sEP9BebWAqzA6suPbn83E=

@@ -1,7 +1,13 @@
+# frozen_string_literal: true
+
+require 'pathname'
 require 'rake/testtask'
 require 'rubocop/rake_task'
+require 'bundler/gem_tasks'
 
-task default: :test
+ROOT = Pathname(__FILE__).dirname
+
+task default: %i[rubocop test]
 
 Rake::TestTask.new do |t|
   t.pattern = 'spec/*_spec.rb'

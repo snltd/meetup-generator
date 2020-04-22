@@ -1,0 +1,11 @@
+- talk = @agenda[:talks].pop
+
+span.ttitle=talk[:title]
+.indent
+  => talk[:talker]
+  ' //
+  => talk[:role]
+  ' @
+  a href="http://#{talk[:company]}"
+    == talk[:company]
+
