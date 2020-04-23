@@ -23,29 +23,36 @@ Build a gem with
 $ rake build
 ```
 
+Build a container with
+
+```sh
+$ docker build -t meetup-generator .
+```
+
 ## Running
 
-Install from Rubygems
+Install and run from Rubygems
 
-```
+```sh
 $ gem install meetup-generator
-```
-
-then run with
-
-```
 $ rackup $(locate_meetup-generator)
 ```
 
 Run from a git checkout
 
-```
+```sh
 $ bin/meetup-generator.rb
+```
+
+Run the container from earlier:
+
+```sh
+$ docker run -p 4567:4567 meetup-generator
 ```
 
 Install as a Solaris/Illumos service
 
-```
+```sh
 $ pfexec svccfg import package/meetup-generator.xml
 ```
 

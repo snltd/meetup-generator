@@ -114,6 +114,7 @@ tech:
   - Burp Scanner
   - Burpsuite
   - cAdvisor
+  - Calico
   - Capistrano
   - Cassandra
   - CDN
@@ -126,6 +127,7 @@ tech:
   - Chef
   - Chef/Puppet
   - CI/CD
+  - Cilium
   - CircleCI
   - Clojure
   - Cloud9
@@ -277,6 +279,7 @@ tech:
   - kitchen-docker
   - knife Plugins
   - Knox
+  - Kompose
   - Kong
   - Kops
   - KrakenD
@@ -288,6 +291,7 @@ tech:
   - Kubeless
   - Kubelet
   - KubeOne
+  - Kubenet
   - Kubermatic
   - Kubernetes
   - kube-spawn
@@ -432,6 +436,7 @@ tech:
   - SNS
   - Solr
   - SPIFFE
+  - Spinnaker
   - Spire
   - Spread
   - SQS
@@ -463,6 +468,7 @@ tech:
   - Travis CI
   - Trickster
   - Triton
+  - Trufflehog
   - Tsuru
   - TUF
   - Tyk
@@ -506,6 +512,7 @@ service:
   - Private Cloud
   - Services
   - Slack Integration
+  - SlackOps
   - SLA
   - SLI
   - SLO
@@ -932,7 +939,7 @@ template:
   - "What I Talk about When I Talk about %tech%"
   - "What I Talk about When I Talk about %verb%ing"
   - "Luke, I Am Your %verb%er"
-  - "A %adjective% Mash-Up of %tech%, %tech%, %tech% and %tech%"
+  - "A %adjective% %tech%, %tech%, %tech% and %tech% Mash-Up "
   - "Reading out the Slides"
   - "Your %tech% is Bad and You Should Feel Bad"
   - "Bearded Manchild Who Flew 8,000 miles at Huge Financial and Ecological Expense to Read Out His Stupid Blog Post Which Gives the Impression He Made Something Wonderful when Actually it Never Even Worked"
