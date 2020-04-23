@@ -23,7 +23,7 @@ Build a gem with
 $ rake build
 ```
 
-Buile a container with
+Build a container with
 
 ```sh
 $ docker build -t meetup-generator .
