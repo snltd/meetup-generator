@@ -12,6 +12,7 @@ OUTER_APP = Rack::Builder.parse_file((MGROOT + 'config.ru').to_s).first
 #
 class TestApp < MiniTest::Test
   attr_reader :things
+
   include Rack::Test::Methods
 
   def initialize(args)
@@ -63,7 +64,7 @@ class TestApp < MiniTest::Test
     get format('/api/talker')
     assert last_response.ok?
     assert_instance_of(String, last_response.body)
-    assert_match(/^\"\w+ \w+\"$/, last_response.body)
+    assert_match(/^"\w+ \w+"$/, last_response.body)
     assert last_response.header['Content-Type'] == 'application/json'
   end
 
@@ -71,7 +72,7 @@ class TestApp < MiniTest::Test
     get format('/api/company')
     assert last_response.ok?
     assert_instance_of(String, last_response.body)
-    assert_match(/^\"\w+.io\"$/, last_response.body)
+    assert_match(/^"\w+.io"$/, last_response.body)
     assert last_response.header['Content-Type'] == 'application/json'
   end
 
