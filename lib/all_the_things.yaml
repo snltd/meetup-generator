@@ -122,7 +122,7 @@ tech:
   - Cernan
   - CFEngine
   - cgroups
-    ChaosKube
+  - ChaosKube
   - Chaos Toolkit
   - Chef
   - Chef/Puppet
@@ -900,7 +900,7 @@ template:
   - "Beautiful %tech% for Beautiful %service%"
   - "Real Heroes Use %tech%"
   - "Our %adjective% Micro-Framework"
-  - "A %tech% %adjective% %adjective% %adjective% Micro-Framework"
+  - "A %tech% %adjective% %adjective% Micro-Framework"
   - "%adjective% %tech% %adjective% Time-series Micro-Services for Dummies"
   - "Living for Meetups: I Haven't Done Any Actual Work Since 2013"
   - "%tech% to %adjective% %service%: Living the Dream"
@@ -940,6 +940,7 @@ template:
   - "What I Talk about When I Talk about %verb%ing"
   - "Luke, I Am Your %verb%er"
   - "A %adjective% %tech%, %tech%, %tech% and %tech% Mash-Up "
+  - "%tech% like Boba Fett"
   - "Reading out the Slides"
   - "Your %tech% is Bad and You Should Feel Bad"
   - "Bearded Manchild Who Flew 8,000 miles at Huge Financial and Ecological Expense to Read Out His Stupid Blog Post Which Gives the Impression He Made Something Wonderful when Actually it Never Even Worked"
@@ -1062,6 +1063,7 @@ job_title:
   - Guru
   - Hacker
   - Helicopter Pilot
+  - Hero
   - Imagineer
   - Innovator
   - Jedi
@@ -1075,6 +1077,7 @@ job_title:
   - Neckbeard without Portfolio
   - Ninja
   - Overlord
+  - Padawan
   - Pirate
   - Polyglot
   - Preacherman
@@ -1087,8 +1090,10 @@ job_title:
   - Scientist
   - Sensei
   - Sherpa
+  - Solution Barista
   - Space Cadet
   - Squadron Leader
+  - Stormtrooper
   - Superstar
   - Technologist
   - Thought Leader
