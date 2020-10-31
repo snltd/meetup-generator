@@ -18,7 +18,7 @@ app_tags = Wavefront::ApplicationTags.new('meetup_generator',
 ROOT = Pathname.new(__FILE__).dirname.parent
 MG   = MeetupGenerator.new
 
-sender = Wavefront::WavefrontProxyClient.new('wavefront-beta',
+sender = Wavefront::WavefrontProxyClient.new('wavefront',
                                              2878, 40_000, 30_000)
 
 reporter = Reporting::WavefrontSpanReporter.new(client: sender)
