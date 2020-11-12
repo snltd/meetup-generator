@@ -1,13 +1,11 @@
 ---
 
-Style/HashEachMethods:
-  Enabled: true
+AllCops:
+  TargetRubyVersion: 2.5
+  NewCops: enable
 
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
+Style/StringConcatenation:
+  Enabled: false
 
 # Allow long blocks of tests
 #
@@ -18,38 +16,4 @@ Metrics/MethodLength:
   Max: 80
 
 Metrics/AbcSize:
-  Max: 80
-
-# New compatabilities
-Layout/EmptyLinesAroundAttributeAccessor:
-  Enabled: true
-Layout/SpaceAroundMethodCallOperator:
-  Enabled: true
-Lint/RaiseException:
-  Enabled: true
-Lint/StructNewOverride:
-  Enabled: true
-Style/ExponentialNotation:
-  Enabled: true
-Style/SlicingWithRange:
-  Enabled: true
-Lint/DeprecatedOpenSSLConstant:
-  Enabled: true
-Lint/MixedRegexpCaptureTypes:
-  Enabled: true
-Style/RedundantRegexpCharacterClass:
-  Enabled: true
-Style/RedundantRegexpEscape:
-  Enabled: true
-Style/AccessorGrouping:
-  Enabled: true
-Style/BisectedAttrAccessor:
-  Enabled: true
-Style/RedundantAssignment:
-  Enabled: true
-Style/RedundantFetchBlock:
-  Enabled: true
-
-# Is nothing sacred?
-Layout/LineLength:
   Max: 80

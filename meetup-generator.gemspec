@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^spec/})
   gem.require_paths = %w[lib]
 
-  gem.add_runtime_dependency 'puma', '~> 4.3', '>= 4.3.5'
+  gem.add_runtime_dependency 'puma', '~> 5.0'
   gem.add_runtime_dependency 'sinatra', '~>2.0', '>= 2.0.8'
   gem.add_runtime_dependency 'slim', '~> 4.1'
 
@@ -32,7 +32,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'nokogiri', '~> 1.10'
   gem.add_development_dependency 'rack-test', '~> 1.1'
   gem.add_development_dependency 'rake', '~> 13.0'
-  gem.add_development_dependency 'rubocop', '~> 0.80'
+  gem.add_development_dependency 'rubocop', '~> 1.1'
 
   gem.add_development_dependency 'rubocop-performance', '~> 1.3'
 

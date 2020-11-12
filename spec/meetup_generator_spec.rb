@@ -45,7 +45,9 @@ end
 # We don't want the class properly initialized
 #
 class Giblets < MeetupGenerator
+  # rubocop:disable Lint/MissingSuper
   def initialize; end
+  # rubocop:enable Lint/MissingSuper
 end
 
 # Test the uninitialized class
