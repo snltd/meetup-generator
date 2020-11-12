@@ -91,6 +91,7 @@ tech:
   - API Gateway
   - APIs
   - ArangoDB
+  - Argo
   - Athena
   - AWS
   - bacon.js
@@ -104,6 +105,7 @@ tech:
   - Borg
   - Bosh
   - Boto
+  - Boundary
   - Bower
   - Brigade
   - Buildkite
@@ -147,6 +149,8 @@ tech:
   - Cognito
   - Coherence
   - Consul
+  - Containerd
+  - Contour
   - Convox
   - CoreDNS
   - CoreOS
@@ -196,6 +200,7 @@ tech:
   - Express
   - Fabric
   - Fabric8
+  - Falco
   - Filebeat
   - Finagle
   - Firebase
@@ -282,6 +287,7 @@ tech:
   - Kompose
   - Kong
   - Kops
+  - Kraken
   - KrakenD
   - Kube
   - Kube-Bench
@@ -290,8 +296,8 @@ tech:
   - Kube Hunter
   - Kubeless
   - Kubelet
-  - KubeOne
   - Kubenet
+  - KubeOne
   - Kubermatic
   - Kubernetes
   - kube-spawn
@@ -331,6 +337,7 @@ tech:
   - Mesos-Consul
   - Mesosphere
   - Metricbeat
+  - Microliths
   - Micrometer
   - microservices
   - Minikube
@@ -348,6 +355,8 @@ tech:
   - NewRelic
   - nginx
   - NiFi
+  - Nix
+  - NixOS
   - node.js
   - Nomad
   - Noms
@@ -372,6 +381,7 @@ tech:
   - Perl
   - Phoenix
   - Pilosa
+  - Portus
   - Powerful Seal
   - Project Atomic
   - Prometheus
@@ -382,6 +392,7 @@ tech:
   - Puppet
   - Puppet/Chef
   - Python
+  - Quay
   - Qubole
   - R
   - RabbitMQ
@@ -429,6 +440,7 @@ tech:
   - SignalFX
   - Sinatra
   - Skaffold
+  - Skipper
   - SmartOS
   - SmartStack
   - SNI
@@ -497,9 +509,12 @@ tech:
 
 service:
   - AIOps
+  - AllOps
   - ChatOps
   - Cloud
+  - ComplianceOps
   - Containers
+  - DataOps
   - DevOps
   - Downtime
   - GitOps
@@ -517,6 +532,8 @@ service:
   - SLI
   - SLO
   - SRE
+  - TestOps
+  - Waypoint
   - WebOps
 
 extreme:
@@ -529,6 +546,7 @@ extreme:
   - Dockerize
   - Hybridize
   - Improve
+  - Internet-Scale
   - Limit
   - Maximize
   - Minimize
@@ -561,6 +579,7 @@ quantifier:
   - Leanness
   - Incident Response
   - Innovation Initiatives
+  - LinkedIn Profile
   - Monitoring
   - Multiregion Dataflows
   - MVP
@@ -657,8 +676,8 @@ is_not:
   - not
 
 company:
-  - Amazon
   - AWS
+  - Amazon
   - Etsy
   - Everyone Else
   - Facebook
@@ -673,14 +692,18 @@ company:
   - Uber
 
 driver:
+  - "CV++"
+  - "Kelsey-Hightower's-Twitter"
+  - "Someone-Else's-Blog"
+  - "Sticker"
+  - "Whatever's-New"
   - Anger
   - Asshole
   - Big Data
   - Blog
   - Bullshit
-  - Copying-Google
   - CV
-  - "CV++"
+  - Copying-Google
   - Data
   - Datensparsamkeit
   - FOMO
@@ -690,32 +713,28 @@ driver:
   - Hubris
   - I-Ching
   - I-Know-Best
-  - Insecurity
   - IPO
+  - Insecurity
   - Job-Security
-  - "Kelsey-Hightower's-Twitter"
+  - LinkedIn Profile
   - Loudest-Person-in-the-Room
   - Meetup-Generator
   - Metric
-  - Naivety
   - NIH
+  - Naivety
   - Overconfidence
   - Paranoia
   - Reddit
   - Reinvention
   - Resumé
-  - "Someone-Else's-Blog"
   - Stack Overflow
-  - "Sticker"
   - Urgency
-  - "Whatever's-New"
   - What-Everyone-Else-is-Doing
   - What-We-Think-Everyone-Else-is-Doing
   - Wheel-Reinvention
 
 adjective:
   - "12 Factor"
-  - "On-Premise"
   - Agile
   - Artisinal
   - Awesome
@@ -756,6 +775,7 @@ adjective:
   - Multi-Dimensional
   - Nano-Serviced
   - Observable
+  - "On-Premise"
   - Opinionated
   - Paradigm-Shifting
   - Public/Private
@@ -777,6 +797,7 @@ panacea:
   - AI
   - AIOps
   - Best Practice
+  - CNCF
   - Containers
   - Deep Learning
   - DevOps
@@ -786,9 +807,10 @@ panacea:
   - "Google SREs"
   - Kubernetes
   - Machine Learning
+  - Microservices
+  - SREs
   - Serverless
   - "Service Mesh Architecture"
-  - SREs
   - "The Blockchain"
   - "The Next Version"
   - Unikernels
@@ -823,135 +845,137 @@ language:
   - Typescript
 
 something_ops:
+  - AI
   - Biz
   - Chat
   - Dev
   - Git
+  - ML
   - 'No'
   - Sec
   - Slack
   - Test
 
 template:
-  - "Regurgited Half-Understood Blog Post"
-  - "Enabling No-Ops with Virtual %tech%"
-  - "Enabling %adjective% %FNOPS% with Virtual %tech%"
-  - "%verb%ed %tech% == #Awesomesauce"
-  - "%verb%ing All of the Things with %tech%"
-  - "I Don't Know Much About %tech% or %tech% But I'm Going to Talk About Them Anyway"
-  - "How %tech% Taught Us What '%verb%ing' Really Means"
-  - "How to %extreme% Your %quantifier% by %is_not% %verb%ing %tech%"
-  - "%tech% for %tech% Users"
-  - "%verb%ing Your %tech% Layer"
-  - "%verb%ing %tech% with %tech% for %skill_level%s"
-  - "Why %tech% is %is_not% the new %tech%"
-  - "%RAND10% Lessons from %verb%ing %verb%ed %tech%"
-  - "How we %verb%ed %tech% with %tech% in %RAND100% %time%"
-  - "%RAND20% Things You Should %is_not% be Doing with %tech% to Enable %service% as a Service"
-  - "From %tech% n00b to %tech% %verb%ing Jedi in %RAND5% %time%"
-  - "Pimp My %tech%. %tech% is the Answer, What's the Question?"
-  - "How We %verb%ed %RAND40%% of our Infrastructure Overnight with %tech%"
-  - "BANG! And the %tech% is Gone! The Future is %verb%ed %tech%"
-  - "How We Use %tech% to %extreme% the Internet of Things"
-  - "We %verb%ed our %tech%. Mind = Blown"
-  - "%tech% or Die. We're Ready, Are You?"
-  - "When %tech% is not Good Enough, Reach for the %tech%"
-  - "%verb%ed %tech% 15-minute Fishbowl Session"
-  - "Everything You Think You Know About %tech% is Wrong"
-  - "I Love the Smell of %tech% in the Morning"
-  - "While You Learn, I Earn: Making Shit Up and Blogging it as Fact"
-  - "%quantifier% as Code: Ready for the Revolution?"
-  - "A Complicated Way to do Something Unnecessary Which Does Not Work"
-  - "Culture: Don't Do it If it's Hard or Boring"
-  - "Something People Have Done Since 198%RAND9%, but with a New Name"
-  - "How We %verb%ed Our %service% with %tech% FTW!"
-  - "Still Using %tech%?"
-  - "I First Heard about %tech% %RAND5% Days Ago, and Now I'm an Expert"
-  - "Fifteen Minutes of Ignorant Hubris"
-  - "Buzzword Blizzard: %tech% + %tech% + %tech% + %tech%"
-  - "How We Do What %company% Do, but on a Tiny Scale, and Wrong"
-  - "EC2 at Scale: %RAND40% instances and Counting!"
-  - "From Pets to Cattle with %tech% and %tech%"
-  - "DevOps and Objet Trouve: If it's Good Enough to be on Github, it's Good Enough for Production"
-  - "%driver% Driven Development 101"
-  - "Ticking the Boxes: You Can't Automate All of the Things if You Aren't Using All of the Things"
-  - "How We Moved from Puppet to Chef to Ansible to Salt to CFEngine then Back to Ansible then Chef Again then Briefly Itamae then Packered AMIs then Masterless Puppet then Chef then a Different Chef Setup then Puppet"
-  - "%verb%ing %tech% Makes for Awesome %driver%-driven Infrastructure"
-  - "How a %tech%/%tech% Mash-Up Shaved %RAND50% Seconds off Our Deployment Times"
-  - "Containers: or How I Swapped a Simple Packaging Problem for a Complex Orchestration Problem"
-  - "%tech% Necromancy for Full-Stack Nirvana"
-  - "Wow Very %tech%. So %tech%. Such %verb%ed"
-  - "Stickers!"
-  - "How We Made a Really Bad Version of Something Which Already Existed"
-  - "We Have a DevOps Consultancy and We Don't Know What We're Doing"
-  - "Dockerizing Dockerized Docker with Docker for Docker Users"
-  - "How we Spent %RAND8% Months Building Our Own Version of a Service We Could Buy for $6/month"
-  - "How we Spent %RAND3% Years Building Our Own Version of a Service We Could Buy for $6/month"
-  - "Thinly Disguised Sales Pitch"
-  - "Roll Your Own Monitoring with %tech%, %tech%, %tech%, %tech%, %tech%, %tech%, %tech%, %tech% and %tech%"
-  - "How This Thing We Built Would Work if it Worked"
-  - "If Heath Robinson Deployed an apt Package"
-  - "We Put %tech% in our %tech%: You Won't Believe What Happened Next"
-  - "%RAND10% Things Only a DevOps Understands"
   - "%RAND10% %tech% Secrets %company% Don't Want You to Know"
-  - "When You Have More Github Repos than Users"
-  - "Large-Scale %tech% Anti-Patterns Will %extreme% Your %service%"
-  - "Bro, Do You Even %tech%?"
-  - "Beautiful %tech% for Beautiful %service%"
-  - "Real Heroes Use %tech%"
-  - "Our %adjective% Micro-Framework"
-  - "A %tech% %adjective% %adjective% Micro-Framework"
+  - "%RAND10% Lessons from %verb%ing %verb%ed %tech%"
+  - "%RAND10% Things Only a DevOps Understands"
+  - "%RAND20% Things You Should %is_not% be Doing with %tech% to Enable %service% as a Service"
+  - "%WORD%Ops"
   - "%adjective% %tech% %adjective% Time-series Micro-Services for Dummies"
-  - "Living for Meetups: I Haven't Done Any Actual Work Since 2013"
-  - "%tech% to %adjective% %service%: Living the Dream"
-  - "10x-ing Your Team: The End of %job_title% %job_title% Culture"
-  - "Vague Soft-Skills Waffle"
-  - "Everything I Know About %tech% I Learned from Star Wars"
-  - "There's %tech% in my %tech%!"
-  - "Repeatedly Saying 'on premise' Without Understanding What it Means"
-  - "'You Have 15 Seconds to Comply' and other '80s Cliches stitched Loosely Together"
-  - "%panacea% Will Fix Everything"
-  - "I Have %RAND18% Months' Experience But I Know Everything"
-  - "We Were the First People to Ever Encounter any of these Problems"
-  - "I Work for Google, So I Know Everything"
-  - "I Used to Work for Google, So I Know Everything"
-  - "Rewriting Most of Kubernetes 101"
-  - "Like, Diversity and Stuff?"
-  - "Everyone Else Does Everything Wrong"
-  - "Validating Laziness by Declaring it 'Best Practice'"
-  - "Humblebrag"
-  - "Our %FNOPS% Journey"
-  - "From %FNOPS% to %FNOPS%"
-  - "The Answer is More Code, What's the Question?"
-  - "We Rewrote Everything in %language% and Now Nothing Works"
-  - "We Rewrote Everything in %language% for No Real Reason"
-  - "You Still Use %language%? For Real?"
-  - "If You Like YAML You'll LOVE Kubernetes"
-  - "A Thing I Did Just So I Could do a Talk About It"
-  - "A System Which Can Serve Ten Million Users (But Only Has Six Hundred)"
-  - "'%tech% Considered Harmful' and other Trite Clichés"
-  - "%tech%, %tech% and %tech% Walk into a Bar"
   - "%adjective% %tech% at Scale"
   - "%adjective% %tech% for Fun and Profit"
+  - "%driver% Driven Development 101"
+  - "%panacea% Will Fix Everything"
+  - "%quantifier% as Code: Ready for the Revolution?"
+  - "%tech% Necromancy for Full-Stack Nirvana"
+  - "%tech% for %tech% Users"
+  - "%tech% like Boba Fett"
+  - "%tech% or Die. We're Ready, Are You?"
+  - "%tech% to %adjective% %service%: Living the Dream"
+  - "%tech%, %tech% and %tech% Walk into a Bar"
+  - "%verb%ed %tech% 15-minute Fishbowl Session"
+  - "%verb%ed %tech% == #Awesomesauce"
+  - "%verb%ing %tech% Makes for Awesome %driver%-driven Infrastructure"
+  - "%verb%ing %tech% with %tech% for %skill_level%s"
+  - "%verb%ing All of the Things with %tech%"
+  - "%verb%ing Your %tech% Layer"
   - "%verb%ing the %tech% for Fun and Profit"
-  - "Winter is Coming: Level Up Your %panacea%"
-  - "%WORD%Ops"
+  - "'%tech% Considered Harmful' and other Trite Clichés"
+  - "'You Have 15 Seconds to Comply' and other '80s Cliches stitched Loosely Together"
+  - "10x-ing Your Team: The End of %job_title% %job_title% Culture"
+  - "A %adjective% %tech%, %tech%, %tech% and %tech% Mash-Up "
+  - "A %tech% %adjective% %adjective% Micro-Framework"
+  - "A Complicated Way to do Something Unnecessary Which Does Not Work"
+  - "A System Which Can Serve Ten Million Users (But Only Has Six Hundred)"
+  - "A Thing I Did Just So I Could do a Talk About It"
+  - "BANG! And the %tech% is Gone! The Future is %verb%ed %tech%"
+  - "Bearded Manchild Who Flew 8,000 miles at Huge Financial and Ecological Expense to Read Out His Stupid Blog Post Which Gives the Impression He Made Something Wonderful when Actually it Never Even Worked"
+  - "Beautiful %tech% for Beautiful %service%"
+  - "Bro, Do You Even %tech%?"
+  - "Buzzword Blizzard: %tech% + %tech% + %tech% + %tech%"
+  - "Containers: or How I Swapped a Simple Packaging Problem for a Complex Orchestration Problem"
+  - "Culture: Don't Do it If it's Hard or Boring"
+  - "DevOps and Objet Trouve: If it's Good Enough to be on Github, it's Good Enough for Production"
+  - "Dockerizing Dockerized Docker with Docker for Docker Users"
+  - "EC2 at Scale: %RAND40% instances and Counting!"
+  - "Enabling %adjective% %FNOPS% with Virtual %tech%"
+  - "Enabling No-Ops with Virtual %tech%"
+  - "Everyone Else Does Everything Wrong"
+  - "Everything I Know About %tech% I Learned from Star Wars"
+  - "Everything You Think You Know About %tech% is Wrong"
+  - "Fifteen Minutes of Ignorant Hubris"
+  - "From %FNOPS% to %FNOPS%"
+  - "From %tech% n00b to %tech% %verb%ing Jedi in %RAND5% %time%"
+  - "From Pets to Cattle with %tech% and %tech%"
+  - "How %tech% Taught Us What '%verb%ing' Really Means"
+  - "How This Thing We Built Would Work if it Worked"
+  - "How We %verb%ed %RAND40%% of our Infrastructure Overnight with %tech%"
+  - "How We %verb%ed Our %service% with %tech% FTW!"
+  - "How We Do What %company% Do, but on a Tiny Scale, and Wrong"
+  - "How We Made a Really Bad Version of Something Which Already Existed"
+  - "How We Moved from Puppet to Chef to Ansible to Salt to CFEngine then Back to Ansible then Chef Again then Briefly Itamae then Packered AMIs then Masterless Puppet then Chef then a Different Chef Setup then Puppet"
+  - "How We Use %tech% to %extreme% the Internet of Things"
+  - "How a %tech%/%tech% Mash-Up Shaved %RAND50% Seconds off Our Deployment Times"
+  - "How to %extreme% Your %quantifier% by %is_not% %verb%ing %tech%"
+  - "How we %verb%ed %tech% with %tech% in %RAND100% %time%"
+  - "How we Spent %RAND3% Years Building Our Own Version of a Service We Could Buy for $6/month"
+  - "How we Spent %RAND8% Months Building Our Own Version of a Service We Could Buy for $6/month"
+  - "Humblebrag"
+  - "I Don't Know Much About %tech% or %tech% But I'm Going to Talk About Them Anyway"
+  - "I First Heard about %tech% %RAND5% Days Ago, and Now I'm an Expert"
+  - "I Have %RAND18% Months' Experience But I Know Everything"
+  - "I Love the Smell of %tech% in the Morning"
+  - "I Used to Work for Google, So I Know Everything"
+  - "I Work for Google, So I Know Everything"
+  - "If Heath Robinson Deployed an apt Package"
+  - "If You Like YAML You'll LOVE Kubernetes"
+  - "Large-Scale %tech% Anti-Patterns Will %extreme% Your %service%"
+  - "Like, Diversity and Stuff?"
+  - "Living for Meetups: I Haven't Done Any Actual Work Since 2013"
+  - "Luke, I Am Your %verb%er"
+  - "Our %FNOPS% Journey"
+  - "Our %adjective% Micro-Framework"
+  - "Pimp My %tech%. %tech% is the Answer, What's the Question?"
+  - "Reading out the Slides"
+  - "Real Heroes Use %tech%"
+  - "Regurgited Half-Understood Blog Post"
+  - "Repeatedly Saying 'on premise' Without Understanding What it Means"
+  - "Rewriting Most of Kubernetes 101"
+  - "Roll Your Own Monitoring with %tech%, %tech%, %tech%, %tech%, %tech%, %tech%, %tech%, %tech% and %tech%"
+  - "Someone Clever Enough to Help Society in a Thousand Ways Explains How they Maintain a Game Where People Use their Phone to Spend Real Money To Feed Imaginary Food to Imaginary Cats"
+  - "Something People Have Done Since 198%RAND9%, but with a New Name"
+  - "Stickers!"
+  - "Still Using %tech%?"
+  - "The Answer is More Code, What's the Question?"
+  - "There's %tech% in my %tech%!"
+  - "Thinly Disguised Sales Pitch"
+  - "Ticking the Boxes: You Can't Automate All of the Things if You Aren't Using All of the Things"
+  - "Vague Soft-Skills Waffle"
+  - "Validating Laziness by Declaring it 'Best Practice'"
+  - "We %verb%ed our %tech%. Mind = Blown"
+  - "We Have a DevOps Consultancy and We Don't Know What We're Doing"
+  - "We Put %tech% in our %tech%: You Won't Believe What Happened Next"
+  - "We Rewrote Everything in %language% and Now Nothing Works"
+  - "We Rewrote Everything in %language% for No Real Reason"
+  - "We Were the First People to Ever Encounter any of these Problems"
   - "What I Talk about When I Talk about %tech%"
   - "What I Talk about When I Talk about %verb%ing"
-  - "Luke, I Am Your %verb%er"
-  - "A %adjective% %tech%, %tech%, %tech% and %tech% Mash-Up "
-  - "%tech% like Boba Fett"
-  - "Reading out the Slides"
+  - "When %tech% is not Good Enough, Reach for the %tech%"
+  - "When You Have More Github Repos than Users"
+  - "While You Learn, I Earn: Making Shit Up and Blogging it as Fact"
+  - "Why %tech% is %is_not% the new %tech%"
+  - "Winter is Coming: Level Up Your %panacea%"
+  - "Wow Very %tech%. So %tech%. Such %verb%ed"
+  - "You Still Use %language%? For Real?"
   - "Your %tech% is Bad and You Should Feel Bad"
-  - "Bearded Manchild Who Flew 8,000 miles at Huge Financial and Ecological Expense to Read Out His Stupid Blog Post Which Gives the Impression He Made Something Wonderful when Actually it Never Even Worked"
 
 #-------------------------------------------------------------------------
 # This block relates to the names and roles of the people doing the
 # talks
 
-# These are the most common names of the 1990s, according to some
-# stupid website. We have as many female as male. Idealism over
-# realism.
+# These are the most common names of the 1990s, according to some website. We
+# have as many female as male. Idealism over realism.
 #
 first_name:
   - Amanda
