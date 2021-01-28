@@ -9,7 +9,6 @@ config.ru
 lib/all_the_things.yaml
 lib/locator.rb
 lib/meetup_generator.rb
-lib/version.rb
 lib/words.gz
 meetup-generator.gemspec
 package

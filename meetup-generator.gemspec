@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 require 'date'
-require_relative 'lib/version'
+
+# Github actions sets the RELEASE_VERSION environment variable
 
 Gem::Specification.new do |gem|
   gem.name          = 'meetup-generator'
-  gem.version       = VERSION
+  gem.version       = ENV['RELEASE_VERSION'] ||
+                      "0.0.#{Time.now.strftime('%Y%m%d')}"
   gem.date          = Date.today.to_s
 
   gem.summary       = 'Stupid fatuous random string generatpr'
