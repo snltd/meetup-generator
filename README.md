@@ -61,6 +61,6 @@ Install as a Solaris/Illumos service
 $ pfexec svccfg import package/meetup-generator.xml
 ```
 
-Contributing
+## Contributing
 
 Fork it, raise a PR.
