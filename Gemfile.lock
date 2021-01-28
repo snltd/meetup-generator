@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     meetup-generator (0.0.20210128)
-      puma (~> 5.1)
+      puma (~> 5.0.0)
       sinatra (~> 2.1)
       slim (~> 4.1)
 
@@ -21,7 +21,7 @@ GEM
     parallel (1.20.1)
     parser (3.0.0.0)
       ast (~> 2.4.1)
-    puma (5.2.0)
+    puma (5.0.4)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
