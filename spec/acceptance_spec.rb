@@ -56,7 +56,7 @@ class TestApp < MiniTest::Test
       resp = last_response.body
       assert_match(/The code./, resp)
       assert_match(/DevOps Meetup/, resp)
-      templates.each { |t| templates.delete(t) if resp =~ t }
+      templates.each { |t| templates.delete(t) if resp.match?(t) }
     end
   end
 
@@ -109,7 +109,7 @@ class TestApp < MiniTest::Test
     assert_instance_of(String, agenda[:location])
   end
 
-  def test_api_404
+  def test_api_not_found
     get '/api/no_such_thing'
     assert_equal(last_response.status, 404)
   end
