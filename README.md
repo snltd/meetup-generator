@@ -1,4 +1,6 @@
-# meetup-generator [![Build Status](https://travis-ci.org/snltd/meetup-generator.svg?branch=master)](https://travis-ci.org/snltd/meetup-generator) [![Maintainability](https://api.codeclimate.com/v1/badges/4487595d6afb26a57d82/maintainability)](https://codeclimate.com/github/snltd/meetup-generator/maintainability)
+# meetup-generator
+
+![Test](https://github.com/snltd/meetup-generator/workflows/Test/badge.svg) ![Release](https://github.com/snltd/meetup-generator/workflows/Release/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/4487595d6afb26a57d82/maintainability)](https://codeclimate.com/github/snltd/meetup-generator/maintainability)
 
 Built on an immutable polyglot femtoservice architecture, meetup-generator
 melds Deep ML with the power of the Blockchain to deliver planetscale insights
