@@ -93,6 +93,7 @@ tech:
   - ArangoDB
   - Argo
   - Athena
+  - Atlantis
   - AWS
   - bacon.js
   - Berkshelf
@@ -125,6 +126,7 @@ tech:
   - CFEngine
   - cgroups
   - ChaosKube
+  - Chaos Mesh
   - Chaos Toolkit
   - Chef
   - Chef/Puppet
@@ -132,9 +134,10 @@ tech:
   - Cilium
   - CircleCI
   - Clojure
+  - Cloud Custodian
+  - Cloud Foundry
   - Cloud9
   - CloudFormation
-  - Cloud Foundry
   - Cloudfront
   - CloudSearch
   - Cloudstack
@@ -154,12 +157,14 @@ tech:
   - Convox
   - CoreDNS
   - CoreOS
+  - Cortex
   - Couchbase
   - CouchDB
   - CRI-O
   - Crossplane
   - Crystal
   - Cucumber
+  - Curiefense
   - "curl | sudo bash"
   - DalmatinerDB
   - Dapper
@@ -170,6 +175,8 @@ tech:
   - Deep Learning
   - Deis
   - Device Farm
+  - Dex
+  - Distribution
   - Distributed Tracing
   - Django
   - Docker
@@ -211,6 +218,7 @@ tech:
   - Flocker
   - fluentd
   - Flume
+  - Flux
   - Flynn.io
   - Fog
   - Foodcritic
@@ -257,6 +265,7 @@ tech:
   - IAM
   - Immutable Infrastructure
   - Impala
+  - in-toto
   - IndexedDB
   - Infinispan
   - InfluxDB
@@ -277,6 +286,8 @@ tech:
   - KairosDB
   - Kanban
   - Kaniko
+  - Keda
+  - Keptn
   - Kiali
   - Kibana
   - Kind
@@ -305,8 +316,11 @@ tech:
   - Kubic
   - Kubicorn
   - kublr
+  - KUDO
   - Kudu
+  - Kuma
   - Kyma
+  - Kyverno
   - Lambda
   - Lex
   - Lightbend
@@ -362,6 +376,7 @@ tech:
   - Noms
   - NoOps
   - NoSQL
+  - Notary
   - npm
   - Nuclio
   - NuGet
@@ -369,18 +384,23 @@ tech:
   - OCaml
   - Okta
   - OpenFaaS
+  - OpenKruise
+  - OpenMetrics
   - OpenShift
   - OpenTracing
   - OpenWhisk
+  - OpenYurt
   - OpsWorks
   - OrientDB
   - PaaSta
   - Packer
   - Packetbeat
   - Papertrail
+  - Parsec
   - Perl
   - Phoenix
   - Pilosa
+  - Porter
   - Portus
   - Powerful Seal
   - Project Atomic
@@ -446,6 +466,7 @@ tech:
   - SNI
   - Snowball
   - SNS
+  - SofaRPC
   - Solr
   - SPIFFE
   - Spinnaker
@@ -457,12 +478,15 @@ tech:
   - statsd
   - 'Step Functions'
   - Storage Gateway
+  - Strimsi
   - Sublime Text
   - Supergiant
   - Swarm
   - Symplegma
   - Sysdig
   - systemd
+  - TARS
+  - Tekton
   - Telegraf
   - Teleport
   - Telepresence
@@ -474,10 +498,12 @@ tech:
   - TiDB
   - TiKV
   - Timeseries Database
+  - Tinkerbell
   - TokyoTyrant
   - Toxiproxy
   - Traefik
-  - Travis CI
+  - Travis
+  - Tremor
   - Trickster
   - Triton
   - Trufflehog
@@ -490,7 +516,9 @@ tech:
   - Vagrant
   - Vault
   - Velocity
+  - Virtual Kubelet
   - Vitess
+  - Volcano
   - Wangle
   - Wavefront
   - Weave
