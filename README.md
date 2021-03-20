@@ -1,6 +1,6 @@
 # meetup-generator
 
-[![Test](https://github.com/snltd/meetup-generator/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/snltd/meetup-generator/actions/workflows/test.yml) ![Release](https://github.com/snltd/meetup-generator/workflows/Release/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/4487595d6afb26a57d82/maintainability)](https://codeclimate.com/github/snltd/meetup-generator/maintainability)
+[![Test](https://github.com/snltd/meetup-generator/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/snltd/meetup-generator/actions/workflows/test.yml) ![Release](https://github.com/snltd/meetup-generator/workflows/Release/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/4487595d6afb26a57d82/maintainability)](https://codeclimate.com/github/snltd/meetup-generator/maintainability) [![Gem Version](https://badge.fury.io/rb/meetup-generator.svg)](https://badge.fury.io/rb/meetup-generator)
 
 Built on an immutable polyglot femtoservice architecture, meetup-generator
 melds Deep ML with the power of the Blockchain to deliver planetscale insights
