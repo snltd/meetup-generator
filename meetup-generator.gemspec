@@ -25,7 +25,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^spec/})
   gem.require_paths = %w[lib]
 
-  gem.add_runtime_dependency 'puma', '~> 5.0.0'
+  gem.add_runtime_dependency 'puma', '~> 5.0'
   gem.add_runtime_dependency 'sinatra', '~>2.1'
   gem.add_runtime_dependency 'slim', '~> 4.1'
 
