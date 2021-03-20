@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     meetup-generator (0.0.20210320)
-      puma (~> 5.0.0)
+      puma (~> 5.0)
       sinatra (~> 2.1)
       slim (~> 4.1)
 
