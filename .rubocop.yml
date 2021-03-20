@@ -1,8 +1,6 @@
 ---
 require:
-  - rubocop-rake
   - rubocop-minitest
-  - rubocop-performance
   - rubocop-performance
 
 AllCops:
