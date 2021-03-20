@@ -36,6 +36,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rubocop', '~> 1.9'
   gem.add_development_dependency 'rubocop-minitest', '~> 0.10'
   gem.add_development_dependency 'rubocop-performance', '~> 1.3'
+  gem.add_development_dependency 'rubocop-rake', '~> 0.5'
 
   gem.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
 end
