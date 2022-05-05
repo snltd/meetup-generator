@@ -13,7 +13,7 @@ class MeetupGenerator
 
   def initialize
     @words = Zlib::GzipReader.open(LIB + 'words.gz').readlines.map(&:strip)
-    @lib   = YAML.safe_load(IO.read(LIB + 'all_the_things.yaml'),
+    @lib   = YAML.safe_load(File.read(LIB + 'all_the_things.yaml'),
                             symbolize_names: true)
   end
 
