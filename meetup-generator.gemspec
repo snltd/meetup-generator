@@ -38,6 +38,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rubocop-performance', '~> 1.3'
   gem.add_development_dependency 'rubocop-rake', '~> 0.5'
 
-  gem.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
+  gem.required_ruby_version = Gem::Requirement.new('>= 2.7.0')
   gem.metadata['rubygems_mfa_required'] = 'true'
 end
