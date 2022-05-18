@@ -190,6 +190,7 @@ tech:
   - Dubbo
   - DynamoDB
   - Dynatrace
+  - eBPF
   - EC2
   - ECS
   - "Edge Rabbit"
@@ -614,6 +615,7 @@ quantifier:
   - Multiregion Dataflows
   - MVP
   - Observability
+  - Operational Debt
   - Patterns
   - Polyglot Persistence
   - ROI
@@ -621,6 +623,7 @@ quantifier:
   - Seed Capital
   - Synergy
   - TCO
+  - Technical Debt
   - Threat Model
   - Uptime
   - Value Stream Network
@@ -642,11 +645,13 @@ food_style:
   - barrista
   - biodynamic
   - cave-aged
+  - cold-brew
   - copper-still
   - craft
   - extra-matured
   - fairtrade
   - "farmers' market"
+  - foraged
   - fusion
   - gourmet
   - guest-curated
@@ -655,13 +660,16 @@ food_style:
   - keg-aged
   - Lebanese
   - microbrewery
+  - plant-based
   - Scandinavian
   - seagan
   - seasonal
+  - vegetarian
   - vegan
 
 food:
   - ales
+  - avocado toast
   - beard yeast
   - beers
   - breads
@@ -677,16 +685,21 @@ food:
   - grazing boards
   - hummus
   - IPAs
+  - kimchi
+  - kombucha
   - lagers
   - micro-pizza
   - nonsense
   - olives
   - pickles
   - pizza
+  - pulled pork
   - quinoa
   - smoothie bowls
+  - sourdough
   - street food
   - tapas
+  - tacos
 
 skill_level:
   - Advanced User
@@ -1149,6 +1162,8 @@ job_title:
   - Squadron Leader
   - Stormtrooper
   - Superstar
+  - Symmathecist
+  - Tech Whisperer
   - Technologist
   - Thought Leader
   - Visionary
