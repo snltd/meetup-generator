@@ -12,8 +12,8 @@ class MeetupGenerator
   attr_reader :words, :lib
 
   def initialize
-    @words = Zlib::GzipReader.open(LIB + 'words.gz').readlines.map(&:strip)
-    @lib   = YAML.safe_load(IO.read(LIB + 'all_the_things.yaml'),
+    @words = Zlib::GzipReader.open(LIB.join('words.gz')).readlines.map(&:strip)
+    @lib   = YAML.safe_load(File.read(LIB.join('all_the_things.yaml')),
                             symbolize_names: true)
   end
 
@@ -69,7 +69,7 @@ class MeetupGenerator
   end
 
   def something_ops
-    (lib[:something_ops] * 4).sample(rand(2..4)).join + 'Ops'
+    "#{(lib[:something_ops] * 4).sample(rand(2..4)).join}Ops"
   end
 
   def pair(list1, list2)

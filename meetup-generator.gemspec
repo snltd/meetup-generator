@@ -6,8 +6,8 @@ require 'date'
 
 Gem::Specification.new do |gem|
   gem.name          = 'meetup-generator'
-  gem.version       = ENV['RELEASE_VERSION'] ||
-                      "0.0.#{Time.now.strftime('%Y%m%d')}"
+  gem.version       = ENV.fetch('RELEASE_VERSION',
+                                "0.0.#{Time.now.strftime('%Y%m%d')}")
 
   gem.summary       = 'Stupid fatuous random string generatpr'
   gem.description   = 'Generates a website advertising a fictional ' \
@@ -20,8 +20,7 @@ Gem::Specification.new do |gem|
 
   gem.bindir        = 'bin'
   gem.executables   = ['meetup-generator.rb', 'locate_meetup-generator']
-  gem.files         = IO.readlines('package/runtime_files', chomp: true)
-  gem.test_files    = gem.files.grep(%r{^spec/})
+  gem.files         = File.readlines('package/runtime_files', chomp: true)
   gem.require_paths = %w[lib]
 
   gem.add_runtime_dependency 'puma', '~> 5.0'
@@ -38,5 +37,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rubocop-performance', '~> 1.3'
   gem.add_development_dependency 'rubocop-rake', '~> 0.5'
 
-  gem.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
+  gem.required_ruby_version = Gem::Requirement.new('>= 2.7.0')
+  gem.metadata['rubygems_mfa_required'] = 'true'
 end
