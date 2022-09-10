@@ -27,7 +27,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'sinatra', '~>2.2'
   gem.add_runtime_dependency 'slim', '~> 4.1'
 
-  gem.add_development_dependency 'bundler', '~> 2.3'
+  gem.add_development_dependency 'bundler', '>= 2.2'
   gem.add_development_dependency 'minitest', '~> 5.16'
   gem.add_development_dependency 'nokogiri', '~> 1.13'
   gem.add_development_dependency 'rack-test', '~> 1.1'
