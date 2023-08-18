@@ -45,7 +45,7 @@ class TestApp < MiniTest::Test
     templates = things[:template].map do |t|
       escaped = Regexp.escape(CGI.escapeHTML(t))
       matcher = escaped.gsub(/%\w+%/, '[\w\-]+').gsub(/RAND\d+/, '\d+')
-                       .gsub(/FNOPS/, '\w+')
+                       .gsub('FNOPS', '\w+')
       Regexp.new('^.*ttitle">' + matcher + '</span>.*$')
     end
 
