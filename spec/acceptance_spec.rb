@@ -1,12 +1,14 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require 'rack/builder'
+
 %w[minitest minitest/unit minitest/autorun rack/test pathname json
    yaml cgi nokogiri].each { |f| require f }
 
 MGROOT = Pathname.new(__FILE__).realpath.dirname.parent
 
-OUTER_APP = Rack::Builder.parse_file((MGROOT + 'config.ru').to_s).first
+OUTER_APP = Rack::Builder.parse_file(MGROOT.join('config.ru').to_s)
 
 # Acceptance tests for the meetup generator. Yeah, I know.
 #
@@ -17,9 +19,9 @@ class TestApp < MiniTest::Test
 
   def initialize(args)
     super(args)
-    @things = YAML.safe_load(File.read(MGROOT.join(
-                                         'lib', 'all_the_things.yaml'
-                                       )), symbolize_names: true)
+    @things = YAML.safe_load_file(MGROOT.join(
+                                    'lib', 'all_the_things.yaml'
+                                  ), symbolize_names: true)
   end
 
   def app
@@ -46,13 +48,13 @@ class TestApp < MiniTest::Test
       escaped = Regexp.escape(CGI.escapeHTML(t))
       matcher = escaped.gsub(/%\w+%/, '[\w\-]+').gsub(/RAND\d+/, '\d+')
                        .gsub('FNOPS', '\w+')
-      Regexp.new('^.*ttitle">' + matcher + '</span>.*$')
+      Regexp.new("^.*ttitle\">#{matcher}</span>.*$")
     end
 
     until templates.empty?
       get '/'
       assert_equal('text/html;charset=utf-8',
-                   last_response.header['Content-Type'])
+                   last_response.headers['Content-Type'])
       last_response.ok?
       resp = last_response.body
       assert_match(/The code./, resp)
@@ -66,7 +68,7 @@ class TestApp < MiniTest::Test
     assert last_response.ok?
     assert_instance_of(String, last_response.body)
     assert_match(/^"\w+ \w+"$/, last_response.body)
-    assert last_response.header['Content-Type'] == 'application/json'
+    assert last_response.headers['Content-Type'] == 'application/json'
   end
 
   def test_api_company
@@ -74,15 +76,15 @@ class TestApp < MiniTest::Test
     assert last_response.ok?
     assert_instance_of(String, last_response.body)
     assert_match(/^"\w+.io"$/, last_response.body)
-    assert last_response.header['Content-Type'] == 'application/json'
+    assert last_response.headers['Content-Type'] == 'application/json'
   end
 
   def test_api_misc
     %w[title role refreshment location date].each do |word|
-      get format('/api/%<word>s', word: word)
+      get format('/api/%<word>s', word:)
       assert last_response.ok?
       assert_instance_of(String, last_response.body)
-      assert last_response.header['Content-Type'] == 'application/json'
+      assert last_response.headers['Content-Type'] == 'application/json'
     end
   end
 

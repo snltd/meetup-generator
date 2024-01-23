@@ -1,19 +1,14 @@
 ---
-
-AllCops:
-  TargetRubyVersion: 2.5
-  NewCops: enable
-
-Style/StringConcatenation:
-  Enabled: false
+inherit_from:
+  - ../.rubocop.yml
 
 # Allow long blocks of tests
 #
-Metrics/BlockLength:
-  Max: 120
-
 Metrics/MethodLength:
   Max: 80
 
 Metrics/AbcSize:
   Max: 80
+
+Metrics/ClassLength:
+  Max: 300

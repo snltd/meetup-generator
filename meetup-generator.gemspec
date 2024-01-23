@@ -23,10 +23,6 @@ Gem::Specification.new do |gem|
   gem.files         = File.readlines('package/runtime_files', chomp: true)
   gem.require_paths = %w[lib]
 
-  gem.add_runtime_dependency 'puma', '~> 6.3'
-  gem.add_runtime_dependency 'sinatra', '~>3.1'
-  gem.add_runtime_dependency 'slim', '~> 5.1'
-
-  gem.required_ruby_version = Gem::Requirement.new('>= 3.2.0')
+  gem.required_ruby_version = Gem::Requirement.new('>= 3.1.0')
   gem.metadata['rubygems_mfa_required'] = 'true'
 end
