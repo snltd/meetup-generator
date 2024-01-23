@@ -13,8 +13,8 @@ class MeetupGenerator
 
   def initialize
     @words = Zlib::GzipReader.open(LIB.join('words.gz')).readlines.map(&:strip)
-    @lib   = YAML.safe_load(File.read(LIB.join('all_the_things.yaml')),
-                            symbolize_names: true)
+    @lib   = YAML.safe_load_file(LIB.join('all_the_things.yaml'),
+                                 symbolize_names: true)
   end
 
   # @param num [Integer] how many talks you want
@@ -22,18 +22,18 @@ class MeetupGenerator
   #
   def agenda(num = 5)
     { talks: lib[:template].sample(num).map { |t| talk(t) },
-      refreshment: refreshment,
-      location: location,
-      date: date }
+      refreshment:,
+      location:,
+      date: }
   end
 
   # @param templates [Array[String]] array of templates
   #
   def talk(template = random_template)
     { title: title(template),
-      talker: talker,
-      role: role,
-      company: company }
+      talker:,
+      role:,
+      company: }
   end
 
   def location

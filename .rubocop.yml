@@ -1,21 +1,10 @@
 ---
+
 require:
   - rubocop-rake
   - rubocop-minitest
   - rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.7
   NewCops: enable
-
-Metrics/ClassLength:
-  Max: 400
-
-Style/IfUnlessModifier:
-  Enabled: false # because it wants to make lines >80 chars
-Style/OptionalBooleanParameter:
-  Enabled: false
-
-# Is nothing sacred?
-Layout/LineLength:
-  Max: 80
+  TargetRubyVersion: 3.1
