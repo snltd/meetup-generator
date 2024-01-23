@@ -15,10 +15,10 @@ jobs:
     - name: Set env
       run: echo "RELEASE_VERSION=$(echo ${GITHUB_REF:10})" >> $GITHUB_ENV
 
-    - name: Set up Ruby 3.1
+    - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.1
+        ruby-version: 3.2
     - run: bundle install
 
     - name: Run tests
