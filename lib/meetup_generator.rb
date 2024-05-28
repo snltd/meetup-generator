@@ -30,7 +30,7 @@ class MeetupGenerator
   # @param templates [Array[String]] array of templates
   #
   def talk(template = random_template)
-    { title: title(template),
+    { title: "#{title(template)} With AI",
       talker:,
       role:,
       company: }
