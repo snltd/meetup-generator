@@ -18,7 +18,7 @@ class TestApp < MiniTest::Test
   include Rack::Test::Methods
 
   def initialize(args)
-    super(args)
+    super
     @things = YAML.safe_load_file(MGROOT.join(
                                     'lib', 'all_the_things.yaml'
                                   ), symbolize_names: true)
@@ -45,6 +45,7 @@ class TestApp < MiniTest::Test
   #
   def test_default
     templates = things[:template].map do |t|
+      t = "#{t} With AI"
       escaped = Regexp.escape(CGI.escapeHTML(t))
       matcher = escaped.gsub(/%\w+%/, '[\w\-]+').gsub(/RAND\d+/, '\d+')
                        .gsub('FNOPS', '\w+')
