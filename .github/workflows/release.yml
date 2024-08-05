@@ -37,6 +37,9 @@ jobs:
         GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
 
   docker-hub:
+    name: Build and Publish to Docker Hub
+    runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v4
     - name: Set env
@@ -64,5 +67,5 @@ jobs:
       uses: docker/build-and-push-action@v6
       with:
         push: true
-        tags: ${{ steps.metadata.outputs/tags }}
+        tags: ${{ steps.metadata.outputs.tags }}
    
