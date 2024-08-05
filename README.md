@@ -1,6 +1,6 @@
 # meetup-generator
 
-[![Test](https://github.com/snltd/meetup-generator/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/snltd/meetup-generator/actions/workflows/test.yml) ![Release](https://github.com/snltd/meetup-generator/workflows/Release/badge.svg) [![Gem Version](https://badge.fury.io/rb/meetup-generator.svg)](https://badge.fury.io/rb/meetup-generator)
+[![Test](https://github.com/snltd/meetup-generator/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/snltd/meetup-generator/actions/workflows/test.yml) [![Build and Release to Docker Hub](https://github.com/snltd/meetup-generator/actions/workflows/release-dockerhub.yml/badge.svg)](https://github.com/snltd/meetup-generator/actions/workflows/release-dockerhub.yml) [![Build and Release to Rubygems](https://github.com/snltd/meetup-generator/actions/workflows/release-rubygems.yml/badge.svg)](https://github.com/snltd/meetup-generator/actions/workflows/release-rubygems.yml) [![Gem Version](https://badge.fury.io/rb/meetup-generator.svg)](https://badge.fury.io/rb/meetup-generator)
 
 Built on an immutable polyglot femtoservice architecture, meetup-generator
 melds Deep ML with the power of the Blockchain to deliver planetscale insights
