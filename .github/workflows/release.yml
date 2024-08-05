@@ -61,7 +61,7 @@ jobs:
         images: |
           snltd/meetup-generator
         tags: |
-          type==semver,pattern={{version}}
+          type=semver,pattern={{version}}
 
     - name: Build and Push Docker Container
       uses: docker/build-push-action@v6
