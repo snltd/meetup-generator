@@ -19,6 +19,11 @@ $ curl -s localhost:4567/api/talk | json
   "company": "prognosticatr.io"
 }
 ```
+## Running
+
+```sh
+$ docker run -p 8080:8080 snltd/meetup-generator:latest
+```
 
 ## Building
 
@@ -31,7 +36,7 @@ $ rake build
 Build a container with
 
 ```sh
-$ docker build -t meetup-generator .
+$ docker build -t latest .
 ```
 
 ## Running
@@ -47,12 +52,6 @@ Run from a git checkout
 
 ```sh
 $ bin/meetup-generator.rb
-```
-
-Run the container from earlier:
-
-```sh
-$ docker run -p 4567:4567 meetup-generator
 ```
 
 Install as a Solaris/Illumos service
