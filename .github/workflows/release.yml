@@ -64,7 +64,7 @@ jobs:
           type==semver,pattern={{version}}
 
     - name: Build and Push Docker Container
-      uses: docker/build-and-push-action@v6
+      uses: docker/build-push-action@v6
       with:
         push: true
         tags: ${{ steps.metadata.outputs.tags }}
