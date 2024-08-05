@@ -1,4 +1,6 @@
 .git
-website.xml
-test
-LICENSE.md
+.github
+package
+spec
+fly.toml
+LICENSE.txt
