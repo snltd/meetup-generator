@@ -1,4 +1,4 @@
-name: Release
+name: Build and Release to Rubygems
 
 on:
   push:
@@ -6,19 +6,19 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
-  build:
-    name: Build + Publish
+  rubygems:
+    name: Build and Publish to Rubygems
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set env
-      run: echo "RELEASE_VERSION=$(echo ${GITHUB_REF:10})" >> $GITHUB_ENV
+      run: echo "RELEASE_VERSION=$(echo ${GITHUB_REF:10})" >>$GITHUB_ENV
 
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.2
+        ruby-version: 3.3
     - run: bundle install
 
     - name: Run tests
